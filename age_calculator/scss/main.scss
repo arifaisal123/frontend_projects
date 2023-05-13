@@ -1,0 +1,88 @@
+@import "defaults";
+@import "variables";
+@import "fonts";
+
+
+body {
+    background-color: $primary-color;
+}
+
+.main {
+    background-color: $secondary-color;
+    width: 90%;
+    margin: 0 auto;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -45%;
+    transform: translateY(-50%);
+    border-radius: 7%;
+    border-bottom-right-radius: 23%;
+
+    .date {
+        padding-top: 10%;
+        text-align: center;
+        label {
+            color: $font-tertiary;
+            display: block;
+            font-family: "Poppins-Bold";
+        }
+        .day, .month, .year {
+            display: inline-block;
+            width: 30%;
+            input {
+                width: 50%;
+                height: 2rem;
+            }
+        } 
+    }
+    section {
+        padding-top: 10%;
+        .age {
+            padding-left: 5%;
+            &_number {
+                color: $font-secondary;
+                font-family: "Poppins-ExtraBoldItalic";
+                font-size: 3rem;
+            }
+            &_text {
+                color: $font-primary;
+                font-family: "Poppins-ExtraBoldItalic";
+                font-size: 3rem;
+            }            
+        }
+    }
+
+    .line {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 30%; /* Set top to 50% to position the line in the middle of the ball */
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: $font-tertiary;
+        // transform: translateY(-50%); /* Use translateY to center the line vertically */
+    }
+
+    .purple-icon {
+        background-color: $font-secondary;
+        border: 2px solid $font-secondary;
+        border-radius: 50%;
+        width: 20%;
+        height: 8vh;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+.attribution { 
+    position: absolute;
+    left: 20%;
+    bottom: 1%;
+    font-size: 11px; text-align: center; 
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}

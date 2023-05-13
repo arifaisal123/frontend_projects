@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url("../assets/fonts/Poppins-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Poppins-ExtraBoldItalic";
+  src: url("../assets/fonts/Poppins-ExtraBoldItalic.ttf");
+}
+body {
+  background-color: #F0F0F0;
+}
+
+.main {
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  height: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -45%;
+  transform: translateY(-50%);
+  border-radius: 7%;
+  border-bottom-right-radius: 23%;
+}
+.main .date {
+  padding-top: 10%;
+  text-align: center;
+}
+.main .date label {
+  color: #969696;
+  display: block;
+  font-family: "Poppins-Bold";
+}
+.main .date .day, .main .date .month, .main .date .year {
+  display: inline-block;
+  width: 30%;
+}
+.main .date .day input, .main .date .month input, .main .date .year input {
+  width: 50%;
+  height: 2rem;
+}
+.main section {
+  padding-top: 10%;
+}
+.main section .age {
+  padding-left: 5%;
+}
+.main section .age_number {
+  color: #7D50FA;
+  font-family: "Poppins-ExtraBoldItalic";
+  font-size: 3rem;
+}
+.main section .age_text {
+  color: #000;
+  font-family: "Poppins-ExtraBoldItalic";
+  font-size: 3rem;
+}
+.main .line {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 30%; /* Set top to 50% to position the line in the middle of the ball */
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #969696;
+}
+.main .purple-icon {
+  background-color: #7D50FA;
+  border: 2px solid #7D50FA;
+  border-radius: 50%;
+  width: 20%;
+  height: 8vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.attribution {
+  position: absolute;
+  left: 20%;
+  bottom: 1%;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */
