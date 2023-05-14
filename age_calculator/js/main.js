@@ -1,4 +1,17 @@
-function calculate_age() {
+function resetCircleColor() {
+    const purpleCircle = document.getElementById("circle");
+    purpleCircle.style.backgroundColor = "#7D50FA";
+    purpleCircle.style.borderColor = "#7D50FA";
+}
+
+function changeCircleColor() {
+    const purpleCircle = document.getElementById("circle");
+    purpleCircle.style.backgroundColor = "#000";
+    purpleCircle.style.borderColor = "#000";
+
+}
+
+function calculateAge() {
     // Stores the input of the user
     const year = document.getElementById("year");
     const month = document.getElementById("month");

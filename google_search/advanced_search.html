@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CS50's Google Advanced Search</title>
+        <link rel="icon" type="image/png" href="./images/favicon.png"/>
+        <link rel="stylesheet" href="./css/styles.css"/>
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <img class="advanced_logo" src="./images/google.png"/>
+                <ul>
+                    <li><a href="./index.html"><span class="previous_button">&#8249;</span> Go Back to Google Search</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="advanced_header">
+            <h1>Advanced Search</h1>
+        </div>
+        <div class="advanced_form">
+            <p>Find pages with...</p>
+            <form action="https://www.google.com/search">
+                <div>
+                    <label for="atw">all these words: </label>
+                    <input id="atw" type="text" name="as_q">
+                </div>
+                <div>
+                    <label for="tewop">this exact word or phrase: </label>
+                    <input id="tewop" type="text" name="as_epq">
+                </div>
+                <div>
+                    <label for="aotw">any of these words: </label>
+                    <input id="aotw" type="text" name="as_oq">
+                </div>
+                <div>
+                    <label for="notw">this exact word or phrase: </label>
+                    <input id="notw" type="text" name="as_eq">
+                </div>
+                <div id="advanced_submit">
+                    <input type="submit" value="Advanced Search">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

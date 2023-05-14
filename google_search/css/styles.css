@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    text-align: right;
+}
+
+.navbar {
+    padding: 6px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.previous_button {
+    font-size: 22px;
+}
+
+.logo {
+    text-align: center;
+    padding-top: 250px;
+}
+
+.main_form {
+    padding-top: 20px;
+}
+
+.main_input {
+    text-align: center;
+}
+
+.main_input input {
+    border-color: rgba(0, 0, 0, .1);
+    border-radius: 25px;
+    width: 600px;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 25px;
+}
+
+.main_input input:focus {
+    outline: none;
+}
+
+.main_input input:hover {
+    border: 2px solid rgba(204,204,204,0.7);
+    transition: border-color 0.2s ease-in-out;
+}
+
+.main_submit {
+    text-align: center;
+    padding: 30px;
+}
+
+.main_submit input {
+    padding: 10px 14px;
+    margin: 0 2px;;
+    border: none;
+    border-radius: 3px;
+    background-color: #F8F9FA;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.main_submit input:hover {
+    border: 1px solid rgba(128,128,128, 0.3);
+    cursor: pointer;
+}
+
+.advanced_logo {
+    width: 70px;
+    display: inline-block;
+    float: left;
+    padding-top: 8px;
+}
+
+.advanced_header {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.advanced_header h1 {
+    color: #D93064;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 400;
+    padding: 40px;
+    padding-bottom: 30px;
+}
+
+.advanced_form {
+    padding: 40px;
+}
+
+.advanced_form p {
+    font-size: 16px;
+    font-family: Arial;
+}
+
+.advanced_form form div {
+    padding: 10px 0;
+    font-size: 13px;
+    font-family: Arial;
+}
+
+.advanced_form form div label {
+    display: inline-block;
+    width: 182px;
+}
+
+.advanced_form form div input {
+    width: 572px;
+    height: 29px;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    padding-left: 8px;
+}
+
+#advanced_submit input {
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0 8px;
+    border-radius: 2px;
+    width: 120px;
+    margin-left: 638px;
+}
+
+#advanced_submit input:hover {
+    background-color: #357ae8;
+    border: 1px solid #2f5bb7;
+}
+

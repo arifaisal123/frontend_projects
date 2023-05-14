@@ -9,47 +9,55 @@ body {
 
 .main {
     background-color: $secondary-color;
-    width: 90%;
+    width: 170px;
     margin: 0 auto;
-    height: 60vh;
+    height: 300px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -45%;
+    top: 200px;
+    left: 240px;
+    margin-left: -232px;
     transform: translateY(-50%);
-    border-radius: 7%;
-    border-bottom-right-radius: 23%;
+    border-radius: 15px;
+    border-bottom-right-radius: 70px;
 
     .date {
-        padding-top: 10%;
+        padding-top: 25px;
         text-align: center;
         label {
             color: $font-tertiary;
             display: block;
             font-family: "Poppins-Bold";
+            font-size: 8px;
+            text-align: left;
+            padding-left: 6px;
         }
         .day, .month, .year {
             display: inline-block;
-            width: 30%;
+            width: 54px;
             input {
-                width: 50%;
-                height: 2rem;
+                width: 44px;
+                height: 26px;
+                border: 1px solid $font-tertiary;
+                border-radius: 5px;
+                text-align: center;
+                font-weight: bold;
+                background-color: $secondary-color;
             }
         } 
     }
     section {
-        padding-top: 10%;
+        padding-top: 20px;
         .age {
-            padding-left: 5%;
+            padding-left: 10px;
             &_number {
                 color: $font-secondary;
                 font-family: "Poppins-ExtraBoldItalic";
-                font-size: 3rem;
+                font-size: 24px;
             }
             &_text {
                 color: $font-primary;
                 font-family: "Poppins-ExtraBoldItalic";
-                font-size: 3rem;
+                font-size: 24px;
             }            
         }
     }
@@ -58,20 +66,19 @@ body {
         content: "";
         display: block;
         position: absolute;
-        top: 30%; /* Set top to 50% to position the line in the middle of the ball */
+        top: 105px; 
         left: 0;
         right: 0;
         height: 1px;
         background-color: $font-tertiary;
-        // transform: translateY(-50%); /* Use translateY to center the line vertically */
     }
 
     .purple-icon {
         background-color: $font-secondary;
         border: 2px solid $font-secondary;
-        border-radius: 50%;
-        width: 20%;
-        height: 8vh;
+        border-radius: 80px;
+        width: 40px;
+        height: 40px;
         margin: 0 auto;
         position: relative;
     }
@@ -79,9 +86,9 @@ body {
 
 .attribution { 
     position: absolute;
-    left: 20%;
-    bottom: 1%;
-    font-size: 11px; text-align: center; 
+    left: 50px;
+    bottom: 2px;
+    font-size: 8px; text-align: center; 
     a { 
         color: hsl(228, 45%, 44%); 
     }
