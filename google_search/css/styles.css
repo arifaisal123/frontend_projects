@@ -154,3 +154,8 @@ a:hover {
     border: 1px solid #2f5bb7;
 }
 
+@media only screen and (max-width: 1280px) {
+    .logo {
+        padding-top: 150px;
+    }
+  }
