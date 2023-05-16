@@ -1,0 +1,199 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('../images/1.jpg');
+
+  /* Full height */
+  height: 100vh%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container_section1 {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 6%;
+  padding: 5%; 
+  padding-top: 10%;
+}
+
+.container_section1 > i {
+  padding-right: 5%;
+  padding-bottom: 2%;
+}
+
+.container_section1 > span {
+  color: #f8f9f5;
+  font-family: Pacifico;
+  font-size: 2.5rem;
+}
+
+.container_section1 > p {
+  color: #f8f9f5;
+  font-family: Alkatra;
+  font-size: 1.3rem;
+}
+
+.nav {
+  margin-top: 5%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5%;
+}
+
+.nav-link {
+  color: #f8f9f5;
+  font-size: 1.3rem;
+}
+
+.nav-link:hover {
+  border-top: 1px solid #f8f9f5;
+  border-bottom: 1px solid #f8f9f5;
+  color: #f8f9f5;
+}
+
+.temp_border {
+  border: 2px solid #fff;
+}
+
+.container_section2 {
+  border-radius: 3%;
+  padding: 5%; 
+}
+
+.section2 {  
+  padding: 5%;
+}
+
+.section2 > div > h1, .section2 > div > h2, .section2 > div > p {
+  color: #f8f9f5;
+  font-family: Arial;
+  padding: 8%;
+  padding-left: 0;
+}
+
+.section2 > div > h1 {
+  font-size: 2.8rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.section2 > div > h2 {
+  border-bottom: 1px solid #f8f9f5;
+  font-size: 1.3rem;
+  padding-top: 1%;
+}
+
+.section2 > div > p {
+  font-size: 1.1rem;
+  padding: 1.5%;
+}
+
+.container_section2 > button {
+  margin-top: 3%;
+}
+
+.btn_custom {
+  background-color: #3a3a3a;
+  border-color: #3a3a3a;
+  color: #f8f9f5;
+}
+
+.btn_custom:hover {
+  background-color: #f8f9f5;
+  border-color: #3a3a3a;
+  color: #000;
+}
+
+.mobile_image {
+  border: 3px solid #f8f9f5;
+  border-radius: 3%;
+  padding: 2%;
+  width: 75%;
+} 
+
+.section3 {
+  padding: 3%;
+}
+
+.fa_size1 {
+  font-size: 4rem;
+}
+
+.fa_size2 {
+  font-size: 3rem;
+}
+
+.container_section3 {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 3%;
+  padding: 8%; 
+}
+
+.cs3_part2 > h2, .cs3_part3 > h2 {
+  padding-top: 6%;
+}
+
+.cs3_part2 > i, .cs3_part3 > i {
+  padding-top: 6%;
+}
+
+.cs3_part2 > p, .cs3_part3 > p {
+  padding-top: 6%;
+}
+
+.section3 h2, .section3 i, .section3 p {
+  color: #000;
+  padding-bottom: 10%;
+} 
+
+.section3 h2, .section3 p {
+  font-family: Arial;
+} 
+
+.section3 h2 {
+  font-weight: bold;
+}
+
+.container_section4 {
+  border-radius: 3%;
+  padding: 5%; 
+  padding-top: 2%;
+}
+
+.section4 {
+  padding: 5%;
+}
+
+.section4_image {
+  border-radius: 3%;
+}
+
+.section4 > div > h2, .section4 > div > p {
+  color: #f8f9f5;
+  font-family: Arial;
+}
+
+.section4 > div > h2 {
+  padding-bottom: 4%;
+}
+
+.container_section4 > form {
+  padding-top: 3%;
+}
+
+.section5 > footer > p {
+  color: #f8f9f5;
+  font-family: Arial;
+}

@@ -1,0 +1,95 @@
+/** {
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+*/
+h1, h2 {
+	text-align: center;
+}
+
+h1 {
+	color: #4285F4;
+	font-family: Pacifico, Sofia, serif;
+	font-size: 5rem;
+	margin-bottom: 0;
+	margin-top: 0.5%;
+}
+
+h2 {
+	font-family: "Comic Sans MS", Helvetica, serif;
+	font-size: 1.2rem;
+	margin-top: 0.5% ;
+}
+
+p {
+	text-align: center;
+}
+
+#buttons {
+	text-align: center;
+
+}
+
+hr {
+	border-top: 1px solid #f4b142;
+}
+
+#text_container {
+	width: 70%;
+	height: 60vh;
+	border: 1px solid #4285F4;
+	border-radius: 5px;
+	margin: 0 auto;
+	overflow-y: auto;
+}
+
+#generate_text {
+	padding: 15% 0;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+footer {
+	text-align: center;
+}
+
+footer > ul > a{
+	display: inline-block;
+	list-style: none;
+	padding: 0 2%;
+	text-decoration: none;
+	color: #4285F4;
+	font-weight: bold;
+}
+
+#howto {
+	color: #000000;
+	font-family: "Comic Sans MS";
+	list-style: none;
+	text-align: center;
+}
+
+#howto li {
+	padding: 1% 0;
+}
+
+#sf_style {
+	text-align: left;
+	padding-left: 2%;
+}
+
+iframe {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	height: 70vh;
+}
+
+
+#aboutme {
+	color: #000000;
+	font-family: "Comic Sans MS";
+	text-align: center;
+	padding: 0 3%;
+}
