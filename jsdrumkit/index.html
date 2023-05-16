@@ -1,0 +1,80 @@
+<!-- Images by Pexel
+Icons from Flaticon -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>DrumKit</title>
+        <link href="./images/favicon.png" rel="icon" type="image/png"/>
+        <link href="./css/styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="key" data-key="65">
+                <kbd>A</kbd>
+                <span class="soundtype">clap</span>
+            </div>
+            <div class="key" data-key="83">
+                <kbd>S</kbd>
+                <span class="soundtype">hihat</span>
+            </div>
+            <div class="key" data-key="68">
+                <kbd>D</kbd>
+                <span class="soundtype">kick</span>
+            </div>
+            <div class="key" data-key="70">
+                <kbd>F</kbd>
+                <span class="soundtype">openhat</span>
+            </div>
+            <div class="key" data-key="71">
+                <kbd>G</kbd>
+                <span class="soundtype">boom</span>
+            </div>
+            <div class="key" data-key="72">
+                <kbd>H</kbd>
+                <span class="soundtype">ride</span>
+            </div>
+            <div class="key" data-key="74">
+                <kbd>J</kbd>
+                <span class="soundtype">snare</span>
+            </div>
+            <div class="key" data-key="75">
+                <kbd>K</kbd>
+                <span class="soundtype">tom</span>
+            </div>
+            <div class="key" data-key="76">
+                <kbd>L</kbd>
+                <span class="soundtype">tink</span>
+            </div>
+        </div>
+        <audio data-key="65" src="./sounds/clap.wav"></audio>
+        <audio data-key="83" src="./sounds/hihat.wav"></audio>
+        <audio data-key="68" src="./sounds/kick.wav"></audio>
+        <audio data-key="70" src="./sounds/openhat.wav"></audio>
+        <audio data-key="71" src="./sounds/boom.wav"></audio>
+        <audio data-key="72" src="./sounds/ride.wav"></audio>
+        <audio data-key="74" src="./sounds/snare.wav"></audio>
+        <audio data-key="75" src="./sounds/tom.wav"></audio>
+        <audio data-key="76" src="./sounds/tink.wav"></audio>
+    </body>
+    <script>
+        function playSound(e) {
+            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`); // Takes the keyCode of the key pressed, and enter as the value of data-key attribute.
+            const key = document.querySelector(`.key[data-key="${e.keyCode}"]`); // Takes the keyCode of the key pressed, and enter as the value of data-key attribute.
+            if (!audio) return; // If no audio is found
+            audio.currentTime = 0; // Resets the timer to 0, and play again whenever key is pressed
+            audio.play();  // Plays audio
+            key.classList.add("playing");  // Adds the playing class to the current classlist
+        }
+
+        function removeTransition(e) {
+            if (e.propertyName !== "transform") return;  // If the propertyName is not transform, the function will return without doing anything
+            this.classList.remove("playing");  // If the propertyName is transform, then it will remove the playing class from the classlist
+        }
+
+        const keys = document.querySelectorAll(".key");
+        keys.forEach(key => key.addEventListener("transitionend", removeTransition)); // It will loop through all keys, and search for transitionend eventlistener
+
+        window.addEventListener("keydown", playSound);  // Whenever key is pressed, audio will play
+    </script>
+</html>
