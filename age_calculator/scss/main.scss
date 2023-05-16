@@ -81,6 +81,35 @@ body {
         height: 40px;
         margin: 0 auto;
         position: relative;
+        
+        .leaf {
+            margin-top: 18px;
+            margin-left: 7px;
+            box-shadow: 0 0.5px 0 0.5px white;
+            transform: rotate(90deg);
+            width: 22px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 16px;
+                height: 0;
+                box-shadow: 5px 8px 0 0.5px white;
+                transform: rotate(135deg);
+                translate: 18px 8px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 16px;
+                height: 0;
+                box-shadow: 5px 8px 0 0.5px white;
+                transform: rotate(225deg);
+                translate: 6px 3px;
+            }
+
+        }
     }
 }
 
