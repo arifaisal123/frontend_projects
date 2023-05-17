@@ -103,7 +103,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 138px;
+  top: 145px;
   left: 0;
   right: 0;
   height: 1px;
@@ -182,9 +182,6 @@ body {
     color: #000;
     font-family: "Poppins-ExtraBoldItalic";
     font-size: 48px;
-  }
-  .container .main .line {
-    top: 158px;
   }
   .container .main .purple-icon {
     border-radius: 80px;
