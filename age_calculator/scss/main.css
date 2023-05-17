@@ -32,7 +32,6 @@ body {
   margin: 0 auto;
   height: 400px;
   position: absolute;
-  top: 200px;
   border-radius: 15px;
   border-bottom-right-radius: 70px;
 }
@@ -61,7 +60,9 @@ body {
   border-radius: 5px;
   text-align: center;
   font-weight: bold;
+  font-size: 18px;
   background-color: #fff;
+  font-family: "Poppins-Bold";
 }
 .container .main .date .day input::-moz-placeholder, .container .main .date .month input::-moz-placeholder, .container .main .date .year input::-moz-placeholder {
   font-family: "Poppins-Bold";
@@ -121,7 +122,6 @@ body {
   box-shadow: 5px 8px 0 1px white;
   transform: rotate(135deg);
   translate: 18px 8px;
-  border-radius: 50%;
 }
 .container .main .purple-icon .leaf::after {
   content: "";
@@ -140,4 +140,73 @@ body {
 }
 .container .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1280px) {
+  .container .main {
+    width: 500px;
+    height: 440px;
+    border-radius: 25px;
+    border-bottom-right-radius: 170px;
+  }
+  .container .main .date {
+    justify-content: flex-start;
+    padding-left: 25px;
+  }
+  .container .main .date .month {
+    padding-left: 25px;
+  }
+  .container .main .date .year {
+    padding-left: 50px;
+  }
+  .container .main section {
+    padding-top: 15px;
+  }
+  .container .main section .age {
+    padding-left: 35px;
+  }
+  .container .main section .age_number {
+    color: #7D50FA;
+    font-family: "Poppins-ExtraBoldItalic";
+    font-size: 48px;
+  }
+  .container .main section .age_text {
+    color: #000;
+    font-family: "Poppins-ExtraBoldItalic";
+    font-size: 48px;
+  }
+  .container .main .line {
+    top: 152px;
+  }
+  .container .main .purple-icon {
+    border-radius: 80px;
+    width: 70px;
+    height: 70px;
+    margin-left: 385px;
+  }
+  .container .main .purple-icon .leaf {
+    margin-top: 32px;
+    margin-left: 14px;
+    box-shadow: 0 0.5px 0 2px white;
+    transform: rotate(90deg);
+    width: 36px;
+  }
+  .container .main .purple-icon .leaf::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 0;
+    box-shadow: 5px 2px 0 2px white;
+    transform: rotate(135deg);
+    translate: 18px 8px;
+  }
+  .container .main .purple-icon .leaf::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 0;
+    box-shadow: 5px 15px 0 2px white;
+    transform: rotate(225deg);
+    translate: 6px 3px;
+  }
 }/*# sourceMappingURL=main.css.map */
