@@ -5,6 +5,10 @@
 }
 
 @font-face {
+  font-family: "Poppins-Regular";
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
   font-family: "Poppins-Bold";
   src: url("../assets/fonts/Poppins-Bold.ttf");
 }
@@ -45,16 +49,16 @@ body {
   color: #969696;
   display: block;
   font-family: "Poppins-Bold";
-  font-size: 18px;
+  font-size: 11px;
   text-align: left;
   padding-left: 6px;
 }
 .container .main .date .day, .container .main .date .month, .container .main .date .year {
   display: inline-block;
-  width: 84px;
+  width: 100px;
 }
 .container .main .date .day input, .container .main .date .month input, .container .main .date .year input {
-  width: 80px;
+  width: 90px;
   height: 46px;
   border: 1px solid #969696;
   border-radius: 5px;
@@ -71,6 +75,13 @@ body {
 .container .main .date .day input::placeholder, .container .main .date .month input::placeholder, .container .main .date .year input::placeholder {
   font-family: "Poppins-Bold";
   font-size: 18px;
+}
+.container .main .date .day span, .container .main .date .month span, .container .main .date .year span {
+  color: rgb(236, 30, 30);
+  font-size: 7px;
+  font-style: italic;
+  visibility: hidden;
+  font-family: "Poppins-Regular";
 }
 .container .main section {
   padding-top: 20px;
@@ -153,14 +164,11 @@ body {
     justify-content: flex-start;
     padding-left: 25px;
   }
-  .container .main .date .month {
-    padding-left: 25px;
-  }
-  .container .main .date .year {
-    padding-left: 50px;
+  .container .main .date .month, .container .main .date .year {
+    margin-left: 25px;
   }
   .container .main section {
-    padding-top: 15px;
+    padding-top: 4px;
   }
   .container .main section .age {
     padding-left: 35px;
@@ -176,7 +184,7 @@ body {
     font-size: 48px;
   }
   .container .main .line {
-    top: 152px;
+    top: 158px;
   }
   .container .main .purple-icon {
     border-radius: 80px;

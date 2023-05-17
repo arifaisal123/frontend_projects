@@ -27,19 +27,22 @@ body {
             justify-content: space-around;
             padding-top: 25px;
             text-align: center;
+
             label {
                 color: $font-tertiary;
                 display: block;
                 font-family: "Poppins-Bold";
-                font-size: 18px;
+                font-size: 11px;
                 text-align: left;
                 padding-left: 6px;
             }
+
             .day, .month, .year {
                 display: inline-block;
-                width: 84px;
+                width: 100px;
+
                 input {
-                    width: 80px;
+                    width: 90px;
                     height: 46px;
                     border: 1px solid $font-tertiary;
                     border-radius: 5px;
@@ -54,10 +57,21 @@ body {
                     font-family: "Poppins-Bold";
                     font-size: 18px;
                 }
-            } 
+
+                span {
+                    color: $alert-color;
+                    font-size: 7px;
+                    font-style: italic;
+                    visibility: hidden;
+                    font-family: "Poppins-Regular";
+                }
+            }
+
         }
+
         section {
             padding-top: 20px;
+            
             .age {
                 padding-left: 15px;
                 &_number {
@@ -146,17 +160,13 @@ body {
                 justify-content: flex-start;
                 padding-left: 25px;
 
-                .month {
-                    padding-left: 25px;
-                }
-
-                .year {
-                    padding-left: 50px;
+                .month, .year {
+                    margin-left: 25px;
                 }
             }
 
             section {
-                padding-top: 15px;
+                padding-top: 4px;
                 .age {
                     padding-left: 35px;
                     &_number {
@@ -173,7 +183,7 @@ body {
             }
 
             .line {
-                top: 152px; 
+                top: 158px; 
             }
 
             .purple-icon {
