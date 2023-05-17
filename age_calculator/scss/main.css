@@ -20,24 +20,27 @@ body {
   background-color: #F0F0F0;
 }
 
-.main {
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container .main {
   background-color: #fff;
-  width: 170px;
+  width: 340px;
   margin: 0 auto;
   height: 300px;
   position: absolute;
   top: 200px;
-  left: 240px;
-  margin-left: -232px;
-  transform: translateY(-50%);
   border-radius: 15px;
   border-bottom-right-radius: 70px;
 }
-.main .date {
+.container .main .date {
   padding-top: 25px;
   text-align: center;
 }
-.main .date label {
+.container .main .date label {
   color: #969696;
   display: block;
   font-family: "Poppins-Bold";
@@ -45,11 +48,11 @@ body {
   text-align: left;
   padding-left: 6px;
 }
-.main .date .day, .main .date .month, .main .date .year {
+.container .main .date .day, .container .main .date .month, .container .main .date .year {
   display: inline-block;
   width: 54px;
 }
-.main .date .day input, .main .date .month input, .main .date .year input {
+.container .main .date .day input, .container .main .date .month input, .container .main .date .year input {
   width: 44px;
   height: 26px;
   border: 1px solid #969696;
@@ -58,23 +61,23 @@ body {
   font-weight: bold;
   background-color: #fff;
 }
-.main section {
+.container .main section {
   padding-top: 20px;
 }
-.main section .age {
+.container .main section .age {
   padding-left: 10px;
 }
-.main section .age_number {
+.container .main section .age_number {
   color: #7D50FA;
   font-family: "Poppins-ExtraBoldItalic";
   font-size: 24px;
 }
-.main section .age_text {
+.container .main section .age_text {
   color: #000;
   font-family: "Poppins-ExtraBoldItalic";
   font-size: 24px;
 }
-.main .line {
+.container .main .line {
   content: "";
   display: block;
   position: absolute;
@@ -84,7 +87,7 @@ body {
   height: 1px;
   background-color: #969696;
 }
-.main .purple-icon {
+.container .main .purple-icon {
   background-color: #7D50FA;
   border: 2px solid #7D50FA;
   border-radius: 80px;
@@ -93,14 +96,14 @@ body {
   margin: 0 auto;
   position: relative;
 }
-.main .purple-icon .leaf {
+.container .main .purple-icon .leaf {
   margin-top: 18px;
   margin-left: 7px;
   box-shadow: 0 0.5px 0 0.5px white;
   transform: rotate(90deg);
   width: 22px;
 }
-.main .purple-icon .leaf::before {
+.container .main .purple-icon .leaf::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -108,8 +111,9 @@ body {
   box-shadow: 5px 8px 0 0.5px white;
   transform: rotate(135deg);
   translate: 18px 8px;
+  border-radius: 50%;
 }
-.main .purple-icon .leaf::after {
+.container .main .purple-icon .leaf::after {
   content: "";
   position: absolute;
   width: 16px;
@@ -118,14 +122,12 @@ body {
   transform: rotate(225deg);
   translate: 6px 3px;
 }
-
-.attribution {
+.container .attribution {
   position: absolute;
-  left: 50px;
   bottom: 2px;
   font-size: 8px;
   text-align: center;
 }
-.attribution a {
+.container .attribution a {
   color: hsl(228, 45%, 44%);
 }/*# sourceMappingURL=main.css.map */
