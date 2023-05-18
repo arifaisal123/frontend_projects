@@ -65,6 +65,10 @@ body {
   color: hsl(245, 75%, 52%);
   font-weight: 900;
 }
+.container .content .plan .plan_3 a:active {
+  color: #766CF1;
+  text-decoration: none;
+}
 .container .content .payment {
   background: hsl(245, 75%, 52%);
   color: #fff;
@@ -77,6 +81,13 @@ body {
   border: none;
   box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
 }
+.container .content .payment:hover {
+  cursor: pointer;
+}
+.container .content .payment:active {
+  background-color: #766CF1;
+  cursor: pointer;
+}
 .container .content .cancel_payment {
   background: #fff;
   color: hsl(224, 23%, 55%);
@@ -87,12 +98,16 @@ body {
   height: 40px;
   border: none;
 }
+.container .content .cancel_payment:hover {
+  cursor: pointer;
+}
+.container .content .cancel_payment:active {
+  color: #000;
+}
 
 .attribution {
   position: absolute;
-  bottom: 2px;
   font-size: 11px;
-  margin-left: 40px;
 }
 .attribution .attribution a {
   color: hsl(228, 45%, 44%);
@@ -103,5 +118,8 @@ body {
     background: url(../images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .attribution {
+    margin-left: 500px;
   }
 }/*# sourceMappingURL=main.css.map */

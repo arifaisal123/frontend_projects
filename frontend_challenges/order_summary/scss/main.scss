@@ -74,6 +74,11 @@ body {
             .plan_3 a {
                 color: hsl(245, 75%, 52%);
                 font-weight: 900;
+
+                &:active {
+                    color: #766CF1;
+                    text-decoration: none;
+                }
             }
         }
         
@@ -88,6 +93,15 @@ body {
             height: 50px;
             border: none;
             box-shadow: 0 10px 5px rgba(0,0,0,0.1);
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:active {
+                background-color: #766CF1;
+                cursor: pointer;
+            }
         }
 
         .cancel_payment {
@@ -99,15 +113,25 @@ body {
             border-radius: 10px;
             height: 40px;
             border: none;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:active {
+                color: #000;
+            }
         }   
     }   
 }
 
 .attribution { 
     position: absolute;
-    bottom: 2px;
+    // bottom: 2px;
     font-size: 11px; 
-    margin-left: 40px;
+    // margin-left: 40px;
+    // text-align: right;
+
     .attribution a { 
         color: hsl(228, 45%, 44%); 
     } 
@@ -118,5 +142,10 @@ body {
         background: url(../images/pattern-background-desktop.svg);
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .attribution { 
+        margin-left: 500px;
+        // text-align: right;
     }
 }
