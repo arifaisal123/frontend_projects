@@ -11,7 +11,6 @@ body {
 }
 
 .container {
-    // border: 2px solid black;
     border-radius: 25px;
     background-color: #fff;
     width: 340px;
@@ -127,10 +126,8 @@ body {
 
 .attribution { 
     position: absolute;
-    // bottom: 2px;
     font-size: 11px; 
-    // margin-left: 40px;
-    // text-align: right;
+    margin-left: 40px;
 
     .attribution a { 
         color: hsl(228, 45%, 44%); 
@@ -146,6 +143,5 @@ body {
 
     .attribution { 
         margin-left: 500px;
-        // text-align: right;
     }
 }
