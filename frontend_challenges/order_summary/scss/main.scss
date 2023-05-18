@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    font-family: "Red Hat Display";
+}
+
+body {
+    background: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    // border: 2px solid black;
+    border-radius: 25px;
+    background-color: #fff;
+    width: 340px;
+    height: 550px;
+    margin: 100px auto;
+    
+    .content {
+        text-align: center;
+        .hero {
+            img {
+                border-top-left-radius: 22px;
+                border-top-right-radius: 22px;
+                width: 340px;
+            }
+        }
+        
+        .summary {
+            display: inline-block;
+            width: 300px;
+            h1 {
+                font-size: 20px;
+                font-weight: 900;
+                color: hsl(223, 47%, 23%);
+                margin-top: 30px;
+            }
+
+            p {
+                font-size: 16px;
+                color: hsl(224, 23%, 55%);
+                font-weight: 500;
+                margin: 0 20px;
+                margin-bottom: 20px;
+            } 
+        }
+        
+        .plan {
+            background: hsl(225, 100%, 98%);
+            padding: 5px;
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-around;
+            align-items: center;
+            width: 280px;
+            border-radius: 10px;
+            
+            .plan_1, .plan_2, .plan_3 {
+                display: inline-block;
+            }
+
+            .plan_2 {
+                &_1 {
+                    font-weight: 900;
+                    color: hsl(223, 47%, 23%);
+                }
+                &_2 {
+                    color: hsl(224, 23%, 55%);
+                }
+            }
+
+            .plan_3 a {
+                color: hsl(245, 75%, 52%);
+                font-weight: 900;
+            }
+        }
+        
+        .payment {
+            background: hsl(245, 75%, 52%);
+            color: #fff;
+            display: inline-block;
+            width: 280px;
+            margin: 20px;
+            font-weight: 900;
+            border-radius: 10px;
+            height: 50px;
+            border: none;
+            box-shadow: 0 10px 5px rgba(0,0,0,0.1);
+        }
+
+        .cancel_payment {
+            background: #fff;
+            color: hsl(224, 23%, 55%);
+            display: inline-block;
+            width: 280px;
+            font-weight: 900;
+            border-radius: 10px;
+            height: 40px;
+            border: none;
+        }   
+    }   
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 2px;
+    font-size: 11px; 
+    margin-left: 40px;
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    } 
+}
+    
+@media only screen and (min-width: 1280px) {
+    body {
+        background: url(../images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
