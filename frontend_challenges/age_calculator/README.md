@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/arifaisal123/frontend_projects/tree/main/age_calculator](https://github.com/arifaisal123/frontend_projects/tree/main/age_calculator)
-- Live Site URL: [https://arifaisal123.github.io/frontend_projects/age_calculator](https://arifaisal123.github.io/frontend_projects/age_calculator)
+- Solution URL: [https://github.com/arifaisal123/frontend_projects/frontend_challenges/tree/main/age_calculator](https://github.com/arifaisal123/frontend_projects/tree/main/age_calculator)
+- Live Site URL: [https://arifaisal123.github.io/frontend_projects/frontend_challenges/age_calculator](https://arifaisal123.github.io/frontend_projects/age_calculator)
 
 ## My process
 
