@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+html, body{
+    background: hwb(0 95% 5%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sedans {
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suvs {
+    background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+img {
+    padding: 30px 20px;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display";
+    padding: 0 20px;
+}
+
+p {
+    color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca";
+    padding: 30px 20px;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: "Lexend Deca";
+    margin: 20px 20px;
+    margin-bottom: 45px;
+}
+
+.btn_sedan {
+    color: hsl(31, 77%, 52%);
+    background: hsl(0, 0%, 95%);
+}
+
+.btn_sedan:hover {
+    color: hsl(31, 77%, 52%);
+    background: hsl(0, 0%, 95%);
+}
+
+.btn_sedan:active {
+    background: hsl(31, 77%, 52%) !important; 
+    color: hsl(0, 0%, 95%) !important;
+    cursor: pointer;
+}
+
+.btn_suv {
+    color: hsl(184, 100%, 22%);
+    background: hsl(0, 0%, 95%);
+}
+
+.btn_suv:hover {
+    color: hsl(184, 100%, 22%);
+    background: hsl(0, 0%, 95%);
+}
+
+.btn_suv:active {
+    background: hsl(184, 100%, 22%) !important;
+    color: hsl(0, 0%, 95%) !important;
+    cursor: pointer;
+}
+
+.btn_luxury {
+    color: hsl(179, 100%, 13%);
+    background: hsl(0, 0%, 95%);
+}
+
+.btn_luxury:hover {
+    color: hsl(179, 100%, 13%);
+    background: hsl(0, 0%, 95%);
+}
+
+.btn_luxury:active {
+    background: hsl(179, 100%, 13%) !important;
+    color: hsl(0, 0%, 95%) !important;
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 375px) {
+    html, body{
+        height: 0%;
+    }
+    
+    .container{
+        height: 0%;
+    }
+}
