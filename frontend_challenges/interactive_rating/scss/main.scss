@@ -1,0 +1,87 @@
+@import "default";
+@import "fonts";
+@mixin circle {
+    background: rgba(149, 158, 172, 0.1);
+    width: 50px;
+    display: flex;
+    height: 50px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: hsl(216, 12%, 8%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    .rating-container {
+        width: 360px;
+        background: hsl(213, 19%, 18%);
+        border-radius: 15px;
+
+        .star {
+            @include circle;
+            margin: 20px;
+        }
+
+        h1 {
+            color: hsl(0, 0%, 100%);
+            font-size: 25px;
+            font-weight: 400;
+            margin: 20px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: hsl(217, 12%, 63%);
+            margin: 20px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            font-size: 15px;
+        }
+
+        .rating {
+            display: flex;
+            margin: 20px;
+            margin-bottom: 25px;
+            justify-content: space-between;
+            .rating1, .rating2, .rating3, .rating4, .rating5 {
+                @include circle;
+                color: hsl(217, 12%, 63%);
+            }
+        }
+
+        .submit-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+
+            button {
+                color: #fff;
+                background-color: hsl(25, 97%, 53%);
+                border-radius: 25px;
+                width: 320px;
+                height: 50px;
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
