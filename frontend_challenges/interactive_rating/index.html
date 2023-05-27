@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
   <link rel="stylesheet" href="./scss/main.css"/>
-  
+  <script type="text/javascript" src="./js/main.js"></script>
   <title>Interactive Rating</title>
 </head>
 <body>
@@ -22,11 +21,11 @@
           to help us improve our offering!
         </p>
         <div class="rating">
-          <div class="rating1">1</div>
-          <div class="rating2">2</div>
-          <div class="rating3">3</div>
-          <div class="rating4">4</div>
-          <div class="rating5">5</div>
+          <div id="rating1" class="rating1" onclick="changeCircleColor(1)">1</div>
+          <div id="rating2" class="rating2" onclick="changeCircleColor(2)">2</div>
+          <div id="rating3" class="rating3" onclick="changeCircleColor(3)">3</div>
+          <div id="rating4" class="rating4" onclick="changeCircleColor(4)">4</div>
+          <div id="rating5" class="rating5" onclick="changeCircleColor(5)">5</div>
         </div>
         <div class="submit-button">
           <button>Submit</button>

@@ -40,6 +40,7 @@ body {
   font-weight: 400;
   margin: 20px;
   margin-bottom: 15px;
+  font-weight: 600;
 }
 .container .rating-container p {
   color: hsl(217, 12%, 63%);
@@ -63,6 +64,12 @@ body {
   justify-content: center;
   align-items: center;
   color: hsl(217, 12%, 63%);
+  font-weight: 700;
+}
+.container .rating-container .rating .rating1:hover, .container .rating-container .rating .rating2:hover, .container .rating-container .rating .rating3:hover, .container .rating-container .rating .rating4:hover, .container .rating-container .rating .rating5:hover {
+  color: #fff;
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
 }
 .container .rating-container .submit-button {
   display: flex;
@@ -78,6 +85,12 @@ body {
   height: 50px;
   text-transform: uppercase;
   font-size: 16px;
+  font-weight: 700;
+}
+.container .rating-container .submit-button button:hover, .container .rating-container .submit-button button:active {
+  color: hsl(25, 97%, 53%);
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .attribution {
