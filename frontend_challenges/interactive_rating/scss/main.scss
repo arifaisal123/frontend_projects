@@ -24,77 +24,132 @@ body {
         width: 360px;
         background: hsl(213, 19%, 18%);
         border-radius: 15px;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: all 0.8s ease;
 
-        .star {
-            @include circle;
-            margin: 20px;
-        }
-
-        h1 {
-            color: hsl(0, 0%, 100%);
-            font-size: 25px;
-            font-weight: 400;
-            margin: 20px;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        p {
-            color: hsl(217, 12%, 63%);
-            margin: 20px;
-            margin-top: 15px;
-            margin-bottom: 25px;
-            font-size: 15px;
-        }
-
-        .rating {
-            display: flex;
-            margin: 20px;
-            margin-bottom: 25px;
-            justify-content: space-between;
-            .rating1, .rating2, .rating3, .rating4, .rating5 {
+        .front {
+            backface-visibility: hidden;
+            .star {
                 @include circle;
+                margin: 20px;
+            }
+    
+            h1 {
+                color: hsl(0, 0%, 100%);
+                font-size: 25px;
+                font-weight: 400;
+                margin: 20px;
+                margin-bottom: 15px;
+                font-weight: 600;
+            }
+    
+            p {
                 color: hsl(217, 12%, 63%);
-                font-weight: 700;
-                
-                &:hover {
+                margin: 20px;
+                margin-top: 15px;
+                margin-bottom: 25px;
+                font-size: 15px;
+            }
+    
+            .rating {
+                display: flex;
+                margin: 20px;
+                margin-bottom: 25px;
+                justify-content: space-between;
+                .rating1, .rating2, .rating3, .rating4, .rating5 {
+                    @include circle;
+                    color: hsl(217, 12%, 63%);
+                    font-weight: 700;
+                    
+                    &:hover {
+                        color: #fff;
+                        background-color: hsl(25, 97%, 53%);
+                        cursor: pointer;
+                    }
+                }
+            }
+    
+            .submit-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+    
+                button {
                     color: #fff;
                     background-color: hsl(25, 97%, 53%);
-                    cursor: pointer;
+                    border-radius: 25px;
+                    width: 320px;
+                    height: 50px;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-weight: 700;
+    
+                    &:hover, &:active {
+                        color: hsl(25, 97%, 53%);
+                        background-color: #fff;
+                        cursor: pointer;
+                    }
                 }
             }
         }
 
-        .submit-button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px;
+        .back {
+            position: absolute;
+            top:0;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
 
-            button {
-                color: #fff;
-                background-color: hsl(25, 97%, 53%);
-                border-radius: 25px;
-                width: 320px;
-                height: 50px;
-                text-transform: uppercase;
-                font-size: 16px;
-                font-weight: 700;
+            .success_image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 40px;
+                margin-bottom: 30px;
+            }
 
-                &:hover, &:active {
-                    color: hsl(25, 97%, 53%);;
-                    background-color: #fff;
-                    cursor: pointer;
+            .final_rating {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 20px;
+                color: hsl(25, 97%, 53%);
+
+                p {
+                    background: rgba(149, 158, 172, 0.1);
+                    border-radius: 25px;
+                    width: 200px;
+                    text-align: center;
+                    padding: 6px;
+                    font-weight: 700;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+
+            .success_message {
+                h2, p {
+                    text-align: center;
+                    margin: 10px;
+                }
+
+                h2 {
+                    color: #fff;
+                }
+
+                p {
+                    color: hsl(217, 12%, 63%);
                 }
             }
         }
-    }
+    }        
 }
-
 
 .attribution { 
     font-size: 11px; 
     text-align: center;
+    color: hsl(217, 12%, 63%);
     
     a { 
         color: hsl(228, 45%, 44%); 

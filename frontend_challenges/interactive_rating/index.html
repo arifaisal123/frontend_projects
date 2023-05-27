@@ -12,42 +12,46 @@
   <main>
     <div class="container">
       <div class="rating-container">
-        <div class="star">
-          <img src="./images/icon-star.svg" alt="Star"/>
+        <div class="front">
+          <div class="star">
+            <img src="./images/icon-star.svg" alt="Star"/>
+          </div>
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!
+          </p>
+          <div class="rating">
+            <div id="rating1" class="rating1" onclick="changeRating(1)">1</div>
+            <div id="rating2" class="rating2" onclick="changeRating(2)">2</div>
+            <div id="rating3" class="rating3" onclick="changeRating(3)">3</div>
+            <div id="rating4" class="rating4" onclick="changeRating(4)">4</div>
+            <div id="rating5" class="rating5" onclick="changeRating(5)">5</div>
+          </div>
+          <div class="submit-button">
+            <button onclick="flipCard()">Submit</button>
+          </div>     
         </div>
-        <h1>How did we do?</h1>
-        <p>
-          Please let us know how we did with your support request. All feedback is appreciated 
-          to help us improve our offering!
-        </p>
-        <div class="rating">
-          <div id="rating1" class="rating1" onclick="changeCircleColor(1)">1</div>
-          <div id="rating2" class="rating2" onclick="changeCircleColor(2)">2</div>
-          <div id="rating3" class="rating3" onclick="changeCircleColor(3)">3</div>
-          <div id="rating4" class="rating4" onclick="changeCircleColor(4)">4</div>
-          <div id="rating5" class="rating5" onclick="changeCircleColor(5)">5</div>
-        </div>
-        <div class="submit-button">
-          <button>Submit</button>
-        </div>        
+        <div class="back">
+          <div class="success_image">
+            <img src="./images/illustration-thank-you.svg" alt="Successfully Rated"/>
+          </div>
+          <div class="final_rating">
+            <p>You selected <span id="user_rating">None</span> out of 5</p>
+          </div>
+          <div class="success_message">
+            <h2>Thank you!</h2>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+              don’t hesitate to get in touch!</p>
+          </div>
+        </div>   
       </div>
     </div>
   </main>
-
-<!-- 
-  You selected  Add rating here --> <!--out of 5 -->
-
-  <!-- Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
-
   <footer>
     <div class="attribution">
-      Coded by <a href="https://arifaisal123.github.io">Arif Faisal</a>.
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.       
+      <p>Coded by <a href="https://arifaisal123.github.io">Arif Faisal</a></p>
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>    
     </div>
   </footer>
 </body>

@@ -23,8 +23,14 @@ body {
   width: 360px;
   background: hsl(213, 19%, 18%);
   border-radius: 15px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
 }
-.container .rating-container .star {
+.container .rating-container .front {
+  backface-visibility: hidden;
+}
+.container .rating-container .front .star {
   background: rgba(149, 158, 172, 0.1);
   width: 50px;
   display: flex;
@@ -34,7 +40,7 @@ body {
   align-items: center;
   margin: 20px;
 }
-.container .rating-container h1 {
+.container .rating-container .front h1 {
   color: hsl(0, 0%, 100%);
   font-size: 25px;
   font-weight: 400;
@@ -42,20 +48,20 @@ body {
   margin-bottom: 15px;
   font-weight: 600;
 }
-.container .rating-container p {
+.container .rating-container .front p {
   color: hsl(217, 12%, 63%);
   margin: 20px;
   margin-top: 15px;
   margin-bottom: 25px;
   font-size: 15px;
 }
-.container .rating-container .rating {
+.container .rating-container .front .rating {
   display: flex;
   margin: 20px;
   margin-bottom: 25px;
   justify-content: space-between;
 }
-.container .rating-container .rating .rating1, .container .rating-container .rating .rating2, .container .rating-container .rating .rating3, .container .rating-container .rating .rating4, .container .rating-container .rating .rating5 {
+.container .rating-container .front .rating .rating1, .container .rating-container .front .rating .rating2, .container .rating-container .front .rating .rating3, .container .rating-container .front .rating .rating4, .container .rating-container .front .rating .rating5 {
   background: rgba(149, 158, 172, 0.1);
   width: 50px;
   display: flex;
@@ -66,18 +72,18 @@ body {
   color: hsl(217, 12%, 63%);
   font-weight: 700;
 }
-.container .rating-container .rating .rating1:hover, .container .rating-container .rating .rating2:hover, .container .rating-container .rating .rating3:hover, .container .rating-container .rating .rating4:hover, .container .rating-container .rating .rating5:hover {
+.container .rating-container .front .rating .rating1:hover, .container .rating-container .front .rating .rating2:hover, .container .rating-container .front .rating .rating3:hover, .container .rating-container .front .rating .rating4:hover, .container .rating-container .front .rating .rating5:hover {
   color: #fff;
   background-color: hsl(25, 97%, 53%);
   cursor: pointer;
 }
-.container .rating-container .submit-button {
+.container .rating-container .front .submit-button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
 }
-.container .rating-container .submit-button button {
+.container .rating-container .front .submit-button button {
   color: #fff;
   background-color: hsl(25, 97%, 53%);
   border-radius: 25px;
@@ -87,15 +93,56 @@ body {
   font-size: 16px;
   font-weight: 700;
 }
-.container .rating-container .submit-button button:hover, .container .rating-container .submit-button button:active {
+.container .rating-container .front .submit-button button:hover, .container .rating-container .front .submit-button button:active {
   color: hsl(25, 97%, 53%);
   background-color: #fff;
   cursor: pointer;
+}
+.container .rating-container .back {
+  position: absolute;
+  top: 0;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.container .rating-container .back .success_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  margin-bottom: 30px;
+}
+.container .rating-container .back .final_rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  color: hsl(25, 97%, 53%);
+}
+.container .rating-container .back .final_rating p {
+  background: rgba(149, 158, 172, 0.1);
+  border-radius: 25px;
+  width: 200px;
+  text-align: center;
+  padding: 6px;
+  font-weight: 700;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container .rating-container .back .success_message h2, .container .rating-container .back .success_message p {
+  text-align: center;
+  margin: 10px;
+}
+.container .rating-container .back .success_message h2 {
+  color: #fff;
+}
+.container .rating-container .back .success_message p {
+  color: hsl(217, 12%, 63%);
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: hsl(217, 12%, 63%);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
