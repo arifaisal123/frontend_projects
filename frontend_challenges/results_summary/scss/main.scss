@@ -275,7 +275,7 @@
 }
 
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 375px) {
     .container {
         height: 100vh;
         width: 100vw;
@@ -295,6 +295,13 @@
 
                 .summary {
                     width: 100vw;
+
+                    &_continue {
+    
+                        button {
+                            padding: 15px 160px;
+                        }
+                    }
                 }
             }
         }
