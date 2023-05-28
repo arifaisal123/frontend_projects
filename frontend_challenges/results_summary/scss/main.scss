@@ -247,8 +247,9 @@
                         cursor: pointer;
                         background-color: hsl(224, 30%, 27%);
                         color: white;
-                        padding: 15px 100px;
+                        padding: 15px 0;
                         border-radius: 25px;
+                        width: 86%;
     
                         &:hover, &:active {
                             background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -291,6 +292,10 @@
                     border-top-left-radius: 0;
                     border-top-right-radius: 0;
                     width: 100vw;
+
+                    &_message_2 {
+                        margin-bottom: 20px;
+                    }
                 }
 
                 .summary {
@@ -299,11 +304,16 @@
                     &_continue {
     
                         button {
-                            padding: 15px 160px;
+                            // padding: 15px 160px;
+                            width: 90%;
                         }
                     }
                 }
             }
         }
+
+        footer {
+            display: none;
+        }   
     }
 }
