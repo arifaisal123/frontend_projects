@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #fff8f8;
+  background-color: #f7f7f7;
 }
 .container .results-container {
   background-color: #fff;
@@ -226,10 +226,14 @@
   border-radius: 25px;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+footer {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
 }
-.attribution a {
+footer .attribution {
+  font-size: 11px;
+}
+footer .attribution a {
   color: hsl(228, 45%, 44%);
 }/*# sourceMappingURL=main.css.map */

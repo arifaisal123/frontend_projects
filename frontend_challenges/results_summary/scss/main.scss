@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #fff8f8;
+    background-color: #f7f7f7;
 
     .results-container {
         background-color: #fff;
@@ -254,11 +254,16 @@
     }
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center;
-    
-    a { 
-        color: hsl(228, 45%, 44%); 
+footer {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+
+    .attribution { 
+        font-size: 11px; 
+        
+        a { 
+            color: hsl(228, 45%, 44%); 
+        }
     }
 }
