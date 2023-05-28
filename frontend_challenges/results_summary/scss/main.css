@@ -251,6 +251,8 @@
     width: 100vw;
     flex-direction: column;
     justify-content: flex-start;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
   .container main .results-container .result {
     border-top-left-radius: 0;
