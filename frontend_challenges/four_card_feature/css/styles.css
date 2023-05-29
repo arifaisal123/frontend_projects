@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid {
+    background-color: hsl(0, 0%, 98%);
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+h1 span {
+    font-weight: 200;
+    display: block;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+    font-weight: 400;
+}
+
+.supervisor-container {
+    box-shadow: 4px 6px 10px rgba(0,0,0,0.1);
+    border-top: 4px solid hsl(180, 62%, 55%);
+    border-radius: 10px;
+}
+
+.team-builder-container {
+    box-shadow: 4px 6px 10px rgba(0,0,0,0.1);
+    border-top: 4px solid hsl(0, 78%, 62%);
+    border-radius: 10px;
+}
+
+.karma-container {
+    box-shadow: 4px 6px 10px rgba(0,0,0,0.1);
+    border-top: 4px solid hsl(34, 97%, 64%);
+    border-radius: 10px;
+}
+
+.calculator-container {
+    box-shadow: 4px 6px 10px rgba(0,0,0,0.1);
+    border-top: 4px solid hsl(212, 86%, 64%);
+    border-radius: 10px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
