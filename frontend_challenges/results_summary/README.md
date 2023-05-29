@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/arifaisal123/frontend_projects/tree/main/frontend_challenges/results_summary)
-- Live Site URL: [Add live site URL here](https://arifaisal123.github.io/frontend_projects/frontend_challenges/results_summary)
+- Solution URL: [https://github.com/arifaisal123/frontend_projects/tree/main/frontend_challenges/results_summary](https://github.com/arifaisal123/frontend_projects/tree/main/frontend_challenges/results_summary)
+- Live Site URL: [https://arifaisal123.github.io/frontend_projects/frontend_challenges/results_summary](https://arifaisal123.github.io/frontend_projects/frontend_challenges/results_summary)
 
 ## My process
 
