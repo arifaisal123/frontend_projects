@@ -63,7 +63,7 @@ p {
     color: hsl(228, 45%, 44%); 
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1440px) {
     .qr-container {
         box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
     }
@@ -85,34 +85,5 @@ p {
         width: 300px;
         font-size: 18px;
         margin-bottom: 40px;
-    }
-}
-
-@media only screen and (min-width: 1920px) {
-    .qr-container {
-        box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
-    }
-
-    img {
-        width: 400px;
-        margin: 24px;
-        margin-bottom: 35px;
-    }
-
-    h1 {
-        width: 360px;
-        font-size: 30px;
-        margin-bottom: 25px;
-    
-    }
-    
-    p {
-        width: 360px;
-        font-size: 22px;
-        margin-bottom: 48px;
-    }
-
-    .attribution {
-        font-size: 15px;
     }
 }
