@@ -73,25 +73,8 @@ p {
     margin-bottom: 12px;
 }
 
-.faq_1 .ques p {
-    margin-right: 25px;
-}
-
 .faq_2 .ques p {
     font-weight: 700;
-    margin-right: 24px;
-}
-
-.faq_3 .ques p {
-    margin-right: 92px;
-}
-
-.faq_4 .ques p {
-    margin-right: 88px;
-}
-
-.faq_5 .ques p {
-    margin-right: 47px;
 }
 
 .open {
