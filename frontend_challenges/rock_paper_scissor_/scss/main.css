@@ -82,6 +82,11 @@
   background-size: 50% auto;
   box-shadow: 0px 4px 0px hsla(39, 89%, 49%, 0.7);
 }
+.container-play_1 .scissors:hover {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
 .container-play_2 {
   display: flex;
   justify-content: space-between;
@@ -105,6 +110,11 @@
   background-size: 50% auto;
   box-shadow: 0px 4px 0px hsla(189, 59%, 53%, 0.7);
 }
+.container-play_2 .spock:hover {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
 .container-play_2 .paper {
   width: 90px;
   height: 90px;
@@ -122,6 +132,11 @@
   background-size: cover;
   background-size: 50% auto;
   box-shadow: 0px 4px 0px hsla(230, 89%, 62%, 0.7);
+}
+.container-play_2 .paper:hover {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
 }
 .container-play_3 {
   display: flex;
@@ -146,6 +161,11 @@
   background-size: 50% auto;
   box-shadow: 0px 4px 0px hsla(261, 73%, 60%, 0.7);
 }
+.container-play_3 .lizard:hover {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
 .container-play_3 .rock {
   width: 90px;
   height: 90px;
@@ -163,6 +183,11 @@
   background-size: cover;
   background-size: 50% auto;
   box-shadow: 0px 4px 0px hsla(349, 71%, 52%, 0.7);
+}
+.container-play_3 .rock:hover {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
 }
 .container .play-result {
   border: 2px solid #fff;
@@ -417,6 +442,16 @@
   color: #fff;
   text-transform: uppercase;
   font-size: 16px;
+  font-weight: 700;
+}
+.container .rules button:hover {
+  background-color: #fafafa;
+  color: #172042;
+  cursor: pointer;
+}
+.container .rules button:active {
+  background-color: hsl(39, 89%, 49%);
+  border-color: hsl(39, 89%, 49%);
 }
 .container .attribution {
   font-size: 11px;
@@ -429,4 +464,5 @@
 }
 .container .attribution a:hover, .container .attribution a:active {
   color: hsl(349, 71%, 52%);
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
