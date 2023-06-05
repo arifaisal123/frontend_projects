@@ -219,6 +219,7 @@
   background-size: cover;
   background-size: 50% auto;
   box-shadow: 0px 4px 0px hsla(39, 89%, 49%, 0.7);
+  display: none;
 }
 .container .play-result-user .paper {
   width: 90px;
@@ -320,6 +321,7 @@
   background-size: cover;
   background-size: 50% auto;
   box-shadow: 0px 4px 0px hsla(39, 89%, 49%, 0.7);
+  display: none;
 }
 .container .play-result-opponent .paper {
   width: 90px;

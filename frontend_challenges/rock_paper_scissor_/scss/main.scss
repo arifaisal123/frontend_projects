@@ -167,7 +167,7 @@
         &-user {
             .scissors {
                 @include play-circle($scissor-color, $scissor-image, $scissor-bs-color);
-                // display: none; //debug
+                display: none; //debug
             }
 
             .paper {
@@ -202,7 +202,7 @@
         &-opponent {
             .scissors {
                 @include play-circle($scissor-color, $scissor-image, $scissor-bs-color);
-                // display: none; //debug
+                display: none; //debug
             }
 
             .paper {
