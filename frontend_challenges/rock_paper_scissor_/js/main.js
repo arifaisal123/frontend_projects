@@ -27,6 +27,14 @@ let resultOpponentRock = document.getElementById("result-opponent-rock");
 let resultOpponentLizard = document.getElementById("result-opponent-lizard");
 let resultOpponentSpock = document.getElementById("result-opponent-spock");
 
+// Final Result Variables
+let finalResult = document.getElementById("final-result");
+let win = document.getElementById("win");
+let draw = document.getElementById("draw");
+let lose = document.getElementById("lose");
+let finalResultButton = document.getElementById("final-result-button");
+
+
 // Pop-up functionality for showing rules
 openButton.addEventListener("click", function() {
     rulesContainer.style.display = "flex";
@@ -40,6 +48,8 @@ closeButton.addEventListener("click", function() {
 // Game Functionality
 // Scissors functionality 
 playScissors.addEventListener("click", function() {
+    hidePreviousResults();
+
     containerPlay.style.display = "none";
 
     playResult.style.display = "flex";
@@ -72,6 +82,7 @@ playScissors.addEventListener("click", function() {
 
 // Paper functionality
 playPaper.addEventListener("click", function() {
+    hidePreviousResults();
     containerPlay.style.display = "none";
 
     playResult.style.display = "flex";
@@ -104,6 +115,8 @@ playPaper.addEventListener("click", function() {
 
 // Rock functionality
 playRock.addEventListener("click", function() {
+    hidePreviousResults();
+
     containerPlay.style.display = "none";
 
     playResult.style.display = "flex";
@@ -136,6 +149,8 @@ playRock.addEventListener("click", function() {
 
 // Lizard functionality
 playLizard.addEventListener("click", function() {
+    hidePreviousResults();
+
     containerPlay.style.display = "none";
 
     playResult.style.display = "flex";
@@ -168,6 +183,8 @@ playLizard.addEventListener("click", function() {
 
 // Spock functionality
 playSpock.addEventListener("click", function() {
+    hidePreviousResults();
+
     containerPlay.style.display = "none";
 
     playResult.style.display = "flex";
@@ -207,10 +224,6 @@ function opponentPlay() {
 
 // Show win message, and update score
 function showWin() {
-    let finalResult = document.getElementById("final-result");
-    let win = document.getElementById("win");
-    let finalResultButton = document.getElementById("final-result-button");
-
     finalResult.style.display = "flex";
     win.style.display = "flex";
     finalResultButton.style.display = "block";
@@ -219,10 +232,6 @@ function showWin() {
 
 // Show draw message
 function showDraw() {
-    let finalResult = document.getElementById("final-result");
-    let draw = document.getElementById("draw");
-    let finalResultButton = document.getElementById("final-result-button");
-
     finalResult.style.display = "flex";
     draw.style.display = "flex";
     finalResultButton.style.display = "block";
@@ -231,11 +240,17 @@ function showDraw() {
 
 // Show lose message
 function showLose() {
-    let finalResult = document.getElementById("final-result");
-    let lose = document.getElementById("lose");
-    let finalResultButton = document.getElementById("final-result-button");
-
     finalResult.style.display = "flex";
     lose.style.display = "flex";
     finalResultButton.style.display = "block";
+}
+
+
+// Hide result
+function hidePreviousResults() {
+    finalResult.style.display = "none";
+    win.style.display = "none";
+    draw.style.display = "none";
+    lose.style.display = "none";
+    finalResultButton.style.display = "none";
 }
