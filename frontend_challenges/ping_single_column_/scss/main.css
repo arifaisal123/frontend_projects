@@ -17,7 +17,7 @@
 }
 .container header {
   position: absolute;
-  top: 10px;
+  top: 5px;
 }
 .container header div {
   display: flex;
@@ -26,7 +26,7 @@
 }
 .container header div img {
   margin-top: 80px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   width: 20%;
 }
 .container header h1, .container header h2 {
