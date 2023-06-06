@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container header {
+  position: absolute;
+  top: 10px;
+}
+.container header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container header div img {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  width: 20%;
+}
+.container header h1, .container header h2 {
+  text-align: center;
+}
+.container header h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.container header h1 span {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+.container header h2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.container header .user-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container header .user-input_1 {
+  margin-top: 35px;
+  border: 2px solid hsl(223, 100%, 88%);
+  border-radius: 20px;
+  width: 280px;
+  height: 40px;
+  padding-left: 30px;
+}
+.container header .user-input_2 {
+  margin-top: 10px;
+  border-radius: 20px;
+  width: 280px;
+  height: 40px;
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0;
+  box-shadow: 0 8px 6px hsla(223, 87%, 63%, 0.2);
+}
+.container main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 120px;
+}
+.container main img {
+  width: 80%;
+}
+.container footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 20px;
+}
+.container footer .icons {
+  margin-bottom: 20px;
+}
+.container footer .icons .facebook, .container footer .icons .twitter, .container footer .icons .instagram {
+  background-color: #fff;
+  color: #4e78f1;
+  border-radius: 50%;
+  padding: 12px;
+  border: 2px solid hsl(223, 100%, 88%);
+  margin: 0 10px;
+}
+.container footer .icons .facebook {
+  padding: 12px 15px;
+}
+.container footer .icons .facebook:hover, .container footer .icons .twitter:hover, .container footer .icons .instagram:hover {
+  color: #fff;
+  background-color: #4e78f1;
+  border-color: transparent;
+}
+.container footer .copyright {
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 10px;
+  font-size: 11px;
+}
+.container footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.container footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */
