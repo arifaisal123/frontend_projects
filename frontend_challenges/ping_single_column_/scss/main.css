@@ -69,6 +69,10 @@
   margin-bottom: 0;
   box-shadow: 0 8px 6px hsla(223, 87%, 63%, 0.2);
 }
+.container header .user-input_2:hover {
+  cursor: pointer;
+  background-color: hsla(223, 87%, 63%, 0.8);
+}
 .container main {
   display: flex;
   justify-content: center;
@@ -105,6 +109,7 @@
   color: #fff;
   background-color: #4e78f1;
   border-color: transparent;
+  cursor: pointer;
 }
 .container footer .copyright {
   color: hsl(0, 0%, 59%);
@@ -116,5 +121,46 @@
   text-align: center;
 }
 .container footer .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #4e78f1;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (min-width: 821px) {
+  .container header, .container footer {
+    position: relative;
+  }
+  .container header div img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 15%;
+  }
+  .container header h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  .container header h2 {
+    font-size: 20px;
+  }
+  .container header .user-input {
+    flex-direction: row;
+    margin-top: 25px;
+  }
+  .container header .user-input_1, .container header .user-input_2 {
+    margin-top: 0;
+    margin-right: 10px;
+  }
+  .container header .user-input_1 {
+    width: 340px;
+  }
+  .container header .user-input_2 {
+    width: 160px;
+  }
+  .container main {
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+  .container main img {
+    width: 44%;
+  }
 }/*# sourceMappingURL=main.css.map */

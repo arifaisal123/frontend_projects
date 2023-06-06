@@ -76,6 +76,11 @@
                 font-weight: 600;
                 margin-bottom: 0;
                 box-shadow: 0 8px 6px hsla(223, 87%, 63%, 0.2);
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: hsla(223, 87%, 63%, 0.8);
+                }
             }
         }
     }
@@ -118,6 +123,7 @@
                 color: #fff;
                 background-color: #4e78f1;
                 border-color: transparent;
+                cursor: pointer;
             }
         }
 
@@ -132,10 +138,65 @@
             text-align: center;
             
             a { 
-                color: hsl(228, 45%, 44%); 
+                color: #4e78f1;
+                text-decoration: none;
+                font-weight: 700;
             }
         }
     }
 }
 
+@media (min-width: 821px) {
+    .container {
+        header, footer {
+            position: relative;
+        }
 
+        header {
+            div {
+    
+                img {
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    width: 15%;
+                }
+            }
+
+            h1 {
+                margin-bottom: 10px;
+                font-size: 40px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .user-input{
+                flex-direction: row;
+                margin-top: 25px;
+
+                &_1, &_2 {
+                    margin-top: 0;
+                    margin-right: 10px;
+                }
+
+                &_1 {
+                    width: 340px;
+                }
+
+                &_2 {
+                    width: 160px;
+                }
+            }
+        }
+
+        main {
+            margin-top: 50px;
+            margin-bottom: 60px;
+
+            img {
+                width: 44%;
+            }
+        }
+    }
+}
