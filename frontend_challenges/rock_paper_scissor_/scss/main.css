@@ -195,7 +195,6 @@
   cursor: pointer;
 }
 .container .play-result {
-  border: 2px solid #fff;
   width: 300px;
   display: flex;
   justify-content: space-between;

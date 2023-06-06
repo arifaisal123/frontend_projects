@@ -1,3 +1,8 @@
+// Score functionality
+let score = 0;
+let scoreCounter = document.getElementById("score-counter");
+let loseStatus = false;
+
 // Pop-up functionality variables
 let openButton = document.getElementById("open-popup");
 let closeButton = document.getElementById("close-popup");
@@ -83,6 +88,7 @@ playScissors.addEventListener("click", function() {
 // Paper functionality
 playPaper.addEventListener("click", function() {
     hidePreviousResults();
+
     containerPlay.style.display = "none";
 
     playResult.style.display = "flex";
@@ -224,6 +230,7 @@ function opponentPlay() {
 
 // Show win message, and update score
 function showWin() {
+    increaseScore();
     finalResult.style.display = "flex";
     win.style.display = "flex";
     finalResultButton.style.display = "block";
@@ -240,17 +247,62 @@ function showDraw() {
 
 // Show lose message
 function showLose() {
+    loseStatus = true;
     finalResult.style.display = "flex";
     lose.style.display = "flex";
     finalResultButton.style.display = "block";
 }
 
 
-// Hide result
+// Hide previous results
 function hidePreviousResults() {
     finalResult.style.display = "none";
     win.style.display = "none";
     draw.style.display = "none";
     lose.style.display = "none";
     finalResultButton.style.display = "none";
+}
+
+
+// Hide results container
+function hideResultContainer() {
+    resultScissors.style.display = "none";
+    resultPaper.style.display = "none";
+    resultRock.style.display = "none";
+    resultLizard.style.display = "none";
+    resultSpock.style.display = "none";
+
+    resultOpponentScissors.style.display = "none";
+    resultOpponentPaper.style.display = "none";
+    resultOpponentRock.style.display = "none";
+    resultOpponentLizard.style.display = "none";
+    resultOpponentSpock.style.display = "none";
+}
+
+
+// Functionality of play again button
+finalResultButton.addEventListener("click", function() {
+    hidePreviousResults();
+    hideResultContainer();
+
+    containerPlay.style.display = "block";
+    playResult.style.display = "none";
+
+    if (loseStatus === true) {
+        resetScore();
+    }
+});
+
+
+// Increase score
+function increaseScore() {
+    score += 1;
+    scoreCounter.innerHTML = score; 
+}
+
+// Reset score
+function resetScore() {
+    score = 0;
+    scoreCounter.innerHTML = score;
+    loseStatus = false;
 }
