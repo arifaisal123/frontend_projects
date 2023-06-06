@@ -37,7 +37,8 @@ closeButton.addEventListener("click", function() {
 });
 
 
-// Game Functionality 
+// Game Functionality
+// Scissors functionality 
 playScissors.addEventListener("click", function() {
     containerPlay.style.display = "none";
 
@@ -48,22 +49,28 @@ playScissors.addEventListener("click", function() {
 
     if (opponentGuess == 1) {
         resultOpponentScissors.style.display = "flex";
+        showDraw();
     }
     else if (opponentGuess == 2) {
         resultOpponentPaper.style.display = "flex";
+        showWin();
     }
     else if (opponentGuess == 3) {
         resultOpponentRock.style.display = "flex";
+        showLose();
     }
     else if (opponentGuess == 4) {
         resultOpponentLizard.style.display = "flex";
+        showWin();
     }
     else if (opponentGuess == 5) {
         resultOpponentSpock.style.display = "flex";
+        showLose();
     }
 });
 
 
+// Paper functionality
 playPaper.addEventListener("click", function() {
     containerPlay.style.display = "none";
 
@@ -74,22 +81,28 @@ playPaper.addEventListener("click", function() {
 
     if (opponentGuess == 1) {
         resultOpponentScissors.style.display = "flex";
+        showLose();
     }
     else if (opponentGuess == 2) {
         resultOpponentPaper.style.display = "flex";
+        showDraw();
     }
     else if (opponentGuess == 3) {
         resultOpponentRock.style.display = "flex";
+        showWin();
     }
     else if (opponentGuess == 4) {
         resultOpponentLizard.style.display = "flex";
+        showLose();
     }
     else if (opponentGuess == 5) {
         resultOpponentSpock.style.display = "flex";
+        showWin();
     }
 });
 
 
+// Rock functionality
 playRock.addEventListener("click", function() {
     containerPlay.style.display = "none";
 
@@ -100,22 +113,28 @@ playRock.addEventListener("click", function() {
 
     if (opponentGuess == 1) {
         resultOpponentScissors.style.display = "flex";
+        showWin();
     }
     else if (opponentGuess == 2) {
         resultOpponentPaper.style.display = "flex";
+        showLose();
     }
     else if (opponentGuess == 3) {
         resultOpponentRock.style.display = "flex";
+        showDraw();
     }
     else if (opponentGuess == 4) {
         resultOpponentLizard.style.display = "flex";
+        showWin();
     }
     else if (opponentGuess == 5) {
         resultOpponentSpock.style.display = "flex";
+        showLose();
     }
 });
 
 
+// Lizard functionality
 playLizard.addEventListener("click", function() {
     containerPlay.style.display = "none";
 
@@ -126,22 +145,28 @@ playLizard.addEventListener("click", function() {
 
     if (opponentGuess == 1) {
         resultOpponentScissors.style.display = "flex";
+        showLose();
     }
     else if (opponentGuess == 2) {
         resultOpponentPaper.style.display = "flex";
+        showWin();
     }
     else if (opponentGuess == 3) {
         resultOpponentRock.style.display = "flex";
+        showLose();
     }
     else if (opponentGuess == 4) {
         resultOpponentLizard.style.display = "flex";
+        showDraw();
     }
     else if (opponentGuess == 5) {
         resultOpponentSpock.style.display = "flex";
+        showWin();
     }
 });
 
 
+// Spock functionality
 playSpock.addEventListener("click", function() {
     containerPlay.style.display = "none";
 
@@ -152,23 +177,65 @@ playSpock.addEventListener("click", function() {
 
     if (opponentGuess == 1) {
         resultOpponentScissors.style.display = "flex";
+        showWin();
     }
     else if (opponentGuess == 2) {
         resultOpponentPaper.style.display = "flex";
+        showLose();
     }
     else if (opponentGuess == 3) {
         resultOpponentRock.style.display = "flex";
+        showWin();
     }
     else if (opponentGuess == 4) {
         resultOpponentLizard.style.display = "flex";
+        showLose();
     }
     else if (opponentGuess == 5) {
         resultOpponentSpock.style.display = "flex";
+        showDraw();
     }
 });
 
 
+// Opponent's guess
 function opponentPlay() {
     let guess = Math.floor(Math.random() * 5) + 1;
     return guess;
+}
+
+
+// Show win message, and update score
+function showWin() {
+    let finalResult = document.getElementById("final-result");
+    let win = document.getElementById("win");
+    let finalResultButton = document.getElementById("final-result-button");
+
+    finalResult.style.display = "flex";
+    win.style.display = "flex";
+    finalResultButton.style.display = "block";
+}
+
+
+// Show draw message
+function showDraw() {
+    let finalResult = document.getElementById("final-result");
+    let draw = document.getElementById("draw");
+    let finalResultButton = document.getElementById("final-result-button");
+
+    finalResult.style.display = "flex";
+    draw.style.display = "flex";
+    finalResultButton.style.display = "block";
+}
+
+
+// Show lose message
+function showLose() {
+    let finalResult = document.getElementById("final-result");
+    let lose = document.getElementById("lose");
+    let finalResultButton = document.getElementById("final-result-button");
+
+    finalResult.style.display = "flex";
+    lose.style.display = "flex";
+    finalResultButton.style.display = "block";
 }
