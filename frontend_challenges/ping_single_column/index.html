@@ -14,10 +14,12 @@
       <div><img src="./images/logo.svg"/></div>
       <h1><span>We are launching</span> soon!</h1>
       <h2>Subscribe and get notified</h2>
-      <form class="user-input">
-        <input class="user-input_1" type="email" placeholder="Your email address..."/>
-        <input class="user-input_2" type="submit" value="Notify Me"/>
+      <form class="user-input" novalidate>
+        <input id="input-field" class="user-input_1" type="email" placeholder="Your email address..."/>
+        <input id="submit" class="user-input_2" type="submit" value="Notify Me"/>
       </form>
+      <p id="error1">Whoops! It looks like you forgot to add your email.</p>
+      <p id="error2">Please provide a valid email address.</p>
     </header>
     <main>
       <img src="./images/illustration-dashboard.png"/>
@@ -35,5 +37,6 @@
       </div>
     </footer>
   </div>
+  <script src="./js/main.js"></script>
 </body>
 </html>

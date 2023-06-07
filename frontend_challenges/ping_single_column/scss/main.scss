@@ -83,6 +83,14 @@
                 }
             }
         }
+
+        #error1, #error2 {
+            display: none;
+            font-size: 11px;
+            font-style: italic;
+            color: red;
+            margin-left: 8%;
+        } 
     }
 
     main {
@@ -146,15 +154,27 @@
     }
 }
 
-@media (min-width: 821px) {
+@media (min-width: 500px) {
     .container {
         header, footer {
             position: relative;
         }
 
+        main {
+            margin-top: 30px;
+            margin-bottom: 60px;
+
+            img {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (min-width: 821px) {
+    .container {
         header {
-            div {
-    
+            div {    
                 img {
                     margin-top: 20px;
                     margin-bottom: 30px;
@@ -192,7 +212,6 @@
 
         main {
             margin-top: 50px;
-            margin-bottom: 60px;
 
             img {
                 width: 44%;
