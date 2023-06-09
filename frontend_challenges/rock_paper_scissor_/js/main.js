@@ -39,6 +39,9 @@ let draw = document.getElementById("draw");
 let lose = document.getElementById("lose");
 let finalResultButton = document.getElementById("final-result-button");
 
+// Sound variables
+const hoverSound = new Audio("./assets/sounds/hover1.mp3");
+
 
 // Pop-up functionality for showing rules
 openButton.addEventListener("click", function() {
@@ -306,3 +309,15 @@ function resetScore() {
     scoreCounter.innerHTML = score;
     loseStatus = false;
 }
+
+// Play sound on hover
+function handleHover() {
+    hoverSound.loop = false;
+    hoverSound.play();
+}
+
+playScissors.addEventListener('mouseenter', handleHover);
+playPaper.addEventListener('mouseenter', handleHover);
+playSpock.addEventListener('mouseenter', handleHover);
+playLizard.addEventListener('mouseenter', handleHover);
+playRock.addEventListener('mouseenter', handleHover);

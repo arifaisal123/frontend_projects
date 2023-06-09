@@ -53,7 +53,7 @@
 }
 .container-play {
   width: 330px;
-  background-image: url("../images/bg-pentagon.svg");
+  background-image: url("../assets/images/bg-pentagon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -70,12 +70,12 @@
   border-width: 10px;
   border-style: solid;
   border-color: hsl(39, 89%, 49%);
-  border-radius: 45px;
+  border-radius: 50%;
   background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/icon-scissors.svg");
+  background-image: url("../assets/images/icon-scissors.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -85,8 +85,8 @@
 .container-play_1 .scissors:hover {
   width: 100px;
   height: 100px;
-  border-radius: 50px;
   cursor: pointer;
+  transition: ease-in-out 0.2s;
 }
 .container-play_2 {
   display: flex;
@@ -99,12 +99,12 @@
   border-width: 10px;
   border-style: solid;
   border-color: hsl(189, 59%, 53%);
-  border-radius: 45px;
+  border-radius: 50%;
   background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/icon-spock.svg");
+  background-image: url("../assets/images/icon-spock.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -114,8 +114,8 @@
 .container-play_2 .spock:hover {
   width: 100px;
   height: 100px;
-  border-radius: 50px;
   cursor: pointer;
+  transition: ease-in-out 0.2s;
 }
 .container-play_2 .paper {
   width: 90px;
@@ -123,12 +123,12 @@
   border-width: 10px;
   border-style: solid;
   border-color: hsl(230, 89%, 62%);
-  border-radius: 45px;
+  border-radius: 50%;
   background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/icon-paper.svg");
+  background-image: url("../assets/images/icon-paper.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -138,8 +138,8 @@
 .container-play_2 .paper:hover {
   width: 100px;
   height: 100px;
-  border-radius: 50px;
   cursor: pointer;
+  transition: ease-in-out 0.2s;
 }
 .container-play_3 {
   display: flex;
@@ -152,12 +152,12 @@
   border-width: 10px;
   border-style: solid;
   border-color: hsl(261, 73%, 60%);
-  border-radius: 45px;
+  border-radius: 50%;
   background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/icon-lizard.svg");
+  background-image: url("../assets/images/icon-lizard.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -167,8 +167,8 @@
 .container-play_3 .lizard:hover {
   width: 100px;
   height: 100px;
-  border-radius: 50px;
   cursor: pointer;
+  transition: ease-in-out 0.2s;
 }
 .container-play_3 .rock {
   width: 90px;
@@ -176,12 +176,12 @@
   border-width: 10px;
   border-style: solid;
   border-color: hsl(349, 71%, 52%);
-  border-radius: 45px;
+  border-radius: 50%;
   background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/icon-rock.svg");
+  background-image: url("../assets/images/icon-rock.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -191,8 +191,8 @@
 .container-play_3 .rock:hover {
   width: 100px;
   height: 100px;
-  border-radius: 50px;
   cursor: pointer;
+  transition: ease-in-out 0.2s;
 }
 .container .play-result {
   width: 300px;
@@ -207,12 +207,12 @@
   border-width: 10px;
   border-style: solid;
   border-color: hsl(39, 89%, 49%);
-  border-radius: 45px;
+  border-radius: 50%;
   background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/icon-scissors.svg");
+  background-image: url("../assets/images/icon-scissors.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -226,12 +226,12 @@
   border-width: 10px;
   border-style: solid;
   border-color: hsl(230, 89%, 62%);
-  border-radius: 45px;
+  border-radius: 50%;
   background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/icon-paper.svg");
+  background-image: url("../assets/images/icon-paper.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -245,12 +245,12 @@
   border-width: 10px;
   border-style: solid;
   border-color: hsl(349, 71%, 52%);
-  border-radius: 45px;
+  border-radius: 50%;
   background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/icon-rock.svg");
+  background-image: url("../assets/images/icon-rock.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -264,12 +264,12 @@
   border-width: 10px;
   border-style: solid;
   border-color: hsl(261, 73%, 60%);
-  border-radius: 45px;
+  border-radius: 50%;
   background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/icon-lizard.svg");
+  background-image: url("../assets/images/icon-lizard.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -283,12 +283,12 @@
   border-width: 10px;
   border-style: solid;
   border-color: hsl(189, 59%, 53%);
-  border-radius: 45px;
+  border-radius: 50%;
   background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/icon-spock.svg");
+  background-image: url("../assets/images/icon-spock.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -309,12 +309,12 @@
   border-width: 10px;
   border-style: solid;
   border-color: hsl(39, 89%, 49%);
-  border-radius: 45px;
+  border-radius: 50%;
   background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/icon-scissors.svg");
+  background-image: url("../assets/images/icon-scissors.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -328,12 +328,12 @@
   border-width: 10px;
   border-style: solid;
   border-color: hsl(230, 89%, 62%);
-  border-radius: 45px;
+  border-radius: 50%;
   background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/icon-paper.svg");
+  background-image: url("../assets/images/icon-paper.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -347,12 +347,12 @@
   border-width: 10px;
   border-style: solid;
   border-color: hsl(349, 71%, 52%);
-  border-radius: 45px;
+  border-radius: 50%;
   background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/icon-rock.svg");
+  background-image: url("../assets/images/icon-rock.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -366,12 +366,12 @@
   border-width: 10px;
   border-style: solid;
   border-color: hsl(261, 73%, 60%);
-  border-radius: 45px;
+  border-radius: 50%;
   background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/icon-lizard.svg");
+  background-image: url("../assets/images/icon-lizard.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -385,12 +385,12 @@
   border-width: 10px;
   border-style: solid;
   border-color: hsl(189, 59%, 53%);
-  border-radius: 45px;
+  border-radius: 50%;
   background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/icon-spock.svg");
+  background-image: url("../assets/images/icon-spock.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
