@@ -439,6 +439,7 @@
   font-size: 16px;
   display: block;
   text-align: center;
+  cursor: pointer;
 }
 .container .rules button {
   background-color: transparent;
