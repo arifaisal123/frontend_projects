@@ -32,7 +32,7 @@
 }
 .container-score .score {
   margin: 14px;
-  width: 30%;
+  width: 99px;
   padding: 5px 0;
   border-radius: 5px;
   background-color: #fafafa;
@@ -511,4 +511,15 @@
 .container .attribution a:hover, .container .attribution a:active {
   color: hsl(349, 71%, 52%);
   cursor: pointer;
+}
+
+@media (min-width: 750px) {
+  .container-score {
+    width: 430px;
+  }
+}
+@media (min-width: 950px) {
+  .container-score {
+    width: 530px;
+  }
 }/*# sourceMappingURL=main.css.map */
