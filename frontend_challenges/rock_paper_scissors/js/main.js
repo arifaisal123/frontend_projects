@@ -44,7 +44,8 @@ const hoverSound = new Audio("./assets/sounds/hover.mp3");
 const choiceClickSound = new Audio("./assets/sounds/choiceclick.mp3");
 const winSound = new Audio("./assets/sounds/win.mp3");
 const loseSound = new Audio("./assets/sounds/lose.mp3");
-const rulesClickSound = new Audio("./assets/sounds/rulesclick.mp3")
+const rulesClickSound = new Audio("./assets/sounds/rulesclick.mp3");
+const playAgainSound = new Audio("./assets/sounds/newgame.mp3");
 
 
 // Pop-up functionality for showing rules
@@ -95,6 +96,12 @@ function playLoseSound() {
 function playRulesClickSound() {
     rulesClickSound.loop = false;
     rulesClickSound.play();
+}
+
+// Play new game sound when play again button clicked
+function playAgainButtonSound() {
+    playAgainSound.loop = false;
+    playAgainSound.play();
 }
 
 // Scissors functionality 
@@ -335,6 +342,8 @@ function hideResultContainer() {
 
 // Functionality of play again button
 finalResultButton.addEventListener("click", function() {
+    playAgainButtonSound();
+
     hidePreviousResults();
     hideResultContainer();
 
