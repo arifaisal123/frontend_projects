@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container .news-container {
+  margin: 40px 120px;
+}
+.container .news-container header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .news-container header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 38px;
+}
+.container .news-container header nav ul li a {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  cursor: pointer;
+}
+.container .news-container header nav ul li a:hover {
+  color: hsl(5, 85%, 63%);
+}
+.container .news-container main {
+  margin-top: 35px;
+}
+.container .news-container main .main-news {
+  display: flex;
+}
+.container .news-container main .main-news-left {
+  width: 65%;
+}
+.container .news-container main .main-news-left img {
+  width: 100%;
+}
+.container .news-container main .main-news-left-content {
+  display: flex;
+  margin-top: 20px;
+}
+.container .news-container main .main-news-left-content-heading {
+  width: 50%;
+  padding-right: 50px;
+}
+.container .news-container main .main-news-left-content-heading h1 {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 1;
+}
+.container .news-container main .main-news-left-content-para {
+  width: 50%;
+}
+.container .news-container main .main-news-left-content-para p {
+  color: hsl(236, 13%, 42%);
+  margin-bottom: 35px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.container .news-container main .main-news-left-content-para button {
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  text-transform: uppercase;
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+.container .news-container main .main-news-left-content-para button:hover {
+  background-color: #000;
+}
+.container .news-container main .main-news-right {
+  width: 35%;
+  background-color: hsl(240, 100%, 5%);
+  margin-left: 30px;
+  padding: 20px 30px;
+}
+.container .news-container main .main-news-right h2 {
+  color: hsl(35, 77%, 62%);
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 28px;
+}
+.container .news-container main .main-news-right-1, .container .news-container main .main-news-right-2, .container .news-container main .main-news-right-3 {
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+  padding: 24px 0;
+}
+.container .news-container main .main-news-right-1 h3, .container .news-container main .main-news-right-2 h3, .container .news-container main .main-news-right-3 h3 {
+  color: hsl(36, 100%, 99%);
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+.container .news-container main .main-news-right-1 h3:hover, .container .news-container main .main-news-right-2 h3:hover, .container .news-container main .main-news-right-3 h3:hover {
+  color: hsl(35, 77%, 62%);
+}
+.container .news-container main .main-news-right-1 p, .container .news-container main .main-news-right-2 p, .container .news-container main .main-news-right-3 p {
+  color: hsl(233, 8%, 79%);
+  line-height: 1.5;
+  font-size: 14px;
+}
+.container .news-container main .main-news-right-1 {
+  padding-top: 8px;
+}
+.container .news-container main .main-news-right-3 {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.container .news-container main .bottom-news {
+  display: flex;
+  margin-top: 50px;
+}
+.container .news-container main .bottom-news-1, .container .news-container main .bottom-news-2, .container .news-container main .bottom-news-3 {
+  display: flex;
+  width: 33%;
+}
+.container .news-container main .bottom-news-1-left, .container .news-container main .bottom-news-2-left, .container .news-container main .bottom-news-3-left {
+  width: 25%;
+}
+.container .news-container main .bottom-news-1-left img, .container .news-container main .bottom-news-2-left img, .container .news-container main .bottom-news-3-left img {
+  width: 100%;
+}
+.container .news-container main .bottom-news-1-right, .container .news-container main .bottom-news-2-right, .container .news-container main .bottom-news-3-right {
+  width: 60%;
+  margin-left: 15px;
+}
+.container .news-container main .bottom-news-1-right h2, .container .news-container main .bottom-news-1-right h3, .container .news-container main .bottom-news-1-right p, .container .news-container main .bottom-news-2-right h2, .container .news-container main .bottom-news-2-right h3, .container .news-container main .bottom-news-2-right p, .container .news-container main .bottom-news-3-right h2, .container .news-container main .bottom-news-3-right h3, .container .news-container main .bottom-news-3-right p {
+  margin: 11px 0;
+  margin-top: 0;
+}
+.container .news-container main .bottom-news-1-right h2, .container .news-container main .bottom-news-2-right h2, .container .news-container main .bottom-news-3-right h2 {
+  color: hsl(233, 8%, 79%);
+  font-size: 28px;
+}
+.container .news-container main .bottom-news-1-right h3, .container .news-container main .bottom-news-2-right h3, .container .news-container main .bottom-news-3-right h3 {
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 14px;
+}
+.container .news-container main .bottom-news-1-right h3:hover, .container .news-container main .bottom-news-2-right h3:hover, .container .news-container main .bottom-news-3-right h3:hover {
+  color: hsl(5, 85%, 63%);
+}
+.container .news-container main .bottom-news-1-right p, .container .news-container main .bottom-news-2-right p, .container .news-container main .bottom-news-3-right p {
+  color: hsl(236, 13%, 42%);
+  font-size: 11px;
+  width: 90%;
+}/*# sourceMappingURL=main.css.map */

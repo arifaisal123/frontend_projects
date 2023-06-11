@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+
+    .news-container {
+        margin: 40px 120px;
+
+        header {
+
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                ul {
+                    display: flex;
+                    list-style: none;
+                    gap: 38px;
+
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: hsl(236, 13%, 42%);
+                            cursor: pointer;
+                            
+                            &:hover {
+                                color:hsl(5, 85%, 63%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            margin-top: 35px;
+
+            .main-news {
+                display: flex;
+
+                &-left {
+                    width: 65%;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    &-content {
+                        display: flex;
+                        margin-top: 20px;
+
+                        &-heading {
+                            width: 50%;
+                            padding-right: 50px;
+
+                            h1 {
+                                font-weight: 800;
+                                font-size: 50px;
+                                line-height: 1;
+                            }
+                        }
+
+                        &-para {
+                            width: 50%;
+
+                            p {
+                                color: hsl(236, 13%, 42%);
+                                margin-bottom: 35px;
+                                line-height: 1.4;
+                                font-size: 14px;
+                            }
+                            button {
+                                background-color: hsl(5, 85%, 63%);
+                                color: hsl(36, 100%, 99%);
+                                text-transform: uppercase;
+                                padding: 12px 20px;
+                                font-weight: 700;
+                                font-size: 11px;
+                                letter-spacing: 4px;
+                                cursor: pointer;
+
+                                &:hover {
+                                    background-color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-right {
+                    width: 35%;
+                    background-color: hsl(240, 100%, 5%);
+                    margin-left: 30px;
+                    padding: 20px 30px;
+
+                    h2 {
+                        color: hsl(35, 77%, 62%);
+                        padding-bottom: 15px;
+                        font-weight: 700;
+                        font-size: 28px;
+                    }
+
+                    &-1, &-2, &-3 {
+                        border-bottom: 1px solid hsl(236, 13%, 42%);
+                        padding: 24px 0;
+                        
+                        h3 {
+                            color: hsl(36, 100%, 99%);
+                            padding-bottom: 15px;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: hsl(35, 77%, 62%);
+                            }
+                        }
+
+                        p {
+                            color: hsl(233, 8%, 79%);
+                            line-height: 1.5;
+                            font-size: 14px;
+                        }
+                    }
+
+                    &-1 {
+                        padding-top: 8px;
+                    }
+
+                    &-3 {
+                        border-bottom: none;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+
+            .bottom-news {
+                display: flex;
+                margin-top: 50px;
+
+                &-1, &-2, &-3 {
+                    display: flex;
+                    width: 33%;
+
+                    &-left {
+                        width: 25%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    &-right {
+                        width: 60%;
+                        margin-left: 15px;
+
+                        h2, h3, p {
+                            margin: 11px 0;
+                            margin-top: 0;
+                        }
+
+                        h2 {
+                            color: hsl(233, 8%, 79%);
+                            font-size: 28px;
+                        }
+
+                        h3 {
+                            cursor: pointer;
+                            font-weight: 800;
+                            font-size: 14px;
+
+                            &:hover {
+                                color:hsl(5, 85%, 63%);
+                            }
+                        }
+
+                        p {
+                            color: hsl(236, 13%, 42%);
+                            font-size: 11px;
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
