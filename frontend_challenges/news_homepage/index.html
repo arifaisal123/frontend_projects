@@ -3,23 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">
     <link rel="stylesheet" href="./scss/main.css"/>
     <title>News | Homepage</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution { font-size: 11px; text-align: center; }
-      .attribution a { color: hsl(228, 45%, 44%); }
-    </style>
   </head>
   <body>
     <div class="container">
       <div class="news-container">
         <header>
           <nav>
-            <img src="./assets/images/logo.svg" alt="logo"/>
+            <img src="./assets/images/logo.svg" alt="logo" class="desktop-menu"/>
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">New</a></li>
@@ -27,12 +20,14 @@
               <li><a href="#">Trending</a></li>
               <li><a href="#">Categories</a></li>
             </ul>
+            <img src="./assets/images/icon-menu.svg" alt="menu button" class="mobile-menu"/>
           </nav>
         </header>
         <main>
           <div class="main-news">
             <div class="main-news-left">
-              <img src="./assets/images/image-web-3-desktop.jpg" alt="web3 colorful blocks"/>
+              <img class="web3-desktop" src="./assets/images/image-web-3-desktop.jpg" alt="web3 colorful blocks"/>
+              <img class="web3-mobile" src="./assets/images/image-web-3-mobile.jpg" alt="web3 colorful blocks"/>
               <div class="main-news-left-content">
                 <div class="main-news-left-content-heading">
                   <h1>The Bright Future of Web 3.0?</h1>

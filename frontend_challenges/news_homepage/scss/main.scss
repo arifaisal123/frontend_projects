@@ -37,6 +37,10 @@
                         }
                     }
                 }
+
+                .mobile-menu {
+                    display: none;
+                }
             }
         }
 
@@ -49,8 +53,12 @@
                 &-left {
                     width: 65%;
 
-                    img {
+                    .web3-desktop {
                         width: 100%;
+                    }
+
+                    .web3-mobile {
+                        display: none;
                     }
 
                     &-content {
@@ -183,6 +191,125 @@
                             color: hsl(236, 13%, 42%);
                             font-size: 11px;
                             width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .attribution { 
+            font-size: 11px; 
+            text-align: center; 
+
+            a {
+                color: hsl(228, 45%, 44%); 
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        .news-container {   
+            margin: 30px 20px; 
+            header {    
+                nav {    
+                    ul {
+                        display: none;
+                    }
+                    
+                    .mobile-menu {
+                        display: flex;
+                    }
+                }
+            }
+
+            main {
+                .main-news {
+                    flex-direction: column;
+        
+                    &-left {
+                        width: 100%;
+
+                        .web3-desktop {
+                            display: none;
+                        }
+    
+                        .web3-mobile {
+                            width: 100%;
+                            display: inline;
+                        }
+
+                        &-content {
+                            flex-direction: column;
+    
+                            &-heading {
+                                width: 100%;
+                                padding-right: 0px;
+                                padding-bottom: 10px;
+                            }
+    
+                            &-para {
+                                width: 100%;
+    
+                                p {
+                                    margin-bottom: 20px;
+                                }
+                                button {
+                                    background-color: hsl(5, 85%, 63%);
+                                    color: hsl(36, 100%, 99%);
+                                    text-transform: uppercase;
+                                    padding: 12px 20px;
+                                    font-weight: 700;
+                                    font-size: 11px;
+                                    letter-spacing: 4px;
+                                    cursor: pointer;
+    
+                                    &:hover {
+                                        background-color: #000;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &-right {
+                        margin-top: 40px;
+                        width: 100%;
+                        margin-left: 0px;
+                    }
+                }
+
+                .bottom-news {
+                    flex-direction: column;
+
+                    &-1, &-2, &-3 {
+                        width: 100%;
+                        margin-bottom: 15px;
+    
+                        &-left {
+                            width: 25%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+    
+                        &-right {
+                            width: 100%;
+    
+                            h2 {
+                                font-size: 24px;
+                            }
+    
+                            h3 {
+                                font-size: 12px;
+                            }
+    
+                            p {
+                                font-size: 9px;
+                                width: 100%;
+                            }
                         }
                     }
                 }
