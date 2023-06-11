@@ -21,18 +21,29 @@
                 justify-content: space-between;
 
                 ul {
-                    display: flex;
                     list-style: none;
-                    gap: 38px;
+                    
+                    div {
+                        display: flex;
+                        gap: 38px;
 
-                    li {
-                        a {
-                            text-decoration: none;
-                            color: hsl(236, 13%, 42%);
-                            cursor: pointer;
-                            
-                            &:hover {
-                                color:hsl(5, 85%, 63%);
+                        img {
+                            display: none;
+                            width: 10%;
+                            position: absolute;
+                            top: 20px;
+                            right: 20px;
+                        }
+
+                        li {
+                            a {
+                                text-decoration: none;
+                                color: hsl(236, 13%, 42%);
+                                cursor: pointer;
+                                
+                                &:hover {
+                                    color:hsl(5, 85%, 63%);
+                                }
                             }
                         }
                     }
@@ -217,6 +228,34 @@
                 nav {    
                     ul {
                         display: none;
+                        justify-content: center;
+                        align-items: center;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.8);
+                        z-index: 9999;
+
+                        div {
+                            background-color: #fff;
+                            width: 65%;
+                            display: none;
+                            flex-direction: column;
+                            height: 100vh;
+                            padding-top: 150px;
+                            padding-left: 30px;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+
+                            li {
+                                a {
+                                    color: #000;
+                                }   
+                            }
+                        }
                     }
                     
                     .mobile-menu {
@@ -255,20 +294,6 @@
     
                                 p {
                                     margin-bottom: 20px;
-                                }
-                                button {
-                                    background-color: hsl(5, 85%, 63%);
-                                    color: hsl(36, 100%, 99%);
-                                    text-transform: uppercase;
-                                    padding: 12px 20px;
-                                    font-weight: 700;
-                                    font-size: 11px;
-                                    letter-spacing: 4px;
-                                    cursor: pointer;
-    
-                                    &:hover {
-                                        background-color: #000;
-                                    }
                                 }
                             }
                         }
