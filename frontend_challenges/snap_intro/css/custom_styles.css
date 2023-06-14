@@ -46,7 +46,7 @@
     right: 20px;
 }
 
-.container .row nav ul {
+.menu-background {
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -58,7 +58,7 @@
     z-index: 9999;
 }
 
-.container .row nav ul div {
+.menu-foreground {
     background-color: #fff;
     width: 65%;
     flex-direction: column;
