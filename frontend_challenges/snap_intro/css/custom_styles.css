@@ -12,7 +12,7 @@
     font-weight: 700;
 }
 
-.large-font {
+.medium-font {
     font-size: 40px;
 }
 
@@ -79,3 +79,9 @@
         right: 0;
       }
 }
+
+/* @media (min-width: 1200px) {
+    .large-font {
+        font-size: 60px;
+    }
+} */

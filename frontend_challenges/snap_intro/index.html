@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     
@@ -50,26 +50,33 @@
           <img src="./images/icon-menu.svg" alt="menu button" class="mobile-menu" id="mobile-menu"/>
         </nav>
       </div>
-      <div class="row">
-        <img class="px-0 py-0" src="./images/image-hero-mobile.png" alt="person using laptop">
-      </div>
-      <div class="row text-center justify-content-center">
-        <h1 class="bold-700 large-font pt-5 pb-2">Make remote work</h1>
-        <p class="graycolor bold-500 medium-font px-4">Get your team in sync, no matter your location. Streamline processes, 
-          create team rituals, and watch productivity soar.</p>
-        <button type="button" class="btn btn-dark col-4 py-2 my-2 mb-5 rounded-br button-padding-y">Learn more</button>
-        <div class="row mx-0 my-auto">
-          <div class="col-3">
-            <img class="img-fluid" src="./images/client-databiz.svg" alt="client name">
-          </div>
-          <div class="col-3">
-            <img class="img-fluid h-75" src="./images/client-audiophile.svg" alt="client name">
-          </div>
-          <div class="col-3">
-            <img class="img-fluid" src="./images/client-meet.svg" alt="client name">
-          </div>
-          <div class="col-3">
-            <img class="img-fluid" src="./images/client-maker.svg" alt="client name">
+      <!-- <div class="row">
+          <img class="px-0 py-0 d-lg-none" src="./images/image-hero-mobile.png" alt="person using laptop">
+          <img class="px-0 py-0 d-none d-lg-block" src="./images/image-hero-desktop.png" alt="person using laptop">
+      </div> -->
+      <div class="row text-center justify-content-center justify-content-lg-around">
+        <div class="col-lg-4 order-lg-2 text-lg-right">
+          <img class="px-0 py-0 d-lg-none w-100" src="./images/image-hero-mobile.png" alt="person using laptop">
+          <img class="px-0 py-0 d-none d-lg-block w-100" src="./images/image-hero-desktop.png" alt="person using laptop">
+        </div>
+        <div class="col-lg-6 order-lg-1 text-lg-left text-lg-start">
+          <h1 class="display-3 bold-700 pt-5 pb-2">Make <span class="d-lg-block">remote work</span></h1>
+          <p class="col-lg-9 graycolor bold-500 medium-font px-4 px-lg-0">Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.</p>
+          <button type="button" class="btn btn-dark col-4 py-2 my-2 mb-5 rounded-br button-padding-y">Learn more</button>
+          <div class="row mx-0 my-auto mt-lg-4">
+            <div class="col-3">
+              <img class="img-fluid" src="./images/client-databiz.svg" alt="client name">
+            </div>
+            <div class="col-3">
+              <img class="img-fluid h-75" src="./images/client-audiophile.svg" alt="client name">
+            </div>
+            <div class="col-3">
+              <img class="img-fluid" src="./images/client-meet.svg" alt="client name">
+            </div>
+            <div class="col-3">
+              <img class="img-fluid" src="./images/client-maker.svg" alt="client name">
+            </div>
           </div>
         </div>
       </div>
