@@ -31,3 +31,51 @@
 .button-padding-y {
     padding: 12px 0px !important;
 }
+
+.login-button, .register-button {
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px 0;
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+}
+
+.container .row nav ul div li {
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+#menu-close-button {
+    display: none;
+    width: 10%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@media (max-width: 450px) {
+    .container .row nav ul {
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+      }
+      .container .row nav ul div {
+        background-color: #fff;
+        width: 65%;
+        flex-direction: column;
+        height: 100vh;
+        padding-top: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+}
