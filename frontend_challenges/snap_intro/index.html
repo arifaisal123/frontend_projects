@@ -6,32 +6,32 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     
-    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <title>Snap Intro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./css/custom_styles.css"/>
   </head>
   <body>
     <div class="container min-vh-100">
-      <div class="row mx-1 my-3">
+      <div class="row mx-1 my-3 my-xxl-4">
         <nav class="navbar navbar-light">
-          <a class="navbar-brand" href="#">
-            <img src="./images/logo.svg" class="d-inline-block align-top" alt="company logo">
+          <a class="navbar-brand d-flex align-content-center justify-content-center" href="#">
+            <img src="./images/logo.svg" class="d-inline-block" alt="company logo">
           </a>
           <ul class="navbar-nav mr-auto mt-lg-0 collapse" id="navbarToggleExternalContent">
             <div class="nav-list-block" id="nav-list-block">
               <img src="./images/icon-close-menu.svg" alt="menu close button" id="menu-close-button"/>
               <li class="nav-item">
                 <a class="nav-link" href="#" id="nav-features">Features<span class="px-3"><img src="./images/icon-arrow-down.svg" alt="down arrow" id="down-arrow-1"/><img src="./images/icon-arrow-up.svg" alt="up arrow" class="d-none" id="up-arrow-1"/></span></a>
-                <li><a class="nav-link feature-link d-none" href="#"><img src="./images/icon-todo.svg" alt="to-do icon"/>Todo List</a></li>
-                <li><a class="nav-link feature-link d-none" href="#"><img src="./images/icon-calendar.svg" alt="calendar icon"/>Calendar</a></li>
-                <li><a class="nav-link feature-link d-none" href="#"><img src="./images/icon-reminders.svg" alt="reminder icon"/>Reminders</a></li>
-                <li><a class="nav-link feature-link d-none" href="#"><img src="./images/icon-planning.svg" alt="planning icon"/>Planning</a></li>
+                <li class="mx-4"><a class="nav-link feature-link d-none" href="#"><img class="px-3" src="./images/icon-todo.svg" alt="to-do icon"/>Todo List</a></li>
+                <li class="mx-4"><a class="nav-link feature-link d-none" href="#"><img class="px-3" src="./images/icon-calendar.svg" alt="calendar icon"/>Calendar</a></li>
+                <li class="mx-4"><a class="nav-link feature-link d-none" href="#"><img class="px-3" src="./images/icon-reminders.svg" alt="reminder icon"/>Reminders</a></li>
+                <li class="mx-4"><a class="nav-link feature-link d-none" href="#"><img class="px-3" src="./images/icon-planning.svg" alt="planning icon"/>Planning</a></li>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" id="nav-company">Company<span class="px-3"><img src="./images/icon-arrow-down.svg" alt="down arrow" id="down-arrow-2"/><img src="./images/icon-arrow-up.svg" alt="up arrow" class="d-none" id="up-arrow-2"/></span></a>
-                <li><a class="nav-link company-link d-none" href="#">History</a></li>
-                <li><a class="nav-link company-link d-none" href="#">Our Team</a></li>
-                <li><a class="nav-link company-link d-none" href="#">Blog</a></li>
+                <li class="mx-5"><a class="nav-link company-link d-none" href="#">History</a></li>
+                <li class="mx-5"><a class="nav-link company-link d-none" href="#">Our Team</a></li>
+                <li class="mx-5"><a class="nav-link company-link d-none" href="#">Blog</a></li>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Careers</a>
@@ -50,21 +50,17 @@
           <img src="./images/icon-menu.svg" alt="menu button" class="mobile-menu" id="mobile-menu"/>
         </nav>
       </div>
-      <!-- <div class="row">
-          <img class="px-0 py-0 d-lg-none" src="./images/image-hero-mobile.png" alt="person using laptop">
-          <img class="px-0 py-0 d-none d-lg-block" src="./images/image-hero-desktop.png" alt="person using laptop">
-      </div> -->
       <div class="row text-center justify-content-center justify-content-lg-around">
-        <div class="col-lg-4 order-lg-2 text-lg-right">
+        <div class="col-lg-4 col-xxl-5 order-lg-2 text-lg-right px-0">
           <img class="px-0 py-0 d-lg-none w-100" src="./images/image-hero-mobile.png" alt="person using laptop">
           <img class="px-0 py-0 d-none d-lg-block w-100" src="./images/image-hero-desktop.png" alt="person using laptop">
         </div>
-        <div class="col-lg-6 order-lg-1 text-lg-left text-lg-start">
-          <h1 class="display-3 bold-700 pt-5 pb-2">Make <span class="d-lg-block">remote work</span></h1>
-          <p class="col-lg-9 graycolor bold-500 medium-font px-4 px-lg-0">Get your team in sync, no matter your location. Streamline processes, 
+        <div class="col-lg-6 col-xxl-7 order-lg-1 text-lg-left text-lg-start">
+          <h1 class="bold-700 pt-5 pb-2 my-xxl-5 mb-xxl-4">Make <span class="d-lg-block">remote work</span></h1>
+          <p class="col-lg-9 col-xxl-9 graycolor bold-500 px-4 px-lg-0 pb-xxl-4">Get your team in sync, no matter your location. Streamline processes, 
             create team rituals, and watch productivity soar.</p>
-          <button type="button" class="btn btn-dark col-4 py-2 my-2 mb-5 rounded-br button-padding-y">Learn more</button>
-          <div class="row mx-0 my-auto mt-lg-4">
+          <button type="button" class="btn btn-dark col-4 col-xxl-3 py-2 my-2 mb-5 my-lg-4 rounded-br button-padding-y">Learn more</button>
+          <div class="row mx-0 my-auto mt-lg-5 mt-xxl-5 pt-xxl-5">
             <div class="col-3">
               <img class="img-fluid" src="./images/client-databiz.svg" alt="client name">
             </div>
@@ -80,9 +76,8 @@
           </div>
         </div>
       </div>
-      <div class="row attribution text-center my-5">
-        <p class="fs-6">Coded by <a href="https://arifaisal123.github.io">Arif Faisal</a>.<br>
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+      <div class="row attribution text-center mt-5 pt-5">
+        <p class="fs-6">Coded by <a href="https://arifaisal123.github.io">Arif Faisal</a>. Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
       </div>
     </div> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
