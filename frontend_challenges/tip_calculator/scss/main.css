@@ -60,13 +60,15 @@
 }
 .container .container-calculator-1 section .bill::-moz-placeholder {
   color: hsl(183, 100%, 15%);
+  padding-right: 8px;
 }
 .container .container-calculator-1 section .bill::placeholder {
   color: hsl(183, 100%, 15%);
+  padding-right: 8px;
 }
 .container .container-calculator-1 section .grid-container {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 30px);
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
 }
@@ -75,12 +77,24 @@
   text-align: center;
   color: hsl(189, 41%, 97%);
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .container-calculator-1 section .grid-container .grid-button span {
+  font-size: 13px;
 }
 .container .container-calculator-1 section .grid-container .grid-custom {
   background-color: hsl(189, 41%, 97%);
   text-align: center;
   color: hsl(186, 14%, 43%);
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .container-calculator-1 section .grid-container .grid-custom span {
+  font-size: 13px;
 }
 .container .container-calculator-1 section .people-number {
   background-color: hsl(189, 41%, 97%);
@@ -96,9 +110,11 @@
 }
 .container .container-calculator-1 section .people-number::-moz-placeholder {
   color: hsl(183, 100%, 15%);
+  padding-right: 8px;
 }
 .container .container-calculator-1 section .people-number::placeholder {
   color: hsl(183, 100%, 15%);
+  padding-right: 8px;
 }
 .container .container-calculator-2 {
   width: 260px;
@@ -154,7 +170,7 @@
   border-radius: 3px;
   text-transform: uppercase;
   font-size: 10px;
-  height: 20px;
+  height: 30px;
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
 }
@@ -181,6 +197,7 @@
     display: block;
   }
   .container .container-calculator-1 {
+    padding-right: 0;
     width: 260px;
   }
   .container .container-calculator-2 {
