@@ -17,7 +17,7 @@
         <div class="container-calculator-1">
           <section class="bill-section">
             <h2>Bill</h2>
-            <input type="number" class="bill" placeholder="0">
+            <input id="bill" type="number" class="bill" placeholder="0">
           </section>
           <section class="tip-section">
             <h2>Select Tip %</h2>
@@ -31,8 +31,11 @@
             </div>
           </section>
           <section class="people-section">
-            <h2>Number of People</h2>
-            <input type="number" class="people-number" placeholder="0">
+            <div class="people-section-heading">
+              <h2>Number of People</h2>
+              <h2 id="zero">Can't be zero</h2>
+            </div>            
+            <input id="people-number" type="number" class="people-number" placeholder="0">
           </section>
         </div>
         <div class="container-calculator-2">
@@ -41,14 +44,14 @@
               <h2>Tip Amount
                 <span>/ person</span></h2>
               <div class="tip-amount-dollar">
-                <span>$0.00</span>
+                <span id="tip-amount-dollar">$0.00</span>
               </div>
             </div>
             <div class="total-tip">
               <h2>Total
                 <span>/ person</span></h2>
                 <div class="total-tip-dollar">
-                  <span>$0.00</span>
+                  <span id="total-tip-dollar">$0.00</span>
                 </div>
             </div>
           </div>          
@@ -63,5 +66,6 @@
         Favicon by <a href="https://www.flaticon.com/free-icon/calculator_303635?term=calculator&page=1&position=87&origin=tag&related_id=303635" target="_blank">Flaticon</a>. 
       </p>  
     </footer> 
+    <script src="./js/main.js"></script>
   </body>
 </html>

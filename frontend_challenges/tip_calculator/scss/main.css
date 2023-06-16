@@ -125,6 +125,17 @@ input[type=number]::-webkit-outer-spin-button {
 .container .container-calculator-1 section .grid-container .grid-custom:hover, .container .container-calculator-1 section .grid-container .grid-custom:focus {
   outline-color: hsl(172, 43%, 64%);
 }
+.container .container-calculator-1 section .grid-container .active {
+  background-color: hsl(172, 43%, 64%);
+}
+.container .container-calculator-1 section .people-section-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.container .container-calculator-1 section .people-section-heading #zero {
+  color: rgb(212, 81, 81);
+  display: none;
+}
 .container .container-calculator-1 section .people-number {
   background-color: hsl(189, 41%, 97%);
   background-image: url("../images/icon-person.svg");

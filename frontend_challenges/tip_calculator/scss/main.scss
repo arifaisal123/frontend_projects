@@ -130,8 +130,22 @@ input[type="number"]::-webkit-outer-spin-button {
                             outline-color: hsl(172, 43%, 64%);
                         }
                     }
+
+                    .active {
+                        background-color: hsl(172, 43%, 64%);
+                    }
                 }
                 
+                .people-section-heading {
+                    display: flex;
+                    justify-content: space-between;
+
+                    #zero {
+                        color: rgb(212, 81, 81);
+                        display: none;
+                    }
+                }
+
                 .people-number {
                     background-color: hsl(189, 41%, 97%);
                     background-image: url("../images/icon-person.svg");
