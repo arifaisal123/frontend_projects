@@ -7,6 +7,12 @@
   font-family: "Space Mono", monospace;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .container {
   background-color: hsl(185, 41%, 84%);
   min-height: 100vh;
@@ -57,14 +63,19 @@
   text-align: right;
   color: hsl(183, 100%, 15%);
   height: 30px;
+  cursor: pointer;
+  padding-right: 8px;
+  outline: 2px solid transparent;
+  transition: outline-color 0.3s;
 }
 .container .container-calculator-1 section .bill::-moz-placeholder {
   color: hsl(183, 100%, 15%);
-  padding-right: 8px;
 }
 .container .container-calculator-1 section .bill::placeholder {
   color: hsl(183, 100%, 15%);
-  padding-right: 8px;
+}
+.container .container-calculator-1 section .bill:hover, .container .container-calculator-1 section .bill:focus {
+  outline-color: hsl(172, 43%, 64%);
 }
 .container .container-calculator-1 section .grid-container {
   display: grid;
@@ -80,21 +91,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .container .container-calculator-1 section .grid-container .grid-button span {
   font-size: 13px;
 }
+.container .container-calculator-1 section .grid-container .grid-button:hover {
+  background-color: hsl(172, 43%, 64%);
+  color: hsl(183, 100%, 15%);
+}
 .container .container-calculator-1 section .grid-container .grid-custom {
   background-color: hsl(189, 41%, 97%);
   text-align: center;
-  color: hsl(186, 14%, 43%);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  outline: 2px solid transparent;
+  transition: outline-color 0.3s;
 }
-.container .container-calculator-1 section .grid-container .grid-custom span {
+.container .container-calculator-1 section .grid-container .grid-custom::-moz-placeholder {
   font-size: 13px;
+  text-align: center;
+  color: hsl(186, 14%, 43%);
+}
+.container .container-calculator-1 section .grid-container .grid-custom::placeholder {
+  font-size: 13px;
+  text-align: center;
+  color: hsl(186, 14%, 43%);
+}
+.container .container-calculator-1 section .grid-container .grid-custom:hover, .container .container-calculator-1 section .grid-container .grid-custom:focus {
+  outline-color: hsl(172, 43%, 64%);
 }
 .container .container-calculator-1 section .people-number {
   background-color: hsl(189, 41%, 97%);
@@ -107,14 +136,19 @@
   text-align: right;
   color: hsl(183, 100%, 15%);
   height: 30px;
+  cursor: pointer;
+  padding-right: 8px;
+  outline: 2px solid transparent;
+  transition: outline-color 0.3s;
 }
 .container .container-calculator-1 section .people-number::-moz-placeholder {
   color: hsl(183, 100%, 15%);
-  padding-right: 8px;
 }
 .container .container-calculator-1 section .people-number::placeholder {
   color: hsl(183, 100%, 15%);
-  padding-right: 8px;
+}
+.container .container-calculator-1 section .people-number:hover, .container .container-calculator-1 section .people-number:focus {
+  outline-color: hsl(172, 43%, 64%);
 }
 .container .container-calculator-2 {
   width: 260px;
@@ -173,6 +207,10 @@
   height: 30px;
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+.container .container-calculator-2 button:hover {
+  background-color: hsl(172, 43%, 64%);
 }
 
 .attribution {
@@ -202,5 +240,8 @@
   }
   .container .container-calculator-2 {
     width: 260px;
+  }
+  .container .container-calculator-2 button {
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=main.css.map */

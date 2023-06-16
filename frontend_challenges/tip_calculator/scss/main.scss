@@ -8,6 +8,13 @@
     font-family: 'Space Mono', monospace;
 }
 
+// Changes default input[type="number"] behavior
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .container {
     background-color: hsl(185, 41%, 84%);
     min-height: 100vh;
@@ -61,10 +68,17 @@
                     text-align: right;
                     color: hsl(183, 100%, 15%);
                     height: 30px;
+                    cursor: pointer;
+                    padding-right: 8px;
+                    outline: 2px solid transparent;
+                    transition: outline-color 0.3s;
 
                     &::placeholder {
                         color: hsl(183, 100%, 15%);
-                        padding-right: 8px;
+                    }
+
+                    &:hover, &:focus {
+                        outline-color: hsl(172, 43%, 64%);
                     }
                 }
 
@@ -82,23 +96,38 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        cursor: pointer;
 
                         span {
                             font-size: 13px;
                         }
+                        
+                        &:hover {
+                            background-color: hsl(172, 43%, 64%);
+                            color: hsl(183, 100%, 15%);
+                        }
                     }
-    
+
                     .grid-custom {
                         background-color: hsl(189, 41%, 97%);
                         text-align: center;
-                        color: hsl(186, 14%, 43%);
                         border-radius: 4px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        cursor: pointer;
+                        width: 100%;
+                        outline: 2px solid transparent;
+                        transition: outline-color 0.3s;
 
-                        span {
+                        &::placeholder {
                             font-size: 13px;
+                            text-align: center;
+                            color: hsl(186, 14%, 43%);
+                        }
+
+                        &:hover, &:focus {
+                            outline-color: hsl(172, 43%, 64%);
                         }
                     }
                 }
@@ -114,10 +143,17 @@
                     text-align: right;
                     color: hsl(183, 100%, 15%);
                     height: 30px;
+                    cursor: pointer;
+                    padding-right: 8px;
+                    outline: 2px solid transparent;
+                    transition: outline-color 0.3s;
 
                     &::placeholder {
                         color: hsl(183, 100%, 15%);
-                        padding-right: 8px;
+                    }
+
+                    &:hover, &:focus {
+                        outline-color: hsl(172, 43%, 64%);
                     }
                 }
             }            
@@ -193,6 +229,11 @@
                 height: 30px;
                 background-color: hsl(172, 67%, 45%);
                 color: hsl(183, 100%, 15%);
+                cursor: pointer;
+
+                &:hover {
+                    background-color: hsl(172, 43%, 64%);
+                }
             }
         }
     }
@@ -235,6 +276,10 @@
 
             &-2 {
                 width: 260px;
+
+                button {
+                    margin-top: 20px;
+                }
             }
         }
     }
