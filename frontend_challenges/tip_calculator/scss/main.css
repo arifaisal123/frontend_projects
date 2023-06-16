@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+.container {
+  background-color: hsl(185, 41%, 84%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 18px;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+  color: hsl(183, 100%, 15%);
+}
+.container h1 span {
+  display: block;
+}
+.container .container-calculator {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  border-radius: 12px;
+  background-color: hsl(0, 0%, 100%);
+}
+.container .container-calculator-1 {
+  width: 260px;
+  padding-right: 30px;
+}
+.container .container-calculator-1 section {
+  margin: 25px 0;
+}
+.container .container-calculator-1 section h2 {
+  font-size: 10px;
+  color: hsl(183, 100%, 15%);
+  margin-bottom: 5px;
+}
+.container .container-calculator-1 section .bill {
+  background-color: hsl(189, 41%, 97%);
+  background-image: url("../images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-size: 4%;
+  background-position: 4%;
+  width: 100%;
+  border-radius: 6px;
+  text-align: right;
+  color: hsl(183, 100%, 15%);
+  height: 30px;
+}
+.container .container-calculator-1 section .bill::-moz-placeholder {
+  color: hsl(183, 100%, 15%);
+}
+.container .container-calculator-1 section .bill::placeholder {
+  color: hsl(183, 100%, 15%);
+}
+.container .container-calculator-1 section .grid-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.container .container-calculator-1 section .grid-container .grid-button {
+  background-color: hsl(183, 100%, 15%);
+  text-align: center;
+  color: hsl(189, 41%, 97%);
+  border-radius: 4px;
+}
+.container .container-calculator-1 section .grid-container .grid-custom {
+  background-color: hsl(189, 41%, 97%);
+  text-align: center;
+  color: hsl(186, 14%, 43%);
+  border-radius: 4px;
+}
+.container .container-calculator-1 section .people-number {
+  background-color: hsl(189, 41%, 97%);
+  background-image: url("../images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-size: 4%;
+  background-position: 4%;
+  width: 100%;
+  border-radius: 6px;
+  text-align: right;
+  color: hsl(183, 100%, 15%);
+  height: 30px;
+}
+.container .container-calculator-1 section .people-number::-moz-placeholder {
+  color: hsl(183, 100%, 15%);
+}
+.container .container-calculator-1 section .people-number::placeholder {
+  color: hsl(183, 100%, 15%);
+}
+.container .container-calculator-2 {
+  width: 260px;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 12px;
+  padding: 20px;
+}
+.container .container-calculator-2 .tip-calculation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 90%;
+}
+.container .container-calculator-2 .tip-calculation .tip-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.container .container-calculator-2 .tip-calculation .tip-amount h2 {
+  font-size: 10px;
+  color: hsl(189, 41%, 97%);
+}
+.container .container-calculator-2 .tip-calculation .tip-amount h2 span {
+  display: block;
+  font-size: 7px;
+  color: hsl(184, 14%, 56%);
+}
+.container .container-calculator-2 .tip-calculation .tip-amount-dollar span {
+  font-size: 24px;
+  color: hsl(172, 67%, 45%);
+}
+.container .container-calculator-2 .tip-calculation .total-tip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .container-calculator-2 .tip-calculation .total-tip h2 {
+  font-size: 10px;
+  color: hsl(189, 41%, 97%);
+}
+.container .container-calculator-2 .tip-calculation .total-tip h2 span {
+  display: block;
+  font-size: 7px;
+  color: hsl(184, 14%, 56%);
+}
+.container .container-calculator-2 .tip-calculation .total-tip-dollar span {
+  font-size: 24px;
+  color: hsl(172, 67%, 45%);
+}
+.container .container-calculator-2 button {
+  width: 100%;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 10px;
+  height: 20px;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: hsl(185, 41%, 84%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 620px) {
+  .container .container-calculator-1 {
+    width: 200px;
+  }
+  .container .container-calculator-2 {
+    width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .container .container-calculator {
+    display: block;
+  }
+  .container .container-calculator-1 {
+    width: 260px;
+  }
+  .container .container-calculator-2 {
+    width: 260px;
+  }
+}/*# sourceMappingURL=main.css.map */
