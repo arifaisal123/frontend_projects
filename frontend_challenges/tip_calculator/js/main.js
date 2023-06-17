@@ -1,8 +1,10 @@
 const billInput = document.getElementById("bill");
+const billMessage = document.getElementById("bill-message");
 const gridButtons = document.querySelectorAll(".grid-button");
 const customInput = document.querySelector(".grid-custom");
 const peopleNumberInput = document.getElementById("people-number");
 const zeroInput = document.getElementById("zero"); 
+const LessZeroInput = document.getElementById("less-zero");
 const tipAmountSpan = document.getElementById("tip-amount-dollar");
 const totalAmountSpan = document.getElementById("total-tip-dollar");
 const resetButton = document.querySelector("button");
@@ -14,8 +16,13 @@ let tipAmount;
 let totalAmount;
 
 billInput.addEventListener("change", () => {
-    billValue = billInput.value;
-    calculateTip();
+    if (parseFloat(billInput.value) < 0) {
+      billMessage.style.display = "block";
+    }
+    else {
+      billValue = billInput.value;
+      calculateTip();
+    }
 });
 
 gridButtons.forEach((button) => {
@@ -43,11 +50,19 @@ customInput.addEventListener("input", () => {
 
 peopleNumberInput.addEventListener("change", () => {
     if (peopleNumberInput.value === "0") {
+        LessZeroInput.style.display = "none";
         zeroInput.style.display = "block";
+        peopleNumberInput.style.outlineColor = "rgb(212, 81, 81)";
+    }
+    else if (parseInt(peopleNumberInput.value) < 0) {
+        zeroInput.style.display = "none";
+        LessZeroInput.style.display = "block";
+        peopleNumberInput.style.outlineColor = "rgb(212, 81, 81)";
     }
     else {
         peopleNumber = peopleNumberInput.value;
         calculateTip();
+        LessZeroInput.style.display = "none";
         zeroInput.style.display = "none";
     }
 });
@@ -58,6 +73,8 @@ resetButton.addEventListener("click", () => {
     customInput.value = "";
     peopleNumberInput.value = "";
     zeroInput.style.display = "none";
+    LessZeroInput.style.display = "none";
+    peopleNumberInput.style.outlineColor = "hsl(172, 43%, 64%)";
     billValue = undefined;
     tipPercentage = undefined;
     peopleNumber = undefined;

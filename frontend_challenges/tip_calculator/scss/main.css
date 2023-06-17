@@ -77,6 +77,11 @@ input[type=number]::-webkit-outer-spin-button {
 .container .container-calculator-1 section .bill:hover, .container .container-calculator-1 section .bill:focus {
   outline-color: hsl(172, 43%, 64%);
 }
+.container .container-calculator-1 section #bill-message {
+  display: none;
+  font-size: 11px;
+  color: rgb(212, 81, 81);
+}
 .container .container-calculator-1 section .grid-container {
   display: grid;
   grid-template-rows: repeat(2, 30px);
@@ -160,6 +165,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .container .container-calculator-1 section .people-number:hover, .container .container-calculator-1 section .people-number:focus {
   outline-color: hsl(172, 43%, 64%);
+}
+.container .container-calculator-1 section #less-zero {
+  color: rgb(212, 81, 81);
+  display: none;
 }
 .container .container-calculator-2 {
   width: 260px;

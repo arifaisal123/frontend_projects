@@ -79,7 +79,13 @@ input[type="number"]::-webkit-outer-spin-button {
 
                     &:hover, &:focus {
                         outline-color: hsl(172, 43%, 64%);
-                    }
+                    }  
+                }
+
+                #bill-message {
+                    display: none;
+                    font-size: 11px;
+                    color: rgb(212, 81, 81);
                 }
 
                 .grid-container {
@@ -169,6 +175,11 @@ input[type="number"]::-webkit-outer-spin-button {
                     &:hover, &:focus {
                         outline-color: hsl(172, 43%, 64%);
                     }
+                }
+                
+                #less-zero {
+                    color: rgb(212, 81, 81);
+                    display: none;
                 }
             }            
         }
