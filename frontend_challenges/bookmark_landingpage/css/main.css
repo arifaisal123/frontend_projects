@@ -19,6 +19,22 @@ main .container .row .banner-1::after {
   width: 90%;
   background-color: hsl(231, 69%, 60%);
 }
+main .container .row .banner-2 {
+  position: relative;
+}
+main .container .row .banner-2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  border-top-right-radius: 624.9375rem;
+  border-bottom-right-radius: 624.9375rem;
+  bottom: 3%;
+  right: 15%;
+  height: 74%;
+  width: 90%;
+  background-color: hsl(231, 69%, 60%);
+}
 
 .attribution {
   font-size: 11px;
@@ -46,4 +62,8 @@ main .container .row .banner-1::after {
 
 .btn-shadow {
   box-shadow: 0px 4px 8px hsla(231, 69%, 60%, 0.3);
+}
+
+.fs-2rem {
+  font-size: 2rem;
 }/*# sourceMappingURL=main.css.map */
