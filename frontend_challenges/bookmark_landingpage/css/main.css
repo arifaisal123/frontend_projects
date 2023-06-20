@@ -1,7 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+main .container .row .banner-1 {
+  position: relative;
+}
+main .container .row .banner-1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  border-top-left-radius: 624.9375rem;
+  border-bottom-left-radius: 624.9375rem;
+  bottom: 3%;
+  left: 15%;
+  height: 74%;
+  width: 90%;
+  background-color: hsl(231, 69%, 60%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.color-grayish-blue {
+  color: hsl(229, 8%, 60%);
+}
+
+.bg-soft-blue {
+  background-color: hsl(231, 69%, 60%);
+}
+
+.btn-shadow {
+  box-shadow: 0px 4px 8px hsla(231, 69%, 60%, 0.3);
 }/*# sourceMappingURL=main.css.map */

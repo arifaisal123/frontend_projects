@@ -9,8 +9,8 @@
     <title>Bookmark | Home</title>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-light bg-light">
+    <header>
+      <nav class="navbar navbar-light bg-white">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./images/logo-bookmark.svg" alt="logo" class="d-inline-block align-text-top">
@@ -36,139 +36,175 @@
           </div>
         </div>
       </nav>
-      <div class="row my-4 text-center">
-        <div class="col-12">
-          <img class="w-100" src="./images/illustration-hero.svg" alt="main tablet screen image"/>
-        </div>
-        <div class="col-12">
-          <h1>A Simple Bookmark Manager</h1>
-          <p>A clean and simple interface to organize your favourite websites. Open a new 
-            browser tab and see your sites load instantly. Try it for free.</p>
-        </div>
-        <div class="buttons d-flex justify-content-evenly">
-          <button class="btn btn-primary col-5">Get it on Chrome</button>
-          <button class="btn btn-primary col-5">Get it on Firefox</button>  
-        </div>   
-      </div>
-      <div class="row text-center my-5">
-        <div class="col-12 my-5">
-          <h2>Features</h2>
-          <p>Our aim is to make it quick and easy for you to access your favourite websites. 
-            Your bookmarks sync between your devices so you can access them on the go.</p>
-        </div>        
-      </div>
-      <div class="row">
-        <div class="col-12">Simple Bookmarking</div>
-        <div class="col-12">Speedy Searching</div>
-        <div class="col-12">Easy Sharing</div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <img class="w-100" src="./images/illustration-features-tab-1.svg" alt="bookmarking image"/>
-        </div>
-        <div class="col-12">
-          <h2>Bookmark in one click</h2>
-          <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
-            gives you complete control over how you manage your favourite sites.</p>
-          <button>More Info</button>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row my-4 text-center d-flex justify-content-center">
+          <div class="col-12 banner-1">
+            <img class="w-100" src="./images/illustration-hero.svg" alt="main tablet screen image"/>
+          </div>
+          <div class="col-10 mt-4">
+            <h1 class="fw-500 mb-3">A Simple Bookmark Manager</h1>
+            <p class="color-grayish-blue mb-4">A clean and simple interface to organize your favourite websites. Open a new 
+              browser tab and see your sites load instantly. Try it for free.</p>
+          </div>
+          <div class="buttons d-flex justify-content-evenly">
+            <button class="btn bg-soft-blue text-white btn-shadow col-5 p-3">Get it on Chrome</button>
+            <button class="btn bg-soft-blue text-white btn-shadow col-5 p-3">Get it on Firefox</button>  
+          </div>   
         </div>
       </div>
-      <div class="row d-none">
-        <div class="col-12">
-          <img class="w-100" src="./images/illustration-features-tab-2.svg" alt="Intelligent search"/>
+      <div class="container">
+        <div class="row text-center mt-5 d-flex justify-content-center">
+          <div class="col-10 mt-5 border-bottom border-dark-subtle border-1">
+            <h2>Features</h2>
+            <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+              Your bookmarks sync between your devices so you can access them on the go.</p>
+          </div>        
         </div>
-        <div class="col-12">
-          <h2>Intelligent search</h2>
-          <p>Our powerful search feature will help you find saved sites in no time at all. 
-            No need to trawl through all of your bookmarks.</p>
-          <button>More Info</button>
+        <div class="row text-center d-flex justify-content-center mb-5">
+          <div class="col-10 border-bottom border-dark-subtle border-1"><h3>Simple Bookmarking</h3></div>
+          <div class="col-10 border-bottom border-dark-subtle border-1"><h3>Speedy Searching</h3></div>
+          <div class="col-10 border-bottom border-dark-subtle border-1 mb-5"><h3>Easy Sharing</h3></div>
         </div>
-      </div>
-      <div class="row d-none">
-        <div class="col-12">
-          <img class="w-100" src="./images/illustration-features-tab-3.svg" alt="bookmark sharing"/>
+        <div class="row text-center d-flex justify-content-center mb-5">
+          <div class="col-10">
+            <img class="w-100 mb-4" src="./images/illustration-features-tab-1.svg" alt="bookmarking image"/>
+          </div>
+          <div class="col-10">
+            <h2>Bookmark in one click</h2>
+            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+              gives you complete control over how you manage your favourite sites.</p>
+            <button class="btn btn-primary mb-5">More Info</button>
+          </div>
         </div>
-        <div class="col-12">
-          <h2>Share your bookmarks</h2>
-          <p>Easily share your bookmarks and collections with others. Create a shareable 
-            link that you can send at the click of a button.</p>
-          <button>More Info</button>
+        <div class="row d-none text-center justify-content-center mb-5">
+          <div class="col-10">
+            <img class="w-100 mb-4" src="./images/illustration-features-tab-2.svg" alt="Intelligent search"/>
+          </div>
+          <div class="col-10">
+            <h2>Intelligent search</h2>
+            <p>Our powerful search feature will help you find saved sites in no time at all. 
+              No need to trawl through all of your bookmarks.</p>
+            <button class="btn btn-primary mb-5">More Info</button>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <h2>Download the extension</h2>
-          <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-            got a favourite you’d like us to prioritize.</p>
-        </div>        
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <img src="./images/logo-chrome.svg" alt="chrome icon"/>
-          <h3>Add to Chrome</h3>
-          <p>Minimum version 62</p>
-          <button>Add & Install Extension</button>
-        </div>
-        <div class="col-12">
-          <img src="./images/logo-firefox.svg" alt="firefox icon"/>
-          <h3>Add to Firefox</h3>
-          <p>Minimum version 55</p>
-          <button>Add & Install Extension</button>
-        </div>
-        <div class="col-12">
-          <img src="./images/logo-opera.svg" alt="opera icon"/>
-          <h3>Add to Opera</h3>
-          <p>Minimum version 46</p>
-          <button>Add & Install Extension</button>
+        <div class="row d-none text-center justify-content-center mb-5">
+          <div class="col-10">
+            <img class="w-100 mb-4" src="./images/illustration-features-tab-3.svg" alt="bookmark sharing"/>
+          </div>
+          <div class="col-10">
+            <h2>Share your bookmarks</h2>
+            <p>Easily share your bookmarks and collections with others. Create a shareable 
+              link that you can send at the click of a button.</p>
+            <button class="btn btn-primary mb-5">More Info</button>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <h2>Frequently Asked Questions</h2>
-          <p>Here are some of our FAQs. If you have any other questions you’d like 
-            answered please feel free to email us.</p>
-          <!-- Question 1 -->
-          <p>What is Bookmark?</p>
-          <!-- Answer 1 -->
-          <p class="d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>  
-          <!-- Question 2 -->
-          <p>How can I request a new browser?</p>
-          <!-- Answer 2 -->
-          <p class="d-none">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
-          <!-- Question 3 -->
-          <p>Is there a mobile app?</p>        
-          <!-- Answer 3 -->
-          <p class="d-none">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-            sollicitudin ex et ultricies bibendum.</p>  
-          <!-- Question 4 -->
-          <p>What about other Chromium browsers?</p>
-          <!-- Answer 4 -->
-          <p class="d-none">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-            vitae neque eget nisl gravida pellentesque non ut velit.</p>        
-        <button>More Info</button>
-        </div>      
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <p>35,000+ already joined</p>
-          <h2>Stay up-to-date with what we’re doing</h2>
-          <button>Contact Us</button>
+      <div class="container">
+        <div class="row text-center d-flex justify-content-center mb-5">
+          <div class="col-10">
+            <h2>Download the extension</h2>
+            <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+              got a favourite you’d like us to prioritize.</p>
+          </div>        
+        </div>
+        <div class="row text-center d-flex justify-content-center mb-5">
+          <div class="col-10 border border-dark border-2 mb-5">
+            <img class="my-4" src="./images/logo-chrome.svg" alt="chrome icon"/>
+            <h3>Add to Chrome</h3>
+            <p>Minimum version 62</p>
+            <img src="./images/bg-dots.svg" alt="dots horizontal line"/>
+            <button class="btn btn-primary mb-4">Add & Install Extension</button>
+          </div>
+          <div class="col-10 border border-dark border-2 mb-5">
+            <img class="my-4"  src="./images/logo-firefox.svg" alt="firefox icon"/>
+            <h3>Add to Firefox</h3>
+            <p>Minimum version 55</p>
+            <button class="btn btn-primary mb-4">Add & Install Extension</button>
+          </div>
+          <div class="col-10 border border-dark border-2 mb-5">
+            <img class="my-4" src="./images/logo-opera.svg" alt="opera icon"/>
+            <h3>Add to Opera</h3>
+            <p>Minimum version 46</p>
+            <button class="btn btn-primary mb-4">Add & Install Extension</button>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <img src="./images/logo-bookmark.svg" alt="bookmark logo"/>
-          Features
-          Pricing
-          Contact
+      <div class="container">
+        <div class="row text-center d-flex justify-content-center mb-5">
+          <div class="col-10">
+            <h2>Frequently Asked Questions</h2>
+            <p>Here are some of our FAQs. If you have any other questions you’d like 
+              answered please feel free to email us.</p>
+            <!-- Question 1 -->
+            <div class="d-flex justify-content-between align-items-baseline mt-5">
+              <p>What is Bookmark?</p>
+              <img class="h-100" src="./images/icon-arrow.svg"/>
+            </div>            
+            <!-- Answer 1 -->
+            <div class="border-bottom border-dark-subtle border-1 mb-3">
+              <p class="d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>  
+            </div>
+            <!-- Question 2 -->
+            <div class="d-flex justify-content-between align-items-baseline">
+              <p>How can I request a new browser?</p>
+              <img class="h-100" src="./images/icon-arrow.svg"/>
+            </div>
+            <!-- Answer 2 -->
+            <div class="border-bottom border-dark-subtle border-1 mb-3">
+              <p class="d-none">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+            </div>
+            <!-- Question 3 -->
+            <div class="d-flex justify-content-between align-items-baseline">
+              <p>Is there a mobile app?</p>  
+              <img class="h-100" src="./images/icon-arrow.svg"/>
+            </div>                  
+            <!-- Answer 3 -->
+            <div class="border-bottom border-dark-subtle border-1 mb-3">
+              <p class="d-none">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+              sollicitudin ex et ultricies bibendum.</p> 
+            </div> 
+            <!-- Question 4 -->
+            <div class="d-flex justify-content-between align-items-baseline">
+              <p>What about other Chromium browsers?</p>
+              <img class="h-100" src="./images/icon-arrow.svg"/>
+            </div>
+            <!-- Answer 4 -->
+            <div class="border-bottom border-dark-subtle border-1 mb-4">
+              <p class="d-none">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+              vitae neque eget nisl gravida pellentesque non ut velit.</p>
+            </div>        
+          <button class="btn btn-primary mb-5">More Info</button>
+          </div>      
         </div>
       </div>
-      <footer>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row bg-primary text-center d-flex flex-column justify-content-center align-items-center">
+          <div class="col-10 my-5">
+            <p>35,000+ already joined</p>
+            <h2>Stay up-to-date with what we’re doing</h2>
+            <form action="">
+              <input type="email" class="w-100 my-3"/>
+              <button class="btn btn-danger w-100 mb-3">Contact Us</button>
+            </form>
+          </div>
+        </div>
+        <div class="row bg-warning">
+          <div class="col-12">
+            <img src="./images/logo-bookmark.svg" alt="bookmark logo"/>
+            Features
+            Pricing
+            Contact
+          </div>
+        </div>
         <div class="row">
           <div class="col-12">
             <p class="attribution">
@@ -176,9 +212,9 @@
               Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
             </p>
           </div>
-        </div>       
-      </footer>
-    </div>     
+        </div>   
+      </div>
+    </footer>  
     <script src="./js/bootstrap/bootstrap.bundle.js"></script>
     <script src="./js/custom.js"></script>
   </body>
