@@ -6,3 +6,7 @@ The website currently has the following Google features:
 * Image Search
 * Advanced Search
 * I'm Feeling Lucky
+
+## Screenshot
+
+![](./images/screenshot.png)

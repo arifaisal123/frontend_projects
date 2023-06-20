@@ -3,24 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.css"/>
     <link rel="stylesheet" href="./css/main.css"/>
     <title>Bookmark | Home</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution { font-size: 11px; text-align: center; }
-      .attribution a { color: hsl(228, 45%, 44%); }
-    </style>
   </head>
   <body>
     <div class="container">
       <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./images/logo-bookmark.svg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+            <img src="./images/logo-bookmark.svg" alt="logo" class="d-inline-block align-text-top">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,7 +36,7 @@
           </div>
         </div>
       </nav>
-      <div class="row">
+      <div class="row my-4 text-center">
         <div class="col-12">
           <img class="w-100" src="./images/illustration-hero.svg" alt="main tablet screen image"/>
         </div>
@@ -52,11 +45,13 @@
           <p>A clean and simple interface to organize your favourite websites. Open a new 
             browser tab and see your sites load instantly. Try it for free.</p>
         </div>
-        <button class="btn btn-primary">Get it on Chrome</button>
-        <button class="btn btn-primary">Get it on Firefox</button>        
+        <div class="buttons d-flex justify-content-evenly">
+          <button class="btn btn-primary col-5">Get it on Chrome</button>
+          <button class="btn btn-primary col-5">Get it on Firefox</button>  
+        </div>   
       </div>
-      <div class="row">
-        <div class="col-12">
+      <div class="row text-center my-5">
+        <div class="col-12 my-5">
           <h2>Features</h2>
           <p>Our aim is to make it quick and easy for you to access your favourite websites. 
             Your bookmarks sync between your devices so you can access them on the go.</p>
