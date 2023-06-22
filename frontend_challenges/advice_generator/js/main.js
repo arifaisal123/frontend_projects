@@ -4,7 +4,7 @@ const generatorButton = document.getElementById("generator-button");
 
 async function getData() {
     await fetch("https://api.adviceslip.com/advice") 
-      .then(response => response.json())
+      .then(response => return response.json())
       .then(data => {
         const apiId = data.slip.id;
         const apiAdvice = data.slip.advice;
