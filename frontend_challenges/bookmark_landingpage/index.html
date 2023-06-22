@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-light bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./images/logo-bookmark.svg" alt="logo" class="d-inline-block align-text-top">
@@ -19,18 +19,18 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Features</a>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-500">
+              <li class="nav-item text-uppercase px-3">
+                <a class="nav-link" aria-current="page" href="#">Features</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item text-uppercase px-3">
                 <a class="nav-link" href="#">Pricing</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item text-uppercase px-3 pe-4">
                 <a class="nav-link" href="#">Contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
+              <li class="nav-item text-uppercase px-3 ms-2 bg-soft-red rounded">
+                <a class="nav-link text-white" href="#">Login</a>
               </li>
             </ul>
           </div>
@@ -40,18 +40,18 @@
     <main>
       <div class="container">
         <div class="row my-4 text-center d-flex justify-content-center">
-          <div class="col-12 banner-1">
+          <div class="col-12 col-lg-5 banner-1 order-lg-2">
             <img class="w-100" src="./images/illustration-hero.svg" alt="main tablet screen image"/>
           </div>
-          <div class="col-10 mt-5">
+          <div class="col-10 col-lg-5 order-lg-1 mt-5">
             <h1 class="fw-500 mb-3 fs-2rem">A Simple Bookmark Manager</h1>
             <p class="color-grayish-blue mb-4">A clean and simple interface to organize your favourite websites. Open a new 
               browser tab and see your sites load instantly. Try it for free.</p>
+            <div class="buttons d-flex justify-content-evenly">
+              <button class="btn bg-soft-blue text-white fw-500 btn-shadow col-6 p-2 mx-2">Get it on Chrome</button>
+              <button class="btn bg-grayish-blue text-black fw-500 btn-shadow col-6 p-2 py-3 mx-2">Get it on Firefox</button>  
+            </div>   
           </div>
-          <div class="buttons d-flex justify-content-evenly">
-            <button class="btn bg-soft-blue text-white fw-500 btn-shadow col-5 p-2">Get it on Chrome</button>
-            <button class="btn bg-grayish-blue text-black fw-500 btn-shadow col-5 p-2 py-3">Get it on Firefox</button>  
-          </div>   
         </div>
       </div>
       <div class="container">
@@ -107,22 +107,22 @@
               got a favourite you’d like us to prioritize.</p>
           </div>        
         </div>
-        <div class="row text-center d-flex justify-content-center mb-5">
-          <div class="col-9 border border-white border-2 mb-5 rounded-4 shadow-black">
+        <div class="row text-center d-flex gap-lg-5 justify-content-center mb-5">
+          <div class="col-9 col-lg-3 border border-white border-2 mb-5 rounded-4 shadow-black">
             <img class="mt-5 mb-4 pb-2 w-40" src="./images/logo-chrome.svg" alt="chrome icon"/>
             <h3>Add to Chrome</h3>
             <p class="color-grayish-blue mb-4">Minimum version 62</p>
             <img class="img-fluid col-12" src="./images/bg-dots.svg" alt="dots horizontal line"/>
             <button class="btn bg-soft-blue text-white btn-shadow col-10 p-3 mt-3 mb-5">Add & Install Extension</button>
           </div>
-          <div class="col-9 border border-white border-2 mb-5 rounded-4 shadow-black">
+          <div class="col-9 col-lg-3 border border-white border-2 mb-5 rounded-4 shadow-black">
             <img class="mt-5 mb-4 pb-2 w-40" src="./images/logo-firefox.svg" alt="firefox icon"/>
             <h3>Add to Firefox</h3>
             <p class="color-grayish-blue mb-4">Minimum version 55</p>
             <img class="img-fluid col-12" src="./images/bg-dots.svg" alt="dots horizontal line"/>
             <button class="btn bg-soft-blue text-white btn-shadow col-10 p-3 mt-3 mb-5">Add & Install Extension</button>
           </div>
-          <div class="col-9 border border-white border-2 mb-5 rounded-4 shadow-black">
+          <div class="col-9 col-lg-3 border border-white border-2 mb-5 rounded-4 shadow-black">
             <img class="mt-5 mb-4 pb-2 w-40" src="./images/logo-opera.svg" alt="opera icon"/>
             <h3>Add to Opera</h3>
             <p class="color-grayish-blue mb-4">Minimum version 46</p>
@@ -144,7 +144,7 @@
             </div>            
             <!-- Answer 1 -->
             <div class="border-bottom border-dark-subtle border-1 mb-3">
-              <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+              <p class="d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
               justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>  
             </div>
             <!-- Question 2 -->
@@ -181,7 +181,7 @@
               vitae neque eget nisl gravida pellentesque non ut velit.</p>
             </div>        
             <div class="d-flex justify-content-center">
-              <button class="btn bg-soft-blue text-white btn-shadow col-4 p-3 mt-3 mb-5">More Info</button>
+              <button class="btn bg-soft-blue text-white btn-shadow col-4 col-lg-2 p-3 mt-3 mb-5">More Info</button>
             </div>
           </div>      
         </div>
@@ -193,7 +193,7 @@
           <div class="col-10 my-5">
             <p>35,000+ already joined</p>
             <h2>Stay up-to-date with what we’re doing</h2>
-            <form action="">
+            <form action="" class="">
               <input type="email" class="w-100 my-3 py-3 px-4 color-grayish-blue" placeholder="Enter your email address"/>
               <button class="btn bg-soft-red text-white fw-500 py-3 w-100 mb-3">Contact Us</button>
             </form>

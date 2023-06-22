@@ -95,4 +95,8 @@ main .container .row .banner-2::after {
 .red-marker {
   border: 2px solid hsl(0, 94%, 66%);
   width: 40%;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
