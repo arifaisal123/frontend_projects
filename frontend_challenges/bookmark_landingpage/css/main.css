@@ -3,6 +3,29 @@
   font-family: "Rubik", sans-serif;
 }
 
+header nav .container-fluid #navbarSupportedContent ul #loginButton:hover, header nav .container-fluid #navbarSupportedContent ul #loginButton:active {
+  background-color: #fff;
+  border: 1px solid hsl(0, 94%, 66%) !important;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+header nav .container-fluid #navbarSupportedContent ul #loginButton:hover a, header nav .container-fluid #navbarSupportedContent ul #loginButton:active a {
+  color: hsl(0, 94%, 66%) !important;
+}
+header nav .container-fluid #navbarSupportedContent ul li a:hover, header nav .container-fluid #navbarSupportedContent ul li a:active {
+  color: hsl(0, 94%, 66%) !important;
+  transition: 0.3s ease-in-out;
+}
+
+main .container .row #getChromeButton:hover, main .container .row #getChromeButton:active {
+  border-color: hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%) !important;
+  transition: 0.3s ease-in-out;
+}
+main .container .row #getFirefoxButton:hover {
+  border-color: #000;
+  transition: 0.3s ease-in-out;
+}
 main .container .row .banner-1 {
   position: relative;
 }
@@ -19,21 +42,38 @@ main .container .row .banner-1::after {
   width: 90%;
   background-color: hsl(231, 69%, 60%);
 }
-main .container .row .banner-2 {
+main .container .row div button:hover, main .container .row div button:active {
+  border-color: hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%) !important;
+  transition: 0.3s ease-in-out;
+}
+main .container-fluid #featuresName div h3 {
+  cursor: pointer;
+}
+main .container-fluid #featuresName div h3:hover {
+  color: hsl(0, 94%, 66%);
+  transition: 0.3s ease-in-out;
+}
+main .container-fluid .row .banner-2 {
   position: relative;
 }
-main .container .row .banner-2::after {
+main .container-fluid .row .banner-2::after {
   content: "";
   display: block;
   position: absolute;
   z-index: -1;
   border-top-right-radius: 624.9375rem;
   border-bottom-right-radius: 624.9375rem;
-  bottom: 44%;
-  right: 15%;
-  height: 44%;
+  bottom: -16%;
+  right: 25%;
+  height: 88%;
   width: 100%;
   background-color: hsl(231, 69%, 60%);
+}
+main .container-fluid .row div button:hover, main .container-fluid .row div button:active {
+  border-color: hsl(231, 69%, 60%);
+  color: hsl(231, 69%, 60%) !important;
+  transition: 0.3s ease-in-out;
 }
 
 .attribution {
@@ -56,7 +96,7 @@ main .container .row .banner-2::after {
   color: hsl(229, 8%, 60%);
 }
 
-.bg-grayish-blue {
+.bg-light-grayish-blue {
   background-color: hsl(0, 18%, 97%);
 }
 
@@ -99,4 +139,41 @@ main .container .row .banner-2::after {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  main .container-fluid .row .banner-1::after {
+    bottom: -3%;
+    left: 28%;
+    height: 80%;
+    width: 83%;
+  }
+  main .container-fluid .row .banner-2 {
+    position: relative;
+  }
+  main .container-fluid .row .banner-2::after {
+    bottom: -16%;
+    right: 25%;
+    height: 88%;
+    width: 100%;
+  }
+  .fs-lg-3rem {
+    font-size: 2.5rem;
+  }
+  .fs-lg-1rem {
+    font-size: 1.1rem;
+  }
+  .border-bottom-lg-none {
+    border-bottom: none !important;
+  }
+  .border-bottom-lg-soft-red {
+    border-bottom: 3px solid hsl(0, 94%, 66%) !important;
+    transition: 0.3s ease;
+  }
+  .h-lg-400 {
+    height: 400px;
+  }
+  .h-lg-500 {
+    height: 500px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,12 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
+// Color Variables
+
+$soft-red: hsl(0, 94%, 66%);
+$grayish-blue: hsl(229, 8%, 60%);
+$light-grayish-blue: hsl(0, 18%, 97%);
+$dark-blue: hsl(229, 31%, 21%);
+$soft-blue: hsl(231, 69%, 60%);
+$black: #000;
+$white: #fff;
+$ease-transition: 0.3s ease-in-out;
+
+
 * {
     font-family: 'Rubik', sans-serif;
+}
+
+header {
+    nav {
+        .container-fluid {
+            #navbarSupportedContent {            
+                ul {
+                    #loginButton:hover, #loginButton:active {
+                        background-color: $white;
+                        border: 1px solid $soft-red !important;
+                        cursor: pointer;
+                        transition: $ease-transition;
+
+                        a {
+                            color: $soft-red !important;
+                        }
+                    }
+
+                    li {
+                        a:hover, a:active {
+                            color: $soft-red !important;
+                            transition: $ease-transition;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
 }
 
 main {
     .container {
         .row {
+            #getChromeButton:hover, #getChromeButton:active {
+                border-color: $soft-blue;
+                color: $soft-blue !important;
+                transition: $ease-transition;
+            }
+
+            #getFirefoxButton:hover {
+                border-color: $black;
+                transition: $ease-transition;
+            }
+
             .banner-1 {
                 position: relative;
             }
@@ -22,9 +74,34 @@ main {
                 left: 15%;
                 height: 74%;
                 width: 90%;
-                background-color: hsl(231, 69%, 60%);
+                background-color: $soft-blue;
               }
 
+            div {
+                button:hover, button:active {
+                    border-color: $soft-blue;
+                    color: $soft-blue !important;
+                    transition: $ease-transition;
+                }
+            }
+        }
+    }
+
+    .container-fluid {
+        #featuresName {
+            div {
+                h3 {
+                    cursor: pointer;
+                    
+                    &:hover {
+                        color: $soft-red;
+                        transition: $ease-transition;
+                    }
+                }
+            }
+        }
+
+        .row {
             .banner-2 {
                 position: relative;
             }
@@ -36,23 +113,30 @@ main {
                 z-index: -1;
                 border-top-right-radius: 624.9375rem;
                 border-bottom-right-radius: 624.9375rem;
-                bottom: 44%;
-                right: 15%;
-                height: 44%;
+                bottom: -16%;
+                right: 25%;
+                height: 88%;
                 width: 100%;
-                background-color: hsl(231, 69%, 60%);
+                background-color: $soft-blue;
               }
+            
+            div {
+                button:hover, button:active {
+                    border-color: $soft-blue;
+                    color: $soft-blue !important;
+                    transition: $ease-transition;
+                }
+            }
         }
     }
 }
-
 
 .attribution { 
     font-size: 11px; 
     text-align: center;
     
     a { 
-        color: hsl(0, 94%, 66%);
+        color: $soft-red;
     }
 }
 
@@ -66,19 +150,19 @@ main {
 }
 
 .color-grayish-blue {
-    color: hsl(229, 8%, 60%);
+    color: $grayish-blue;
 }
 
-.bg-grayish-blue {
-    background-color: hsl(0, 18%, 97%);
+.bg-light-grayish-blue {
+    background-color: $light-grayish-blue;
 }
 
 .bg-soft-blue {
-    background-color: hsl(231, 69%, 60%);
+    background-color: $soft-blue;
 }
 
 .bg-soft-red {
-    background-color: hsl(0, 94%, 66%);
+    background-color: $soft-red;
 }
 
 .btn-shadow {
@@ -102,14 +186,69 @@ main {
 }
 
 .bg-dark-blue {
-    background-color: hsl(229, 31%, 21%);
+    background-color: $dark-blue;
 }
 
 .red-marker {
-    border: 2px solid hsl(0, 94%, 66%);
+    border: 2px solid $soft-red;
     width: 40%;
 }
 
 .text-uppercase {
     text-transform: uppercase;
+}
+
+
+// Media query - Large Screen (1200px and above)
+@media screen and (min-width: 1200px) {
+    main {
+        .container-fluid {
+            .row {  
+                .banner-1::after {
+                    bottom: -3%;
+                    left: 28%;
+                    height: 80%;
+                    width: 83%;
+                  }
+
+                .banner-2 {
+                    position: relative;
+                }
+    
+                .banner-2::after {
+                    bottom: -16%;
+                    right: 25%;
+                    height: 88%;
+                    width: 100%;
+                }  
+            }
+        }
+    }
+    
+    // Custom style classes
+
+    .fs-lg-3rem {
+        font-size: 2.5rem;
+    }
+
+    .fs-lg-1rem {
+        font-size: 1.1rem;
+    }
+
+    .border-bottom-lg-none {
+        border-bottom: none !important;
+    }
+
+    .border-bottom-lg-soft-red {
+        border-bottom: 3px solid $soft-red !important;
+        transition: 0.3s ease;
+    }
+
+    .h-lg-400 {
+        height: 400px;
+    }
+
+    .h-lg-500 {
+        height: 500px;
+    }
 }
