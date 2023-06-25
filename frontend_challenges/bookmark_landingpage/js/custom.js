@@ -7,6 +7,9 @@ const carouselItem3 = document.getElementById("carouselItem3");
 const featuresOne = document.getElementById("featuresOneContainer");
 const featuresTwo = document.getElementById("featuresTwoContainer");
 const featuresThree = document.getElementById("featuresThreeContainer");
+const hamburgerMenu = document.getElementById("hamburgerMenu");
+const navbarContent = document.getElementById("navbarSupportedContent");
+const crossButton = document.getElementById("crossButton");
 
 
 bookmarkingButton.addEventListener("click", () => {
@@ -37,4 +40,14 @@ sharingButton.addEventListener("click", () => {
 
     sharingButton.classList.add("border-bottom-soft-red");
     featuresThree.classList.remove("d-none");
+});
+
+hamburgerMenu.addEventListener("click", () => {
+    navbarContent.classList.add("show");
+    navbarContent.classList.add("mobile-menu");
+});
+
+crossButton.addEventListener("click", () => {
+    navbarContent.classList.remove("show");
+    navbarContent.classList.remove("mobile-menu");
 });
