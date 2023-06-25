@@ -44,7 +44,7 @@ main .container .row .banner-1::after {
   bottom: 3%;
   left: 15%;
   height: 74%;
-  width: 90%;
+  width: 95%;
   background-color: hsl(231, 69%, 60%);
 }
 main .container .row div button:hover, main .container .row div button:active {
