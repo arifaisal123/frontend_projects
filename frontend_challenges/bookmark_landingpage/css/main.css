@@ -6,6 +6,7 @@
 header nav .container-fluid button {
   background-color: #fff;
   border-radius: 4px;
+  border-color: rgba(0, 0, 0, 0.2);
 }
 header nav .container-fluid #navbarSupportedContent ul #loginButton:hover, header nav .container-fluid #navbarSupportedContent ul #loginButton:active {
   background-color: #fff;
