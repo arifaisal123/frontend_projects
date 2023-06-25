@@ -47,6 +47,11 @@ main .container .row div button:hover, main .container .row div button:active {
   color: hsl(231, 69%, 60%) !important;
   transition: 0.3s ease-in-out;
 }
+main .container #faqSection div .accordion .accordion-item h2 button:hover, main .container #faqSection div .accordion .accordion-item h2 button:active {
+  border-color: hsl(0, 94%, 66%);
+  color: hsl(0, 94%, 66%) !important;
+  transition: 0.3s ease-in-out;
+}
 main .container-fluid #featuresName div h3 {
   cursor: pointer;
 }
@@ -73,6 +78,22 @@ main .container-fluid .row .banner-2::after {
 main .container-fluid .row div button:hover, main .container-fluid .row div button:active {
   border-color: hsl(231, 69%, 60%);
   color: hsl(231, 69%, 60%) !important;
+  transition: 0.3s ease-in-out;
+}
+
+footer .container-fluid .row div form button:hover, footer .container-fluid .row div form button:active {
+  background-color: #fff !important;
+  color: hsl(0, 94%, 66%) !important;
+  border: 1px solid hsl(0, 94%, 66%) !important;
+  transition: 0.3s ease-in-out;
+}
+footer .container-fluid .row div ul li:hover, footer .container-fluid .row div ul li:active {
+  color: hsl(0, 94%, 66%);
+  cursor: pointer;
+}
+footer .container-fluid .row div svg:hover path {
+  cursor: pointer;
+  fill: hsl(0, 94%, 66%);
   transition: 0.3s ease-in-out;
 }
 
@@ -141,6 +162,10 @@ main .container-fluid .row div button:hover, main .container-fluid .row div butt
   text-transform: uppercase;
 }
 
+.spacing-5 {
+  letter-spacing: 5px;
+}
+
 @media screen and (min-width: 1200px) {
   main .container-fluid .row .banner-1::after {
     bottom: -3%;
@@ -175,5 +200,8 @@ main .container-fluid .row div button:hover, main .container-fluid .row div butt
   }
   .h-lg-500 {
     height: 500px;
+  }
+  .w-lg-25 {
+    width: 25% !important;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -85,6 +85,22 @@ main {
                 }
             }
         }
+
+        #faqSection {
+            div {
+                .accordion {
+                    .accordion-item {
+                        h2 {
+                            button:hover, button:active {
+                                border-color: $soft-red;
+                                color: $soft-red !important;
+                                transition: 0.3s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .container-fluid {
@@ -124,6 +140,36 @@ main {
                 button:hover, button:active {
                     border-color: $soft-blue;
                     color: $soft-blue !important;
+                    transition: $ease-transition;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .container-fluid {
+        .row {
+            div {
+                form {
+                    button:hover, button:active {
+                        background-color: $white !important;
+                        color: $soft-red !important;
+                        border: 1px solid $soft-red !important;
+                        transition: $ease-transition;
+                    }
+                }
+
+                ul {
+                    li:hover, li:active {
+                        color: $soft-red;
+                        cursor: pointer;
+                    }
+                }
+
+                svg:hover path {
+                    cursor: pointer;
+                    fill: $soft-red;
                     transition: $ease-transition;
                 }
             }
@@ -198,6 +244,9 @@ main {
     text-transform: uppercase;
 }
 
+.spacing-5 {
+    letter-spacing: 5px;
+}
 
 // Media query - Large Screen (1200px and above)
 @media screen and (min-width: 1200px) {
@@ -250,5 +299,9 @@ main {
 
     .h-lg-500 {
         height: 500px;
+    }
+
+    .w-lg-25 {
+        width: 25% !important;
     }
 }
