@@ -86,6 +86,25 @@ main .container-fluid .row div button:hover, main .container-fluid .row div butt
   transition: 0.3s ease-in-out;
 }
 
+footer .container-fluid .row div form .emailSettings #emailInput {
+  border-radius: 5px;
+  border-color: transparent;
+  cursor: pointer;
+}
+footer .container-fluid .row div form .emailSettings #emailInput:hover, footer .container-fluid .row div form .emailSettings #emailInput:active {
+  border: 2px solid hsl(0, 94%, 66%) !important;
+}
+footer .container-fluid .row div form .emailSettings .emailErrorMessage {
+  color: black;
+  font-weight: 500;
+  background-color: hsl(0, 94%, 66%);
+  color: #fff;
+  font-style: italic;
+  text-align: left;
+  padding-left: 2%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 footer .container-fluid .row div form button:hover, footer .container-fluid .row div form button:active {
   background-color: #fff !important;
   color: hsl(0, 94%, 66%) !important;
@@ -156,11 +175,6 @@ footer .container-fluid .row div svg:hover path {
 
 .bg-dark-blue {
   background-color: hsl(229, 31%, 21%);
-}
-
-.red-marker {
-  border: 2px solid hsl(0, 94%, 66%);
-  width: 40%;
 }
 
 .text-uppercase {
@@ -247,5 +261,9 @@ footer .container-fluid .row div svg:hover path {
   }
   .w-lg-25 {
     width: 25% !important;
+  }
+  .p-lg-2-5 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 }/*# sourceMappingURL=main.css.map */

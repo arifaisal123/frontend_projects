@@ -15,9 +15,6 @@
           <a class="navbar-brand" href="#">
             <img src="./images/logo-bookmark.svg" alt="logo" class="d-inline-block align-text-top">
           </a>
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
           <button id="hamburgerMenu" class="hamburger-menu d-lg-none">
             <img src="./images/icon-hamburger.svg" alt="hamburger button"/>
           </button>          
@@ -227,9 +224,12 @@
           <div class="col-10 my-5 col-lg-6 d-lg-flex flex-lg-column align-items-lg-center">
             <p class="text-uppercase spacing-5 fw-400">35,000+ already joined</p>
             <h2 class="px-lg-4 col-lg-10">Stay up-to-date with what we’re doing</h2>
-            <form action="" class="d-lg-inline-flex gap-lg-2 align-self-lg-stretch mt-lg-3">
-              <input type="email" class="w-100 my-3 my-lg-0 py-3 py-lg-2 px-4 color-grayish-blue" placeholder="Enter your email address"/>
-              <button class="btn bg-soft-red text-white fw-500 py-3 py-lg-2 w-100 w-lg-25 mb-3 mb-lg-0">Contact Us</button>
+            <form novalidate action="" class="d-lg-flex gap-lg-2 align-self-lg-stretch justify-content-lg-center mt-3">
+              <div class="emailSettings col-lg-9">
+                <input id="emailInput" type="email" class="w-100 my-0 py-3 py-lg-2 px-4 color-grayish-blue" placeholder="Enter your email address"/>
+                <p id="emailErrorMessage" class="emailErrorMessage d-none">Whoops, make sure it's an email</p>
+              </div>              
+              <button id="emailSubmitButton" class="btn bg-soft-red text-white fw-500 py-3 py-lg-2 w-100 w-lg-25 mb-3 p-lg-2-5 mt-3 mt-lg-0">Contact Us</button>
             </form>
           </div>
         </div>

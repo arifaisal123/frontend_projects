@@ -157,6 +157,32 @@ footer {
         .row {
             div {
                 form {
+                    .emailSettings {
+                        #emailInput {
+                            border-radius: 5px;
+                            border-color: transparent;
+                            cursor: pointer;
+                        }
+    
+                        #emailInput:hover, #emailInput:active {
+                            border: 2px solid $soft-red !important;
+                            
+                        }
+    
+                        .emailErrorMessage {
+                            color: black;
+                            font-weight: 500;
+                            background-color: $soft-red;
+                            color: $white;
+                            font-style: italic;
+                            text-align: left;
+                            padding-left: 2%;
+                            border-bottom-left-radius: 5px;
+                            border-bottom-right-radius: 5px;
+
+                        }
+                    }                    
+
                     button:hover, button:active {
                         background-color: $white !important;
                         color: $soft-red !important;
@@ -238,11 +264,6 @@ footer {
 
 .bg-dark-blue {
     background-color: $dark-blue;
-}
-
-.red-marker {
-    border: 2px solid $soft-red;
-    width: 40%;
 }
 
 .text-uppercase {
@@ -343,11 +364,6 @@ footer {
         border-bottom: none !important;
     }
 
-    // .border-bottom-lg-soft-red {
-    //     border-bottom: 3px solid $soft-red !important;
-    //     transition: 0.3s ease;
-    // }
-
     .h-lg-400 {
         height: 400px;
     }
@@ -358,5 +374,10 @@ footer {
 
     .w-lg-25 {
         width: 25% !important;
+    }
+
+    .p-lg-2-5 {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
     }
 }

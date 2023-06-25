@@ -10,6 +10,10 @@ const featuresThree = document.getElementById("featuresThreeContainer");
 const hamburgerMenu = document.getElementById("hamburgerMenu");
 const navbarContent = document.getElementById("navbarSupportedContent");
 const crossButton = document.getElementById("crossButton");
+const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+const emailErrorMessage = document.getElementById("emailErrorMessage");
+const emailSubmitButton = document.getElementById("emailSubmitButton");
+const emailInput = document.getElementById("emailInput");
 
 
 bookmarkingButton.addEventListener("click", () => {
@@ -51,3 +55,19 @@ crossButton.addEventListener("click", () => {
     navbarContent.classList.remove("show");
     navbarContent.classList.remove("mobile-menu");
 });
+
+emailSubmitButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    validateEmail(emailInput.value);
+});
+
+function validateEmail(email) {
+    if (!emailRegex.test(email)) {
+        emailErrorMessage.classList.remove("d-none");
+        emailInput.style.borderWidth = "4px";
+        emailInput.style.borderColor = "hsl(0, 94%, 66%)";
+    } else {
+        emailErrorMessage.classList.add("d-none");
+        this.submit();
+    }
+}
