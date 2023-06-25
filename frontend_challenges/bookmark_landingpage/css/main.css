@@ -166,6 +166,11 @@ footer .container-fluid .row div svg:hover path {
   letter-spacing: 5px;
 }
 
+.border-bottom-soft-red {
+  border-bottom: 4px solid hsl(0, 94%, 66%) !important;
+  transition: 0.3s ease;
+}
+
 @media screen and (min-width: 1200px) {
   main .container-fluid .row .banner-1::after {
     bottom: -3%;
@@ -190,10 +195,6 @@ footer .container-fluid .row div svg:hover path {
   }
   .border-bottom-lg-none {
     border-bottom: none !important;
-  }
-  .border-bottom-lg-soft-red {
-    border-bottom: 3px solid hsl(0, 94%, 66%) !important;
-    transition: 0.3s ease;
   }
   .h-lg-400 {
     height: 400px;

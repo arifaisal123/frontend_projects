@@ -248,6 +248,11 @@ footer {
     letter-spacing: 5px;
 }
 
+.border-bottom-soft-red {
+    border-bottom: 4px solid $soft-red !important;
+    transition: 0.3s ease;
+}
+
 // Media query - Large Screen (1200px and above)
 @media screen and (min-width: 1200px) {
     main {
@@ -288,10 +293,10 @@ footer {
         border-bottom: none !important;
     }
 
-    .border-bottom-lg-soft-red {
-        border-bottom: 3px solid $soft-red !important;
-        transition: 0.3s ease;
-    }
+    // .border-bottom-lg-soft-red {
+    //     border-bottom: 3px solid $soft-red !important;
+    //     transition: 0.3s ease;
+    // }
 
     .h-lg-400 {
         height: 400px;

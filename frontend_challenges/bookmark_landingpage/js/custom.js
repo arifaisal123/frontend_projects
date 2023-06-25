@@ -10,31 +10,31 @@ const featuresThree = document.getElementById("featuresThreeContainer");
 
 
 bookmarkingButton.addEventListener("click", () => {
-    searchingButton.classList.remove("border-bottom-lg-soft-red");
-    sharingButton.classList.remove("border-bottom-lg-soft-red");
+    searchingButton.classList.remove("border-bottom-soft-red");
+    sharingButton.classList.remove("border-bottom-soft-red");
     featuresTwo.classList.add("d-none");
     featuresThree.classList.add("d-none");
 
-    bookmarkingButton.classList.add("border-bottom-lg-soft-red");
+    bookmarkingButton.classList.add("border-bottom-soft-red");
     featuresOne.classList.remove("d-none");
 });
 
 searchingButton.addEventListener("click", () => {
-    sharingButton.classList.remove("border-bottom-lg-soft-red");
-    bookmarkingButton.classList.remove("border-bottom-lg-soft-red");
+    sharingButton.classList.remove("border-bottom-soft-red");
+    bookmarkingButton.classList.remove("border-bottom-soft-red");
     featuresOne.classList.add("d-none");
     featuresThree.classList.add("d-none");
 
-    searchingButton.classList.add("border-bottom-lg-soft-red");
+    searchingButton.classList.add("border-bottom-soft-red");
     featuresTwo.classList.remove("d-none");
 });
 
 sharingButton.addEventListener("click", () => {
-    searchingButton.classList.remove("border-bottom-lg-soft-red");
-    bookmarkingButton.classList.remove("border-bottom-lg-soft-red");
+    searchingButton.classList.remove("border-bottom-soft-red");
+    bookmarkingButton.classList.remove("border-bottom-soft-red");
     featuresOne.classList.add("d-none");
     featuresTwo.classList.add("d-none");
 
-    sharingButton.classList.add("border-bottom-lg-soft-red");
+    sharingButton.classList.add("border-bottom-soft-red");
     featuresThree.classList.remove("d-none");
 });
