@@ -5,6 +5,18 @@
   background-size: 100% 100%;
 }
 
+.apple-background {
+  background-image: url("../images/mobile/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.orange-background {
+  background-image: url("../images/mobile/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -15,6 +27,10 @@
 
 .font-fraunces {
   font-family: "Fraunces", serif;
+}
+
+.spacing-5 {
+  letter-spacing: 5px;
 }
 
 .spacing-8 {
@@ -34,7 +50,7 @@
 }
 
 .color-grayish-blue {
-  color: hsl(232, 10%, 55%);
+  color: hsl(210, 4%, 67%);
 }
 
 .yellow-gradient-button {
@@ -43,4 +59,32 @@
 
 .softred-gradient-button {
   background-image: linear-gradient(hsl(0, 0%, 100%) 50%, hsla(7, 99%, 70%, 0.3));
+}
+
+.color-dark-desaturated-cyan {
+  color: hsl(167, 40%, 24%);
+}
+
+.color-dark-blue {
+  color: hsl(198, 62%, 26%);
+}
+
+.color-dark-grayish-blue {
+  color: hsl(232, 10%, 55%);
+}
+
+.bg-color-dark-light-cyan {
+  background-color: #90D4C5;
+}
+
+.mt-400 {
+  margin-top: 400px;
+}
+
+.h-400 {
+  height: 400px;
+}
+
+.h-600 {
+  height: 600px;
 }/*# sourceMappingURL=main.css.map */
