@@ -93,12 +93,18 @@
   height: 600px;
 }
 
-.mobile-menu {
+.navbar-nav {
   position: fixed;
   top: 80px;
   width: 100%;
   margin: 0 auto;
   background-color: hsl(0, 0%, 100%);
+  transform: translateY(-200%);
+  transition: all 1s ease-in-out !important;
+}
+
+.navbar-nav.open {
+  transform: translateY(0);
 }
 
 .triangle {

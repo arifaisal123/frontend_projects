@@ -105,19 +105,25 @@ $dark-blue: hsl(198, 62%, 26%);
     height: 600px;
 }
 
-.mobile-menu {
+.navbar-nav {
     position: fixed;
     top: 80px;
     width: 100%;
     margin: 0 auto;
     background-color: $white;
+    transform: translateY(-200%);
+    transition: all 1s ease-in-out !important;
+}
+
+.navbar-nav.open {
+    transform: translateY(0);
 }
 
 .triangle {
     width: 0;
     height: 0;
     border-left: 40px solid transparent;
-    border-bottom: 50px solid $white;
+    border-bottom: 50px solid hsl(0, 0%, 100%);
     position: absolute;
     right: 0;
     top: -18%;
