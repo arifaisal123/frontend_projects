@@ -128,4 +128,87 @@ $dark-blue: hsl(198, 62%, 26%);
     position: absolute;
     right: 0;
     top: -18%;
-  }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header-background {
+        background-image: url("../images/desktop/image-header.jpg");
+    }
+
+    .apple-background {
+        background-image: url("../images/desktop/image-graphic-design.jpg");
+    }
+    
+    .orange-background {
+        background-image: url("../images/desktop/image-photography.jpg");
+    }
+
+    .fs-lg-18 {
+        font-size: 18px !important;
+    }
+
+    .fs-lg-20 {
+        font-size: 20px !important;
+    }
+
+    .fs-lg-40 {
+        font-size: 40px !important;
+    }
+
+    .fs-lg-60 {
+        font-size: 60px !important;
+    }
+
+    .px-lg-80 {
+        padding-left: 80px !important;
+        padding-right: 80px !important;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .fs-xxl-20 {
+        font-size: 20px !important;
+    }
+    
+    .fs-xxl-25 {
+        font-size: 25px !important;
+    }
+
+    .fs-xxl-30 {
+        font-size: 30px !important;
+    }
+
+    .fs-xxl-60 {
+        font-size: 60px !important;
+    }
+
+    .fs-xxl-80 {
+        font-size: 80px !important;
+    }
+
+    .mt-xxl-500 {
+        margin-top: 500px;
+    }
+
+    .h-xxl-800 {
+        height: 800px;
+    }
+
+    .h-xxl-1000 {
+        height: 1000px;
+    }
+
+    .px-xxl-100 {
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+    }
+}

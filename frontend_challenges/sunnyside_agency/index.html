@@ -2,26 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="./scss/main.css">
   <title>Sunnyside Agency | Home</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="container-fluid">
-    <div class="row header-background">
+    <div class="row header-background pb-lg-5 h-xxl-1000">
       <header>
         <nav class="navbar navbar-light mt-2">
           <div class="container-fluid">
-            <a class="navbar-brand col-3" href="#">
+            <a class="navbar-brand col-3 col-lg-2" href="#">
               <img class="img-fluid w-100" src="./images/logo.svg" alt="agency logo" width="30" height="24" class="d-inline-block align-text-top">
             </a>
             <button id="toggleButton" class="border-0 bg-transparent" type="button">
@@ -38,9 +31,9 @@
             </div>
           </div>
         </nav>
-        <div class="d-flex flex-column align-items-center my-5 h-400">
-          <h1 class="text-uppercase font-fraunces text-white text-center spacing-8 mt-4 mb-5 display-1">We are creatives</h1>
-          <img class="mt-3 mb-5" src="./images/icon-arrow-down.svg" alt="down arrow">
+        <div class="d-flex flex-column align-items-center my-5 h-400 pt-xxl-5">
+          <h1 class="text-uppercase font-fraunces text-white text-center spacing-8 mt-4 mt-lg-3 mb-5 mb-lg-4 mb-xxl-5 display-1 fs-lg-60 fs-xxl-80 pb-xxl-5">We are creatives</h1>
+          <img class="mt-3 mb-5 mt-xxl-5 pt-xxl-4" src="./images/icon-arrow-down.svg" alt="down arrow">
         </div>        
       </header>
     </div>
@@ -48,69 +41,75 @@
   <main>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 px-0">
-          <img class="w-100 img-fluid" src="./images/mobile/image-transform.jpg" alt="egg photo with yellow background">
+        <div class="col-12 col-lg-6 order-lg-2 px-0">
+          <img class="w-100 img-fluid d-lg-none" src="./images/mobile/image-transform.jpg" alt="egg photo with yellow background">
+          <img class="w-100 img-fluid d-none d-lg-flex" src="./images/desktop/image-transform.jpg" alt="egg photo with yellow background">
         </div>
-        <div class="col-12 d-flex flex-column align-items-center my-5">
-          <h2 class="font-fraunces fw-900 text-center display-4 mb-4 mx-3">Transform your brand</h2>
-          <p class="font-barlow text-center mx-3 color-dark-grayish-blue fs-5 mb-4">We are a full-service creative agency specializing in helping brands grow fast. 
+        <div class="col-12 col-lg-6 order-lg-1 d-flex flex-column align-items-center align-items-lg-start my-5 p-lg-5 px-lg-80">
+          <h2 class="font-fraunces fw-900 text-center text-lg-start display-4 mb-4 mx-3 fs-lg-40 fs-xxl-80 mb-xxl-5">Transform your brand</h2>
+          <p class="font-barlow text-center text-lg-start mx-3 color-dark-grayish-blue fs-5 mb-4 fs-xxl-30 mb-xxl-5">We are a full-service creative agency specializing in helping brands grow fast. 
             Engage your clients through compelling visuals that do most of the marketing for you.</p>
-          <button class="text-uppercase yellow-gradient-button font-fraunces fw-900 rounded border-0">Learn more</button>
+          <button class="text-uppercase yellow-gradient-button font-fraunces fw-900 rounded border-0 mx-lg-3 fs-xxl-20">Learn more</button>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 px-0">
-          <img class="w-100 img-fluid" src="./images/mobile/image-stand-out.jpg" alt="pink cup image">
+        <div class="col-12 col-lg-6 px-0">
+          <img class="w-100 img-fluid d-lg-none" src="./images/mobile/image-stand-out.jpg" alt="pink cup image">
+          <img class="w-100 img-fluid d-none d-lg-flex" src="./images/desktop/image-stand-out.jpg" alt="pink cup image">
         </div>
-        <div class="col-12 d-flex flex-column align-items-center my-5">
-          <h2 class="font-fraunces fw-900 text-center display-4 mb-4 mx-3">Stand out to the right audience</h2>
-          <p class="font-barlow text-center mx-3 color-dark-grayish-blue fs-5 mb-4">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-          <button class="text-uppercase softred-gradient-button font-fraunces fw-900 rounded border-0">Learn more</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 apple-background d-flex flex-column align-items-center h-600">
-          <h2 class="font-fraunces fw-900 text-center display-5 mb-4 mx-3 color-dark-desaturated-cyan mt-400">Graphic design</h2>
-          <p class="font-barlow text-center mx-3 color-dark-desaturated-cyan fs-6 mb-5">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
-        </div>
-        <div class="col-12 orange-background d-flex flex-column align-items-center h-600">
-          <h2 class="font-fraunces fw-900 text-center display-5 mb-4 mx-3 color-dark-blue mt-400">Photography</h2>
-          <p class="font-barlow text-center mx-3 color-dark-blue fs-6 mb-5">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        <div class="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start my-5 p-lg-5 px-lg-80">
+          <h2 class="font-fraunces fw-900 text-center text-lg-start display-4 mb-4 mx-3 fs-lg-40 fs-xxl-80 mb-xxl-5">Stand out to the right audience</h2>
+          <p class="font-barlow text-center text-lg-start mx-3 color-dark-grayish-blue fs-5 mb-4 fs-xxl-30 mb-xxl-5">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+          <button class="text-uppercase softred-gradient-button font-fraunces fw-900 rounded border-0 mx-lg-3 fs-xxl-20">Learn more</button>
         </div>
       </div>
       <div class="row">
-        <h2 class="font-fraunces text-uppercase fs-6 spacing-5 fw-900 color-grayish-blue text-center my-5">Client testimonials</h2>
-        <div class="col-12 d-flex flex-column align-items-center mb-5">
+        <div class="col-12 col-lg-6 apple-background d-flex flex-column align-items-center h-600 h-xxl-800 px-lg-80 px-xxl-100">
+          <h2 class="font-fraunces fw-900 text-center display-5 mb-4 mx-3 color-dark-desaturated-cyan mt-400 mt-xxl-500 fs-lg-40 fs-xxl-60">Graphic design</h2>
+          <p class="font-barlow text-center mx-3 color-dark-desaturated-cyan fs-6 mb-5 fs-xxl-25">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+        <div class="col-12 col-lg-6 orange-background d-flex flex-column align-items-center h-600 h-xxl-800 px-lg-80 px-xxl-100">
+          <h2 class="font-fraunces fw-900 text-center display-5 mb-4 mx-3 color-dark-blue mt-400 mt-xxl-500 fs-lg-40 fs-xxl-60">Photography</h2>
+          <p class="font-barlow text-center mx-3 color-dark-blue fs-6 mb-5 fs-xxl-25">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </div>
+      <div class="row my-lg-5">
+        <h2 class="font-fraunces text-uppercase fs-6 spacing-5 fw-900 color-grayish-blue text-center my-5 fs-xxl-20">Client testimonials</h2>
+        <div class="col-12 col-lg-4 d-flex flex-column align-items-center mb-5 mt-lg-3">
           <img class="rounded-circle w-25" src="./images/image-emily.jpg" alt="image of a customer">
-          <p class="font-barlow text-center my-4 fs-5 color-dark-grayish-blue px-3">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-          <h3 class="font-fraunces fw-900">Emily R.</h3>
+          <p class="font-barlow text-center my-4 fs-5 color-dark-grayish-blue px-3 fs-lg-18 px-xxl-5">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <h3 class="font-fraunces fw-900 fs-lg-20">Emily R.</h3>
           <h4 class="font-barlow color-grayish-blue fs-6">Marketing Director</h4>        
         </div>
-        <div class="col-12 d-flex flex-column align-items-center mt-3 mb-5">
+        <div class="col-12 col-lg-4 d-flex flex-column align-items-center mt-3 mb-5">
           <img class="rounded-circle w-25" src="./images/image-thomas.jpg" alt="image of a customer">
-          <p class="font-barlow text-center my-4 fs-5 color-dark-grayish-blue px-3">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-          <h3 class="font-fraunces fw-900">Thomas S.</h3>
+          <p class="font-barlow text-center my-4 fs-5 color-dark-grayish-blue px-3 fs-lg-18 px-xxl-5">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <h3 class="font-fraunces fw-900 fs-lg-20">Thomas S.</h3>
           <h4 class="font-barlow color-grayish-blue fs-6">Chief Operating Officer</h4>
         </div>
-        <div class="col-12 d-flex flex-column align-items-center mt-3 mb-5">
+        <div class="col-12 col-lg-4 d-flex flex-column align-items-center mt-3 mb-5">
           <img class="rounded-circle w-25" src="./images/image-jennie.jpg" alt="image of a customer">
-          <p class="font-barlow text-center my-4 fs-5 color-dark-grayish-blue px-3">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-          <h3 class="font-fraunces fw-900">Jennie F.</h3>
+          <p class="font-barlow text-center my-4 fs-5 color-dark-grayish-blue px-3 fs-lg-18 px-xxl-5">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <h3 class="font-fraunces fw-900 fs-lg-20">Jennie F.</h3>
           <h4 class="font-barlow color-grayish-blue fs-6">Business Owner</h4>
         </div>
       </div>
       <div class="row">
-        <div class="col-6 px-0">
-          <img class="img-fluid" src="./images/mobile/image-gallery-milkbottles.jpg" alt="milk bottles">
+        <div class="col-6 col-lg-3 px-0">
+          <img class="img-fluid d-lg-none" src="./images/mobile/image-gallery-milkbottles.jpg" alt="milk bottles">
+          <img class="img-fluid d-none d-lg-flex" src="./images/desktop/image-gallery-milkbottles.jpg" alt="milk bottles">
         </div>
-        <div class="col-6 px-0">
-          <img class="img-fluid" src="./images/mobile/image-gallery-orange.jpg" alt="oranges">
+        <div class="col-6 col-lg-3 px-0">
+          <img class="img-fluid d-lg-none" src="./images/mobile/image-gallery-orange.jpg" alt="oranges">
+          <img class="img-fluid d-none d-lg-flex" src="./images/desktop/image-gallery-orange.jpg" alt="oranges">
         </div>
-        <div class="col-6 px-0">
-          <img class="img-fluid" src="./images/mobile/image-gallery-cone.jpg" alt="cones">
+        <div class="col-6 col-lg-3 px-0">
+          <img class="img-fluid d-lg-none" src="./images/mobile/image-gallery-cone.jpg" alt="cones">
+          <img class="img-fluid d-none d-lg-flex" src="./images/desktop/image-gallery-cone.jpg" alt="cones">
         </div>
-        <div class="col-6 px-0">
-          <img class="img-fluid" src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes">
+        <div class="col-6 col-lg-3 px-0">
+          <img class="img-fluid d-lg-none" src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes">
+          <img class="img-fluid d-none d-lg-flex" src="./images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes">
         </div>
       </div>
       <footer>
