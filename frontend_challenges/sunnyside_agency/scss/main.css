@@ -99,7 +99,7 @@
   width: 100%;
   margin: 0 auto;
   background-color: hsl(0, 0%, 100%);
-  z-index: 9999;
+  z-index: 1;
   transform: translateY(-200%);
   transition: all 1s ease-in-out !important;
 }
@@ -124,6 +124,14 @@
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+footer .row div .contacts svg:hover path, footer .row div .contacts svg:active path {
+  fill: #fff;
+  cursor: pointer;
+}
+footer .row div ul li a:hover, footer .row div ul li a:active {
+  color: hsl(0, 0%, 100%);
 }
 
 @media screen and (min-width: 992px) {
@@ -151,6 +159,13 @@
   .px-lg-80 {
     padding-left: 80px !important;
     padding-right: 80px !important;
+  }
+  #contactButton:hover, #contactButton:active {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    cursor: pointer;
+  }
+  #contactButton:hover a, #contactButton:active a {
+    color: hsl(0, 0%, 100%) !important;
   }
 }
 @media screen and (min-width: 1400px) {
