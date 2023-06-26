@@ -77,6 +77,10 @@
   background-color: #90D4C5;
 }
 
+.bg-color-yellow {
+  background-color: hsl(51, 100%, 49%);
+}
+
 .mt-400 {
   margin-top: 400px;
 }
@@ -87,4 +91,22 @@
 
 .h-600 {
   height: 600px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-bottom: 50px solid hsl(0, 0%, 100%);
+  position: absolute;
+  right: 0;
+  top: -18%;
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
 $grayish-blue: hsl(210, 4%, 67%);
 $dark-grayish-blue: hsl(232, 10%, 55%);
+$yellow: hsl(51, 100%, 49%);
 $yellow-gradient: hsla(51, 100%, 49%, 0.3);
 $white: hsl(0, 0%, 100%);
 $soft-red-gradient: hsla(7, 99%, 70%, 0.3);
@@ -88,6 +89,10 @@ $dark-blue: hsl(198, 62%, 26%);
     background-color: $dark-light-cyan;
 }
 
+.bg-color-yellow {
+    background-color: $yellow;
+}
+
 .mt-400 {
     margin-top: 400px;
 }
@@ -99,3 +104,21 @@ $dark-blue: hsl(198, 62%, 26%);
 .h-600 {
     height: 600px;
 }
+
+.mobile-menu {
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $white;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-bottom: 50px solid $white;
+    position: absolute;
+    right: 0;
+    top: -18%;
+  }
