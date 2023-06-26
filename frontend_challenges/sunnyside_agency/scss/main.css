@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+.header-background {
+  background-image: url("../images/mobile/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.font-barlow {
+  font-family: "Barlow", sans-serif;
+}
+
+.font-fraunces {
+  font-family: "Fraunces", serif;
+}
+
+.spacing-8 {
+  letter-spacing: 8px;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.color-grayish-blue {
+  color: hsl(232, 10%, 55%);
+}
+
+.yellow-gradient-button {
+  background-image: linear-gradient(hsl(0, 0%, 100%) 50%, hsla(51, 100%, 49%, 0.3));
+}
+
+.softred-gradient-button {
+  background-image: linear-gradient(hsl(0, 0%, 100%) 50%, hsla(7, 99%, 70%, 0.3));
+}/*# sourceMappingURL=main.css.map */
