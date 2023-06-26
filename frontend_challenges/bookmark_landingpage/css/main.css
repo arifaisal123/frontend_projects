@@ -105,6 +105,9 @@ footer .container-fluid .row div form .emailSettings .emailErrorMessage {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+footer .container-fluid .row div form button {
+  max-height: 50px;
+}
 footer .container-fluid .row div form button:hover, footer .container-fluid .row div form button:active {
   background-color: #fff !important;
   color: hsl(0, 94%, 66%) !important;
