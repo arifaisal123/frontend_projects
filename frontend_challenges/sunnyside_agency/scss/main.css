@@ -99,6 +99,7 @@
   width: 100%;
   margin: 0 auto;
   background-color: hsl(0, 0%, 100%);
+  z-index: 9999;
   transform: translateY(-200%);
   transition: all 1s ease-in-out !important;
 }

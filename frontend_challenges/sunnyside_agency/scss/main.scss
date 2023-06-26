@@ -111,6 +111,7 @@ $dark-blue: hsl(198, 62%, 26%);
     width: 100%;
     margin: 0 auto;
     background-color: $white;
+    z-index: 9999;
     transform: translateY(-200%);
     transition: all 1s ease-in-out !important;
 }
