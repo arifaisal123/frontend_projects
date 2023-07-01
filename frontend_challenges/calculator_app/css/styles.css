@@ -148,6 +148,12 @@
     background-color: hsl(6, 63%, 56%);
 }
 
+.container #calculatorScreen {
+    font-size: 3rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
 .container .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 60px);
