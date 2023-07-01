@@ -140,6 +140,10 @@
     margin-bottom: 24px;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .container .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 60px);
@@ -149,6 +153,7 @@
 }
 
 .container .grid-container .grid-item {
+    cursor: pointer;
     font-weight: 700;
     font-size: 32px;
     display: grid;
@@ -189,4 +194,28 @@
 
 .attribution a { 
     color: hsl(6, 84%, 59%);
+}
+
+@media screen and (min-width: 992px){
+    .w-lg-540 {
+        width: 540px;
+    }
+    
+    .w-lg-600 {
+        width: 600px;
+    }
+
+    .h-lg-128 {
+        height: 128px;
+    }
+
+    .h-lg-500 {
+        height: 500px;
+    }
+
+    .container .grid-container {
+        grid-template-columns: repeat(4, 108px);
+        grid-template-rows: repeat(4, 60px);
+        gap: 20px;
+    }
 }
