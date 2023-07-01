@@ -156,6 +156,7 @@
     justify-items: center;
     border-radius: 5px;
     box-shadow: 0px 4px 0px hsl(28, 16%, 65%);
+    border: 0;
 }
 
 .container .grid-container .item-4 {
