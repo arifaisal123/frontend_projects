@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+* {
+    font-family: 'League Spartan', sans-serif;
+}
+
+.bg-color-main {
+    background-color: hsl(222, 26%, 31%);
+}
+
+.bg-color-toggle {
+    background-color: hsl(223, 31%, 20%);
+}
+
+.bg-color-red {
+    background-color: hsl(6, 63%, 50%);
+}
+
+.w-16 {
+    width: 16px;
+}
+
+.h-16 {
+    height: 16px;
+}
+
+.border-radius-13 {
+    border-radius: 13px;
+}
+
+.border-radius-50 {
+    border-radius: 50%;
+}
+
+.w-71 {
+    width: 71px;
+}
+
+.h-26 {
+    height: 26px;
+}
+
+.w-139 {
+    width: 139px;
+}
+
+.h-42 {
+    height: 42px;
+}
+
+.w-320 {
+    width: 320px;
+}
+
+.h-42 {
+    height: 42px;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
+.spacing-1 {
+    letter-spacing: 1px;
+}
+
+.w-327 {
+    width: 327px;
+}
+
+.h-88 {
+    height: 88px;
+}
+
+.h-420 {
+    height: 420px;
+}
+
+.w-60 {
+    width: 60px;
+}
+
+.h-64 {
+    height: 64px;
+}
+
+.h-532 {
+    height: 532px;
+}
+
+.w-133 {
+    width: 133px;
+}
+
+.w-375 {
+    width: 375px;
+}
+
+.spacing-neg {
+    letter-spacing: -0.53px;
+}
+
+.color-screen-background {
+    background-color: hsl(224, 36%, 15%);
+}
+
+.color-key-background-1 {
+    background-color: #EAE3DC;
+}
+
+.color-key-background-2 {
+    background-color: hsl(225, 21%, 49%);
+}
+
+.color-key-background-3 {
+    background-color: hsl(6, 63%, 50%);
+}
+
+.color-text-dark-grayish-blue {
+    color: hsl(221, 14%, 31%);
+}
+
+.border-radius-10 {
+    border-radius: 10px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.container .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(4, 64px);
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.container .grid-container .grid-item {
+    font-weight: 700;
+    font-size: 32px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 0px hsl(28, 16%, 65%);
+}
+
+.container .grid-container .item-4 {
+    box-shadow: 0px 4px 0px hsl(224, 28%, 35%);
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+}
+
+.container .grid-container .reset {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 20px;
+    box-shadow: 0px 4px 0px hsl(224, 28%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+.container .grid-container .equal-to {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px 4px 0px hsl(6, 70%, 34%);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
