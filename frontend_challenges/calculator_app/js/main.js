@@ -18,6 +18,41 @@ buttons.forEach((button) => {
     button.addEventListener("click", updateScreen);
 });
 
+document.addEventListener("keydown", (event) => {
+    switch(event.key) {
+        case "1":
+            updateScreen(event, source="1");
+            break
+        case "2":
+            updateScreen(event, source="2");
+            break
+        case "3":
+            updateScreen(event, source="3");
+            break
+        case "4":
+            updateScreen(event, source="4");
+            break
+        case "5":
+            updateScreen(event, source="5");
+            break
+        case "6":
+            updateScreen(event, source="6");
+            break
+        case "7":
+            updateScreen(event, source="7");
+            break
+        case "8":
+            updateScreen(event, source="8");
+            break
+        case "9":
+            updateScreen(event, source="9");
+            break
+        case "0":
+            updateScreen(event, source="0");
+            break
+    }
+});
+
 resetButton.addEventListener("click", () => {
     calculatorScreen.textContent = "0";
     isDecimalAdded = false;
@@ -51,8 +86,14 @@ function changeButtonPosition() {
     }
 }
 
-function updateScreen(event) {
-    const buttonTextContent = event.target.textContent;
+function updateScreen(event, source="button") {
+    let buttonTextContent = "";
+    if (source==="button") {
+        buttonTextContent = event.target.textContent;
+    } else {
+        buttonTextContent = source;
+    }
+    
     if (isCalculated === true) {
         calculatorScreen.textContent = "";
         isCalculated = false;
