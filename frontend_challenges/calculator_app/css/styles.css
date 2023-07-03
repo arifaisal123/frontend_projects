@@ -12,6 +12,10 @@
     background-color: hsl(0, 0%, 90%);
 }
 
+.bg-color-main-theme3 {
+    background-color: hsl(268, 75%, 9%);
+}
+
 .bg-color-toggle {
     background-color: hsl(223, 31%, 20%);
 }
@@ -20,12 +24,24 @@
     background-color: hsl(0, 5%, 81%);
 }
 
+.bg-color-toggle-theme3 {
+    background-color: hsl(268, 71%, 12%);
+}
+
 .bg-color-red {
     background-color: hsl(6, 63%, 50%);
 }
 
+.color-red {
+    color: hsl(6, 63%, 50%);
+}
+
 .bg-color-orange {
     background-color: hsl(25, 98%, 40%);
+}
+
+.bg-color-cyan {
+    background-color: hsl(176, 100%, 44%);
 }
 
 .w-16 {
@@ -128,12 +144,28 @@
     background-color: hsl(185, 36%, 48%) !important;
 }
 
+.bg-color-violet-theme3 {
+    background-color: hsl(281, 89%, 26%) !important;
+}
+
 .color-cyan {
-    color: hsl(185, 42%, 37%);
+    color: hsl(185, 42%, 37%) !important;
+}
+
+.color-cyan2 {
+    color: hsl(176, 100%, 44%) !important;
+}
+
+.color-orange {
+    color: hsl(25, 98%, 40%) !important;
 }
 
 .color-theme2-text {
     color: #36362C !important;
+}
+
+.color-theme3-text {
+    color: hsl(52, 100%, 62%) !important;
 }
 
 .color-screen-background {
@@ -144,8 +176,16 @@
     background-color: hsl(0, 5%, 81%);
 }
 
+.color-keypad-background-theme3 {
+    background-color: hsl(268, 71%, 12%);
+}
+
 .color-screen-background-theme2 {
     background-color: hsl(0, 0%, 93%);
+}
+
+.color-screen-background-theme3 {
+    background-color: hsl(268, 71%, 12%);
 }
 
 .color-key-background-1 {
@@ -156,8 +196,12 @@
     background-color: #E5E4E1;
 }
 
+.color-key-background-1-theme3 {
+    background-color: hsl(268, 47%, 21%);
+}
+
 .color-key-background-2 {
-    background-color: hsl(225, 21%, 49%);
+    background-color: hsl(225, 21%, 49%) !important;
 }
 
 .color-key-background-3 {
@@ -214,8 +258,12 @@
     border: 0;
 }
 
-.button-box-shadow {
+.button-box-shadow2 {
     box-shadow: 0px 4px 0px hsl(35, 11%, 61%) !important;
+}
+
+.button-box-shadow3 {
+    box-shadow: 0px 4px 0px hsl(290, 70%, 36%) !important;
 }
 
 .container .grid-container .grid-item:hover {
@@ -278,6 +326,14 @@
     box-shadow: 0px 4px 0px hsl(185, 58%, 25%) !important;
 }
 
+.box-shadow-violet {
+    box-shadow: 0px 4px 0px hsl(285, 91%, 52%) !important;
+}
+
+.button-box-shadow1 {
+    box-shadow: 0px 4px 0px hsl(224, 28%, 35%) !important;
+}
+
 .bg-color-orange-theme2 {
     background-color: hsl(25, 98%, 40%) !important;
 }
@@ -286,8 +342,40 @@
     background-color: hsl(25, 84%, 46%) !important;
 }
 
+.color-key-background-1-theme3-hover {
+    background-color: hsl(268, 42%, 35%) !important;
+}
+
+.bg-color-violet-theme3-hover {
+    background-color: hsl(281, 76%, 36%) !important;
+}
+
+.bg-color-cyan-theme3 {
+    background-color: hsl(176, 100%, 44%) !important;
+}
+
+.bg-color-cyan-theme3-hover {
+    background-color: hsl(176, 100%, 66%) !important;
+}
+
+.color-key-background-1-theme1-hover {
+    background-color: hsl(30, 25%, 95%) !important;
+}
+
+.bg-color-blue-theme1-hover {
+    background-color: hsl(225, 21%, 55%) !important;
+}
+
+.bg-color-red-theme1-hover {
+    background-color: hsl(6, 63%, 56%) !important;
+}
+
 .box-shadow-orange {
     box-shadow: 0px 4px 0px hsl(25, 99%, 27%) !important;
+}
+
+.box-shadow-cyan2 {
+    box-shadow: 0px 4px 0px hsl(177, 92%, 70%) !important;
 }
 
 @media screen and (min-width: 992px){
