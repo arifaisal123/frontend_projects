@@ -126,39 +126,43 @@ function toggleBehavior() {
 
         circleButton.classList.remove("bg-color-red");
         circleButton.classList.add("bg-color-orange");
+        circleButton.addEventListener("mouseenter", () => {
+            circleButton.classList.add("color-orange-hover");
+        });
+        circleButton.addEventListener("mouseleave", () => {
+            circleButton.classList.remove("color-orange-hover");
+        });
 
         calcKeypad.classList.remove("color-screen-background");
         calcKeypad.classList.add("color-keypad-background-theme2");
 
-        calculatorScreen.classList.remove("color-screen-background");
-        calculatorScreen.classList.remove("text-white");
-        calculatorScreen.classList.add("color-screen-background-theme2");
-        calculatorScreen.classList.add("color-theme2-text");
+        calculatorScreen.classList.remove("color-screen-background", "text-white");
+        calculatorScreen.classList.add("color-screen-background-theme2", "color-theme2-text");
 
         gridItems.forEach((item) => {
             item.classList.remove("color-text-dark-grayish-blue", "color-key-background-1");
             item.classList.add("color-theme2-text", "color-key-background-1-theme2", "button-box-shadow2");
         });
 
-        deleteButton.classList.remove("color-key-background-2", "button-box-shadow1");
+        deleteButton.classList.remove("color-key-background-2", "button-box-shadow1", "color-theme2-text");
         deleteButton.classList.add("bg-color-cyan-theme2", "color-white", "box-shadow-cyan");
         deleteButton.addEventListener("mouseenter", () => {
-            deleteButton.classList.add("bg-color-cyan-theme2-hover");
+            deleteButton.style.backgroundColor = "hsl(185, 36%, 48%)";
         });
         deleteButton.addEventListener("mouseleave", () => {
-            deleteButton.classList.remove("bg-color-cyan-theme2-hover");
+            deleteButton.style.backgroundColor = "hsl(185, 42%, 37%)";
         });
 
-        resetButton.classList.remove("color-key-background-2", "button-box-shadow1");
+        resetButton.classList.remove("color-key-background-2", "button-box-shadow1", "color-theme2-text");
         resetButton.classList.add("bg-color-cyan-theme2", "color-white", "box-shadow-cyan");
         resetButton.addEventListener("mouseenter", () => {
-            resetButton.classList.add("bg-color-cyan-theme2-hover");
+            resetButton.style.backgroundColor = "hsl(185, 36%, 48%)";
         });
         resetButton.addEventListener("mouseleave", () => {
-            resetButton.classList.remove("bg-color-cyan-theme2-hover");
+            resetButton.style.backgroundColor = "hsl(185, 42%, 37%)";
         });
 
-        equalButton.classList.remove("color-key-background-3");
+        equalButton.classList.remove("color-key-background-3", "color-theme2-text");
         equalButton.classList.add("bg-color-orange-theme2", "color-white", "box-shadow-orange");
         equalButton.addEventListener("mouseenter", () => {
             equalButton.classList.add("bg-color-orange-theme2-hover");
@@ -167,9 +171,10 @@ function toggleBehavior() {
             equalButton.classList.remove("bg-color-orange-theme2-hover");
         });
 
+        attrText.classList.remove("text-white");
         attrText.classList.add("color-cyan");
         attrLinks.forEach((link) => {
-            link.classList.add("color-orange");
+            link.style.color = "hsl(25, 98%, 40%)";
         });
 
     } else if (toggleButton.classList.contains("justify-content-center")) {
@@ -196,6 +201,12 @@ function toggleBehavior() {
 
         circleButton.classList.remove("bg-color-orange");
         circleButton.classList.add("bg-color-cyan");
+        circleButton.addEventListener("mouseenter", () => {
+            circleButton.classList.add("color-cyan2-hover");
+        });
+        circleButton.addEventListener("mouseleave", () => {
+            circleButton.classList.remove("color-cyan2-hover");
+        });
 
         calcKeypad.classList.remove("color-keypad-background-theme2");
         calcKeypad.classList.add("color-keypad-background-theme3");
@@ -273,6 +284,13 @@ function toggleBehavior() {
 
         circleButton.classList.remove("bg-color-cyan");
         circleButton.classList.add("bg-color-red");
+        circleButton.addEventListener("mouseenter", () => {
+            circleButton.classList.remove("color-cyan2-hover");
+            circleButton.classList.add("bg-color-red-theme1-hover ");
+        });
+        circleButton.addEventListener("mouseleave", () => {
+            circleButton.classList.remove("bg-color-red-theme1-hover");
+        });
 
         calcKeypad.classList.remove("color-keypad-background-theme3");
         calcKeypad.classList.add("color-screen-background");
@@ -285,6 +303,7 @@ function toggleBehavior() {
             item.classList.add("color-text-dark-grayish-blue", "color-key-background-1");
 
             item.addEventListener("mouseenter", () => {
+                item.classList.remove("color-key-background-1-theme3-hover");
                 item.classList.add("color-key-background-1-theme1-hover");
             });
             item.addEventListener("mouseleave", () => {
@@ -292,19 +311,21 @@ function toggleBehavior() {
             });
         });
      
-        deleteButton.classList.remove("bg-color-violet-theme3", "color-white", "box-shadow-violet");
+        deleteButton.classList.remove("bg-color-violet-theme3", "color-white", "box-shadow-violet", "box-shadow-cyan");
         deleteButton.classList.add("color-key-background-2", "button-box-shadow1");
         deleteButton.addEventListener("mouseenter", () => {
-            deleteButton.classList.add("bg-color-blue-theme1-hover");
+            deleteButton.classList.remove("bg-color-violet-theme3-hover");
+            deleteButton.classList.add("color-key-background-1-theme1-hover");
         });
         deleteButton.addEventListener("mouseleave", () => {
             deleteButton.classList.remove("bg-color-blue-theme1-hover");
         });
 
-        resetButton.classList.remove("bg-color-violet-theme3", "color-white", "box-shadow-violet");
+        resetButton.classList.remove("bg-color-violet-theme3", "color-white", "box-shadow-violet", "box-shadow-cyan");
         resetButton.classList.add("color-key-background-2", "button-box-shadow1");
         resetButton.addEventListener("mouseenter", () => {
-            resetButton.classList.add("bg-color-blue-theme1-hover");
+            resetButton.classList.remove("bg-color-violet-theme3-hover");
+            resetButton.classList.add("color-key-background-1-theme1-hover");
         });
         resetButton.addEventListener("mouseleave", () => {
             resetButton.classList.remove("bg-color-blue-theme1-hover");
@@ -313,6 +334,7 @@ function toggleBehavior() {
         equalButton.classList.remove("bg-color-cyan-theme3", "text-black", "box-shadow-cyan2");
         equalButton.classList.add("color-key-background-3");
         equalButton.addEventListener("mouseenter", () => {
+            equalButton.classList.remove("bg-color-cyan-theme3-hover");
             equalButton.classList.add("bg-color-red-theme1-hover");
         });
         equalButton.addEventListener("mouseleave", () => {
@@ -411,7 +433,3 @@ function calculate() {
         calculatorScreen.textContent = "Error";
     }    
 }
-
-function formatNumberWithCommas(number) {
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  }

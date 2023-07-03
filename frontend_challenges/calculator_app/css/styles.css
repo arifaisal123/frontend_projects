@@ -6,7 +6,7 @@
 }
 
 .color-white {
-    color: hsl(0, 0%, 100%) !important;
+    color: hsl(0, 0%, 100%);
 }
 
 /* direct styling */
@@ -52,10 +52,16 @@
     box-shadow: 0px 4px 0px hsl(224, 28%, 35%);
     color: hsl(0, 0%, 100%);
     font-size: 20px;
+    border: 0;
+    border-radius: 5px;
 }
 
-.container .grid-container .item-4:hover {
+.container .grid-container #buttonDel:hover {
     background-color: hsl(225, 21%, 55%);
+}
+
+.container .grid-container #buttonDel:active {
+    margin-top: 2px;
 }
 
 .container .grid-container .reset {
@@ -64,10 +70,16 @@
     font-size: 20px;
     box-shadow: 0px 4px 0px hsl(224, 28%, 35%);
     color: hsl(0, 0%, 100%);
+    border: 0;
+    border-radius: 5px;
 }
 
 .container .grid-container .reset:hover {
     background-color: hsl(225, 21%, 55%);
+}
+
+.container .grid-container .reset:active {
+    margin-top: 2px;
 }
 
 .container .grid-container .equal-to {
@@ -76,10 +88,16 @@
     font-size: 20px;
     color: hsl(0, 0%, 100%);
     box-shadow: 0px 4px 0px hsl(6, 70%, 34%);
+    border: 0;
+    border-radius: 5px;
 }
 
 .container .grid-container .equal-to:hover {
     background-color: hsl(6, 63%, 56%);
+}
+
+.container .grid-container .equal-to:active {
+    margin-top: 2px;
 }
 
 .attribution { 
@@ -196,19 +214,19 @@
 }
 
 .color-key-background-1-theme1-hover {
-    background-color: hsl(30, 25%, 95%) !important;
+    background-color: hsl(30, 25%, 95%);
 }
 
 .bg-color-blue-theme1-hover {
-    background-color: hsl(225, 21%, 55%) !important;
+    background-color: hsl(225, 21%, 55%);
 }
 
 .bg-color-red-theme1-hover {
-    background-color: hsl(6, 63%, 56%) !important;
+    background-color: hsl(6, 63%, 56%);
 }
 
 .box-shadow-orange {
-    box-shadow: 0px 4px 0px hsl(25, 99%, 27%) !important;
+    box-shadow: 0px 4px 0px hsl(25, 99%, 27%);
 }
 
 /* theme-2 */
@@ -229,19 +247,23 @@
 }
 
 .bg-color-cyan-theme2 {
-    background-color: hsl(185, 42%, 37%) !important;
+    background-color: hsl(185, 42%, 37%);
 }
 
 .bg-color-cyan-theme2-hover {
-    background-color: hsl(185, 36%, 48%) !important;
+    background-color: hsl(185, 36%, 48%);
 }
 
 .color-cyan {
-    color: hsl(185, 42%, 37%) !important;
+    color: hsl(185, 42%, 37%);
 }
 
 .color-orange {
-    color: hsl(25, 98%, 40%) !important;
+    color: hsl(25, 98%, 40%);
+}
+
+.color-orange-hover {
+    background-color: hsl(25, 75%, 54%);
 }
 
 .color-theme2-text {
@@ -261,7 +283,7 @@
 }
 
 .button-box-shadow2 {
-    box-shadow: 0px 4px 0px hsl(35, 11%, 61%) !important;
+    box-shadow: 0px 4px 0px hsl(35, 11%, 61%);
 }
 
 .box-shadow-cyan {
@@ -291,6 +313,10 @@
 
 .color-cyan2 {
     color: hsl(176, 100%, 44%) !important;
+}
+
+.color-cyan2-hover {
+    background-color: hsl(176, 83%, 69%) !important;
 }
 
 .color-theme3-text {
