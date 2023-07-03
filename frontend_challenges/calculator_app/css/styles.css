@@ -1,233 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
 
+/* default */
 * {
     font-family: 'League Spartan', sans-serif;
 }
 
-.bg-color-main {
-    background-color: hsl(222, 26%, 31%);
+.color-white {
+    color: hsl(0, 0%, 100%) !important;
 }
 
-.bg-color-main-theme2 {
-    background-color: hsl(0, 0%, 90%);
-}
-
-.bg-color-main-theme3 {
-    background-color: hsl(268, 75%, 9%);
-}
-
-.bg-color-toggle {
-    background-color: hsl(223, 31%, 20%);
-}
-
-.bg-color-toggle-theme2 {
-    background-color: hsl(0, 5%, 81%);
-}
-
-.bg-color-toggle-theme3 {
-    background-color: hsl(268, 71%, 12%);
-}
-
-.bg-color-red {
-    background-color: hsl(6, 63%, 50%);
-}
-
-.color-red {
-    color: hsl(6, 63%, 50%);
-}
-
-.bg-color-orange {
-    background-color: hsl(25, 98%, 40%);
-}
-
-.bg-color-cyan {
-    background-color: hsl(176, 100%, 44%);
-}
-
-.w-16 {
-    width: 16px;
-}
-
-.h-16 {
-    height: 16px;
-}
-
-.border-radius-13 {
-    border-radius: 13px;
-}
-
-.border-radius-50 {
-    border-radius: 50%;
-}
-
-.w-71 {
-    width: 71px;
-}
-
-.h-26 {
-    height: 26px;
-}
-
-.w-139 {
-    width: 139px;
-}
-
-.h-42 {
-    height: 42px;
-}
-
-.w-320 {
-    width: 320px;
-}
-
-.h-42 {
-    height: 42px;
-}
-
-.fw-700 {
-    font-weight: 700;
-}
-
-.fs-12 {
-    font-size: 12px;
-}
-
-.fs-32 {
-    font-size: 32px;
-}
-
-.spacing-1 {
-    letter-spacing: 1px;
-}
-
-.w-327 {
-    width: 327px;
-}
-
-.h-88 {
-    height: 88px;
-}
-
-.h-420 {
-    height: 420px;
-}
-
-.w-60 {
-    width: 60px;
-}
-
-.h-64 {
-    height: 64px;
-}
-
-.h-532 {
-    height: 532px;
-}
-
-.w-133 {
-    width: 133px;
-}
-
-.w-375 {
-    width: 375px;
-}
-
-.spacing-neg {
-    letter-spacing: -0.53px;
-}
-
-.bg-color-cyan-theme2 {
-    background-color: hsl(185, 42%, 37%) !important;
-}
-
-.bg-color-cyan-theme2-hover {
-    background-color: hsl(185, 36%, 48%) !important;
-}
-
-.bg-color-violet-theme3 {
-    background-color: hsl(281, 89%, 26%) !important;
-}
-
-.color-cyan {
-    color: hsl(185, 42%, 37%) !important;
-}
-
-.color-cyan2 {
-    color: hsl(176, 100%, 44%) !important;
-}
-
-.color-orange {
-    color: hsl(25, 98%, 40%) !important;
-}
-
-.color-theme2-text {
-    color: #36362C !important;
-}
-
-.color-theme3-text {
-    color: hsl(52, 100%, 62%) !important;
-}
-
-.color-screen-background {
-    background-color: hsl(224, 36%, 15%);
-}
-
-.color-keypad-background-theme2 {
-    background-color: hsl(0, 5%, 81%);
-}
-
-.color-keypad-background-theme3 {
-    background-color: hsl(268, 71%, 12%);
-}
-
-.color-screen-background-theme2 {
-    background-color: hsl(0, 0%, 93%);
-}
-
-.color-screen-background-theme3 {
-    background-color: hsl(268, 71%, 12%);
-}
-
-.color-key-background-1 {
-    background-color: #EAE3DC;
-}
-
-.color-key-background-1-theme2 {
-    background-color: #E5E4E1;
-}
-
-.color-key-background-1-theme3 {
-    background-color: hsl(268, 47%, 21%);
-}
-
-.color-key-background-2 {
-    background-color: hsl(225, 21%, 49%) !important;
-}
-
-.color-key-background-3 {
-    background-color: hsl(6, 63%, 50%);
-}
-
-.color-text-dark-grayish-blue {
-    color: hsl(221, 14%, 31%);
-}
-
-.border-radius-10 {
-    border-radius: 10px;
-}
-
-.mt-24 {
-    margin-top: 24px;
-}
-
-.mb-24 {
-    margin-bottom: 24px;
-}
-
-.cursor-pointer {
-    cursor: pointer;
-}
-
+/* direct styling */
 .container .row .col-12 .theme-toggler .toggle-num .toggle-button .circle-button:hover {
     background-color: hsl(6, 63%, 56%);
 }
@@ -256,14 +38,6 @@
     border-radius: 5px;
     box-shadow: 0px 4px 0px hsl(28, 16%, 65%);
     border: 0;
-}
-
-.button-box-shadow2 {
-    box-shadow: 0px 4px 0px hsl(35, 11%, 61%) !important;
-}
-
-.button-box-shadow3 {
-    box-shadow: 0px 4px 0px hsl(290, 70%, 36%) !important;
 }
 
 .container .grid-container .grid-item:hover {
@@ -318,44 +92,107 @@
     color: hsl(6, 84%, 59%);
 }
 
-.color-white {
-    color: hsl(0, 0%, 100%) !important;
+/* widths */
+.w-16 {
+    width: 16px;
 }
 
-.box-shadow-cyan {
-    box-shadow: 0px 4px 0px hsl(185, 58%, 25%) !important;
+.w-60 {
+    width: 60px;
 }
 
-.box-shadow-violet {
-    box-shadow: 0px 4px 0px hsl(285, 91%, 52%) !important;
+.w-71 {
+    width: 71px;
+}
+
+.w-133 {
+    width: 133px;
+}
+
+.w-139 {
+    width: 139px;
+}
+
+.w-320 {
+    width: 320px;
+}
+
+.w-327 {
+    width: 327px;
+}
+
+.w-375 {
+    width: 375px;
+}
+
+/* heights */
+.h-16 {
+    height: 16px;
+}
+
+.h-26 {
+    height: 26px;
+}
+
+.h-42 {
+    height: 42px;
+}
+
+.h-64 {
+    height: 64px;
+}
+
+.h-88 {
+    height: 88px;
+}
+
+.h-420 {
+    height: 420px;
+}
+
+.h-532 {
+    height: 532px;
+}
+
+/* theme-1 */
+.bg-color-main {
+    background-color: hsl(222, 26%, 31%);
+}
+
+.bg-color-toggle {
+    background-color: hsl(223, 31%, 20%);
+}
+
+.bg-color-red {
+    background-color: hsl(6, 63%, 50%);
+}
+
+.color-red {
+    color: hsl(6, 63%, 50%);
+}
+
+.color-screen-background {
+    background-color: hsl(224, 36%, 15%);
+}
+
+.color-key-background-1 {
+    background-color: #EAE3DC;
+}
+
+.color-key-background-2 {
+    background-color: hsl(225, 21%, 49%) !important;
+}
+
+.color-key-background-3 {
+    background-color: hsl(6, 63%, 50%);
+}
+
+.color-text-dark-grayish-blue {
+    color: hsl(221, 14%, 31%);
 }
 
 .button-box-shadow1 {
     box-shadow: 0px 4px 0px hsl(224, 28%, 35%) !important;
-}
-
-.bg-color-orange-theme2 {
-    background-color: hsl(25, 98%, 40%) !important;
-}
-
-.bg-color-orange-theme2-hover {
-    background-color: hsl(25, 84%, 46%) !important;
-}
-
-.color-key-background-1-theme3-hover {
-    background-color: hsl(268, 42%, 35%) !important;
-}
-
-.bg-color-violet-theme3-hover {
-    background-color: hsl(281, 76%, 36%) !important;
-}
-
-.bg-color-cyan-theme3 {
-    background-color: hsl(176, 100%, 44%) !important;
-}
-
-.bg-color-cyan-theme3-hover {
-    background-color: hsl(176, 100%, 66%) !important;
 }
 
 .color-key-background-1-theme1-hover {
@@ -374,10 +211,183 @@
     box-shadow: 0px 4px 0px hsl(25, 99%, 27%) !important;
 }
 
+/* theme-2 */
+.bg-color-main-theme2 {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.bg-color-toggle-theme2 {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.bg-color-orange {
+    background-color: hsl(25, 98%, 40%);
+}
+
+.bg-color-cyan {
+    background-color: hsl(176, 100%, 44%);
+}
+
+.bg-color-cyan-theme2 {
+    background-color: hsl(185, 42%, 37%) !important;
+}
+
+.bg-color-cyan-theme2-hover {
+    background-color: hsl(185, 36%, 48%) !important;
+}
+
+.color-cyan {
+    color: hsl(185, 42%, 37%) !important;
+}
+
+.color-orange {
+    color: hsl(25, 98%, 40%) !important;
+}
+
+.color-theme2-text {
+    color: #36362C !important;
+}
+
+.color-keypad-background-theme2 {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.color-screen-background-theme2 {
+    background-color: hsl(0, 0%, 93%);
+}
+
+.color-key-background-1-theme2 {
+    background-color: #E5E4E1;
+}
+
+.button-box-shadow2 {
+    box-shadow: 0px 4px 0px hsl(35, 11%, 61%) !important;
+}
+
+.box-shadow-cyan {
+    box-shadow: 0px 4px 0px hsl(185, 58%, 25%) !important;
+}
+
+.bg-color-orange-theme2 {
+    background-color: hsl(25, 98%, 40%) !important;
+}
+
+.bg-color-orange-theme2-hover {
+    background-color: hsl(25, 84%, 46%) !important;
+}
+
+/* theme-3 */
+.bg-color-main-theme3 {
+    background-color: hsl(268, 75%, 9%);
+}
+
+.bg-color-toggle-theme3 {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.bg-color-violet-theme3 {
+    background-color: hsl(281, 89%, 26%) !important;
+}
+
+.color-cyan2 {
+    color: hsl(176, 100%, 44%) !important;
+}
+
+.color-theme3-text {
+    color: hsl(52, 100%, 62%) !important;
+}
+
+.color-keypad-background-theme3 {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.color-screen-background-theme3 {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.color-key-background-1-theme3 {
+    background-color: hsl(268, 47%, 21%);
+}
+
+.button-box-shadow3 {
+    box-shadow: 0px 4px 0px hsl(290, 70%, 36%) !important;
+}
+
+.box-shadow-violet {
+    box-shadow: 0px 4px 0px hsl(285, 91%, 52%) !important;
+}
+
+.color-key-background-1-theme3-hover {
+    background-color: hsl(268, 42%, 35%) !important;
+}
+
+.bg-color-violet-theme3-hover {
+    background-color: hsl(281, 76%, 36%) !important;
+}
+
+.bg-color-cyan-theme3 {
+    background-color: hsl(176, 100%, 44%) !important;
+}
+
+.bg-color-cyan-theme3-hover {
+    background-color: hsl(176, 100%, 66%) !important;
+}
+
 .box-shadow-cyan2 {
     box-shadow: 0px 4px 0px hsl(177, 92%, 70%) !important;
 }
 
+/* border-radius */
+.border-radius-10 {
+    border-radius: 10px;
+}
+
+.border-radius-13 {
+    border-radius: 13px;
+}
+
+.border-radius-50 {
+    border-radius: 50%;
+}
+
+/* font-size */
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
+/* font-weight */
+.fw-700 {
+    font-weight: 700;
+}
+
+/* spacing */
+.spacing-1 {
+    letter-spacing: 1px;
+}
+
+.spacing-neg {
+    letter-spacing: -0.53px;
+}
+
+/* margins */
+.mt-24 {
+    margin-top: 24px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+/* cursor */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* media queries */
 @media screen and (min-width: 992px){
     .w-lg-540 {
         width: 540px;
