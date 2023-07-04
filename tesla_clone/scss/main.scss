@@ -67,6 +67,7 @@ body {
         z-index: 4;
         height: 100vh;
         overflow-y: scroll;
+        transition: right 0.5s ease-in-out;
 
         &.active {
             right: 0;
@@ -129,7 +130,7 @@ body {
                     background-color: rgba(244, 244, 244, 0.8);
                     color: inherit;
                     padding: 12px 50px;
-                    border-radius: 25px;
+                    border-radius: 6px;
                     text-decoration: none;
                     font-size: 12px;
                     text-transform: uppercase;
