@@ -5,14 +5,6 @@ let level = 0;
 let hasStarted = false;
 let isMobile = false;
 
-$(".btn").on("click", function() {
-    const userChosenColor = $(this).attr("id");
-    userClickedPattern.push(userChosenColor);
-    playSound(userChosenColor);
-    animatePress(userChosenColor);
-    checkAnswer(userClickedPattern.length-1);
-});
-
 $(document).keydown(function() {
     if (!isMobile) {
         startGame();
@@ -24,6 +16,18 @@ $("#level-title-mobile").on("click", function() {
     if (isMobile) {
         startGame();
     }
+});
+
+$(".btn").on("click", function() {
+    const userChosenColor = $(this).attr("id");
+    userClickedPattern.push(userChosenColor);
+    playSound(userChosenColor);
+    animatePress(userChosenColor);
+    checkAnswer(userClickedPattern.length-1);
+});
+
+$("#howToPlay").on("click", function() {
+    $("#gameRules").toggle();
 });
 
 function nextSequence() {
