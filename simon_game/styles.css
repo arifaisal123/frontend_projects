@@ -3,25 +3,33 @@ body {
   background-color: #011F3F;
 }
 
-#level-title {
+#level-title, #level-title-mobile {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
   color: #FEF2BF;
 }
 
+#level-title {
+  display: none;
+}
+
+#level-title-mobile {
+  cursor: pointer;
+  margin-top: 50%;
+}
+
 .container {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 160px;
+  width: 160px;
   border: 10px solid black;
   border-radius: 20%;
   cursor: pointer;
@@ -59,4 +67,14 @@ body {
 
 .attribution a {
   color: orange;
+}
+
+@media (min-width: 992px) {
+  #level-title {
+    display: block;
+  }
+  
+  #level-title-mobile {
+    display: none;
+  }
 }
