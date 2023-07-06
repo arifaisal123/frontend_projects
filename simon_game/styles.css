@@ -3,6 +3,7 @@ body {
   background-color: #011F3F;
 }
 
+/* Title content design */
 #level-title, #level-title-mobile {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
@@ -11,15 +12,18 @@ body {
   color: #FEF2BF;
 }
 
+/* Title for desktop, hidden by default */
 #level-title {
   display: none;
 }
 
+/* Title for mobile */
 #level-title-mobile {
   cursor: pointer;
   margin-top: 50%;
 }
 
+/* How to play button */
 #howToPlay {
   font-family: 'Press Start 2P', cursive;
   color: #FEF2BF;
@@ -27,11 +31,13 @@ body {
   cursor: pointer;
 }
 
+/* Game rules list, hidden by default */
 #gameRules {
   display: none;
   list-style: none;
 }
 
+/* Individual bullet points in game rules list */
 #gameRules li {
   font-family: 'Press Start 2P', cursive;
   font-size: 0.8rem;
@@ -39,12 +45,14 @@ body {
   padding-bottom: 20px;
 }
 
+/* Game blocks container */
 .container {
   display: block;
   width: 50%;
   margin: auto;
 }
 
+/* Game buttons */
 .btn {
   margin: 25px;
   display: inline-block;
@@ -55,32 +63,39 @@ body {
   cursor: pointer;
 }
 
+/* Game over background color */
 .game-over {
   background-color: red;
   opacity: 0.8;
 }
 
+/* Red button color */
 .red {
   background-color: red;
 }
 
+/* Green button color */
 .green {
   background-color: green;
 }
 
+/* Blue button color */
 .blue {
   background-color: blue;
 }
 
+/* Yellow button color */
 .yellow {
   background-color: yellow;
 }
 
+/* Style effect when a button is pressed */
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
 
+/* Attribution design */
 .attribution {
   color: #fff;
 }
@@ -89,6 +104,7 @@ body {
   color: orange;
 }
 
+/* Media queries for larger screens */
 @media (min-width: 992px) {
   #level-title {
     display: block;
