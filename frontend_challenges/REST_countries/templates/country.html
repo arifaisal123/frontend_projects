@@ -5,30 +5,48 @@
 {% endblock %}
 
 {% block main %}
-<button>Back</button>
-<div class="row">
-    <div class="col-6">
-        <img src="{{ country_data['flags']['svg'] }}" alt="country flag">
-    </div>
-    <div class="col-6">
-        <h1>{{ country_data["name"] }}</h1>
-        <p><strong>Native Name:</strong> {{ country_data["nativeName"] }}</p>
-        <p><strong>Population:</strong> {{ country_data["population"] }}</p>
-        <p><strong>Region:</strong> {{ country_data["region"] }}</p>
-        <p><strong>Sub Region:</strong> {{ country_data["subregion"] }}</p>
-        <p><strong>Capital:</strong> {{ country_data["capital"] }}</p>
-        <p><strong>Top Level Domain:</strong> {{ country_data["topLevelDomain"][0] }}</p>
-        <p><strong>Currencies:</strong> {{ country_data["currencies"]["name"] }}</p>
-        <p><strong>Languages:</strong>
-            {% for language in country_data["languages"] %} 
-                {{ language["name"] }}
-            {% endfor %}
-        </p>
-        <p><strong>Border Countries: </strong>
-            {% for border in country_data["borders"] %}
-                <button>{{ country_data["alpha3Code"] == border }}</button>
-            {% endfor %}
-        </p>
+<div class="container">
+    <a href="/"><button class="back-button bg-white border-0 shadow p-2 ps-5 pe-4 mb-5 bg-body rounded custom-box-shadow2 fw-300 mt-3">Back</button></a>
+    <div class="row">
+        <div class="col-12">
+            <img src="{{ country_data['flags']['svg'] }}" alt="country flag" class="img-fluid">
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <h1 class="fs-2 fw-800 mt-5 my-4">{{ country_data["name"] }}</h1>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p><strong>Native Name:</strong> {{ country_data["nativeName"] }}</p>
+                    <p><strong>Population:</strong> {{ '{0:,}'.format(country_data["population"]) }}</p>
+                    <p><strong>Region:</strong> {{ country_data["region"] }}</p>
+                    <p><strong>Sub Region:</strong> {{ country_data["subregion"] }}</p>
+                    <p><strong>Capital:</strong> {{ country_data["capital"] }}</p>
+                </div>
+                <div class="col-12 mt-4">
+                    <p><strong>Top Level Domain:</strong> {{ country_data["topLevelDomain"][0] }}</p>
+                    <p><strong>Currencies:</strong> {{ country_data["currencies"][0]["name"] }}</p>
+                    <p><strong>Languages:</strong>
+                        {% for language in country_data["languages"] %} 
+                            {{ language["name"] }}{% if not loop.last %},{% endif %}
+                        {% endfor %}
+                    </p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 mt-4">
+                    <p><strong>Border Countries: </strong>
+                        {% for border in country_data["borders"] %}
+                            {% for country in data %}
+                                {% if border == country["alpha3Code"] %}
+                                    <button class="border-0 px-3 mx-1 my-1 bg-light-purple rounded">{{ country["name"] }}</button>
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}

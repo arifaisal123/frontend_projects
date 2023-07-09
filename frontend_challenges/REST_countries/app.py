@@ -24,6 +24,6 @@ def country_info(country):
               break
     
     if country_data:
-         return render_template("country.html", country_data=country_data)
+         return render_template("country.html", country_data=country_data, data=data)
     else:
          return "Country not found."

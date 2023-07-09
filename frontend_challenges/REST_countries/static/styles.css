@@ -8,6 +8,10 @@
     height: 15px !important;
 }
 
+.fs-10px {
+    font-size: 12px;
+}
+
 .fw-300 {
     font-weight: 300;
 }
@@ -40,5 +44,19 @@
     background-repeat: no-repeat;
     background-position: 200px center;
     background-size: 10px 10px;
-    padding-right: 20px;
+}
+
+.back-button {
+    background-image: url("./left-arrow.png");
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    background-size: 20px 20px;
+}
+
+.custom-box-shadow2 {
+    box-shadow: 0 0 1rem 0.3rem rgba(0, 0, 0, 0.15)!important;
+}
+
+.bg-light-purple {
+    background-color: rgb(221, 214, 253);
 }
