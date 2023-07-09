@@ -8,6 +8,10 @@
     height: 15px !important;
 }
 
+.h-180px {
+    height: 180px !important;
+}
+
 .fs-10px {
     font-size: 12px;
 }
@@ -59,4 +63,15 @@
 
 .bg-light-purple {
     background-color: rgb(221, 214, 253);
+}
+
+@media (min-width: 992px) {
+    .region-filter-input {
+        background-position: 92% center;
+    }
+    
+    .flag-size-lg {
+        width: 500px !important;
+        height: 300px !important;
+    }
 }

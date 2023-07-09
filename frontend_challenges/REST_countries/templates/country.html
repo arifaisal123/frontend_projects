@@ -8,22 +8,22 @@
 <div class="container">
     <a href="/"><button class="back-button bg-white border-0 shadow p-2 ps-5 pe-4 mb-5 bg-body rounded custom-box-shadow2 fw-300 mt-3">Back</button></a>
     <div class="row">
-        <div class="col-12">
-            <img src="{{ country_data['flags']['svg'] }}" alt="country flag" class="img-fluid">
+        <div class="col-12 col-lg-5 me-lg-5 mt-lg-4">
+            <img src="{{ country_data['flags']['png'] }}" alt="country flag" class="img-fluid flag-size-lg">
         </div>
-        <div class="col-12">
+        <div class="col-12 col-lg-6">
             <div class="row">
-                <h1 class="fs-2 fw-800 mt-5 my-4">{{ country_data["name"] }}</h1>
+                <h1 class="fs-2 fw-800 mt-5 mt-lg-0 my-4">{{ country_data["name"] }}</h1>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-lg-6">
                     <p><strong>Native Name:</strong> {{ country_data["nativeName"] }}</p>
                     <p><strong>Population:</strong> {{ '{0:,}'.format(country_data["population"]) }}</p>
                     <p><strong>Region:</strong> {{ country_data["region"] }}</p>
                     <p><strong>Sub Region:</strong> {{ country_data["subregion"] }}</p>
                     <p><strong>Capital:</strong> {{ country_data["capital"] }}</p>
                 </div>
-                <div class="col-12 mt-4">
+                <div class="col-12 col-lg-6 mt-4">
                     <p><strong>Top Level Domain:</strong> {{ country_data["topLevelDomain"][0] }}</p>
                     <p><strong>Currencies:</strong> {{ country_data["currencies"][0]["name"] }}</p>
                     <p><strong>Languages:</strong>
