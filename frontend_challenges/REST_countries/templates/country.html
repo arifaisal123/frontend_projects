@@ -39,7 +39,7 @@
                         {% for border in country_data["borders"] %}
                             {% for country in data %}
                                 {% if border == country["alpha3Code"] %}
-                                    <button class="border-0 px-3 mx-1 my-1 bg-light-purple rounded">{{ country["name"] }}</button>
+                                    <button class="border-0 px-3 mx-1 my-1 bg-light-purple rounded"><a href="/{{ country['name'] }}" class="text-decoration-none text-color-black">{{ country["name"] }}</a></button>
                                 {% endif %}
                             {% endfor %}
                         {% endfor %}
