@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ country_data["name"] }}
+{% endblock %}
+
+{% block main %}
+<button>Back</button>
+<div class="row">
+    <div class="col-6">
+        <img src="{{ country_data['flags']['svg'] }}" alt="country flag">
+    </div>
+    <div class="col-6">
+        <h1>{{ country_data["name"] }}</h1>
+        <p><strong>Native Name:</strong> {{ country_data["nativeName"] }}</p>
+        <p><strong>Population:</strong> {{ country_data["population"] }}</p>
+        <p><strong>Region:</strong> {{ country_data["region"] }}</p>
+        <p><strong>Sub Region:</strong> {{ country_data["subregion"] }}</p>
+        <p><strong>Capital:</strong> {{ country_data["capital"] }}</p>
+        <p><strong>Top Level Domain:</strong> {{ country_data["topLevelDomain"][0] }}</p>
+        <p><strong>Currencies:</strong> {{ country_data["currencies"]["name"] }}</p>
+        <p><strong>Languages:</strong>
+            {% for language in country_data["languages"] %} 
+                {{ language["name"] }}
+            {% endfor %}
+        </p>
+        <p><strong>Border Countries: </strong>
+            {% for border in country_data["borders"] %}
+                <button>{{ country_data["alpha3Code"] == border }}</button>
+            {% endfor %}
+        </p>
+    </div>
+</div>
+{% endblock %}

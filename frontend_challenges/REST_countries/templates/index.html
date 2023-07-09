@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <div class="row">
+        <div class="col-3">
+            <input type="text">
+        </div>
+        <div class="col-2">
+            <input type="text">
+        </div>
+    </div>
+    <div class="row">
+        {% for item in data %}
+        <a class="col-3" href="/{{ item['name'] }}">
+            <div class="card" style="width: 18rem;">
+                <img src="{{ item['flag'] }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">{{ item["name"] }}</h5>
+                <p><strong>Population:</strong> {{ item["population"] }}</p>
+                <p><strong>Region:</strong> {{ item["region"] }}</p>
+                <p><strong>Capital</strong> {{ item["capital"] }}</p>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+{% endblock %}
