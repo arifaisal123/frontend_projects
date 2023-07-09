@@ -65,6 +65,16 @@
     background-color: rgb(221, 214, 253);
 }
 
+a:hover { 
+    color: black;
+}
+
+.country-card:hover {
+    border: 2px solid black;
+    color: black;
+    transition: 0.1s ease;
+}
+
 @media (min-width: 992px) {
     .region-filter-input {
         background-position: 92% center;
