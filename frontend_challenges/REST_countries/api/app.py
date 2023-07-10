@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Ensure templates are auto-reloaded
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
-with open("data.json", encoding="UTF-8") as file:
+with open("../data.json", encoding="UTF-8") as file:
         data = json.load(file)
 
 @app.route("/")

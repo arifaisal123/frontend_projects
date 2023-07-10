@@ -1699,7 +1699,7 @@
     "independent": true
   },
   {
-    "name": "Bolivia (Plurinational State of)",
+    "name": "Bolivia",
     "topLevelDomain": [".bo"],
     "alpha2Code": "BO",
     "alpha3Code": "BOL",
@@ -1788,7 +1788,7 @@
     "independent": true
   },
   {
-    "name": "Bonaire, Sint Eustatius and Saba",
+    "name": "Bonaire",
     "topLevelDomain": [".an", ".nl"],
     "alpha2Code": "BQ",
     "alpha3Code": "BES",
@@ -2135,7 +2135,7 @@
     "independent": true
   },
   {
-    "name": "British Indian Ocean Territory",
+    "name": "British Indian Ocean",
     "topLevelDomain": [".io"],
     "alpha2Code": "IO",
     "alpha3Code": "IOT",
@@ -2200,7 +2200,7 @@
     "independent": true
   },
   {
-    "name": "United States Minor Outlying Islands",
+    "name": "US Minor Outlying Islands",
     "topLevelDomain": [".us"],
     "alpha2Code": "UM",
     "alpha3Code": "UMI",
@@ -3624,7 +3624,7 @@
     "independent": true
   },
   {
-    "name": "Congo (Democratic Republic of the)",
+    "name": "Congo (Republic)",
     "topLevelDomain": [".cd"],
     "alpha2Code": "CD",
     "alpha3Code": "COD",
@@ -5024,7 +5024,7 @@
     "independent": true
   },
   {
-    "name": "Falkland Islands (Malvinas)",
+    "name": "Falkland Islands",
     "topLevelDomain": [".fk"],
     "alpha2Code": "FK",
     "alpha3Code": "FLK",
@@ -5497,7 +5497,7 @@
     "independent": false
   },
   {
-    "name": "French Southern Territories",
+    "name": "French Southern",
     "topLevelDomain": [".tf"],
     "alpha2Code": "TF",
     "alpha3Code": "ATF",
@@ -6669,7 +6669,7 @@
     "independent": true
   },
   {
-    "name": "Heard Island and McDonald Islands",
+    "name": "Heard and McDonald",
     "topLevelDomain": [".hm", ".aq"],
     "alpha2Code": "HM",
     "alpha3Code": "HMD",
@@ -8236,7 +8236,7 @@
     "independent": true
   },
   {
-    "name": "Lao People's Democratic Republic",
+    "name": "Laos",
     "topLevelDomain": [".la"],
     "alpha2Code": "LA",
     "alpha3Code": "LAO",
@@ -9800,7 +9800,7 @@
     "independent": true
   },
   {
-    "name": "Micronesia (Federated States of)",
+    "name": "Micronesia",
     "topLevelDomain": [".fm"],
     "alpha2Code": "FM",
     "alpha3Code": "FSM",
@@ -11082,7 +11082,7 @@
     "independent": false
   },
   {
-    "name": "Korea (Democratic People's Republic of)",
+    "name": "North Korea",
     "topLevelDomain": [".kp"],
     "alpha2Code": "KP",
     "alpha3Code": "PRK",
@@ -12629,7 +12629,7 @@
     "independent": false
   },
   {
-    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "name": "Saint Helena",
     "topLevelDomain": [".sh"],
     "alpha2Code": "SH",
     "alpha3Code": "SHN",
@@ -12946,7 +12946,7 @@
     "independent": false
   },
   {
-    "name": "Saint Vincent and the Grenadines",
+    "name": "Saint Vincent",
     "topLevelDomain": [".vc"],
     "alpha2Code": "VC",
     "alpha3Code": "VCT",
@@ -14076,7 +14076,7 @@
     "independent": true
   },
   {
-    "name": "South Georgia and the South Sandwich Islands",
+    "name": "South Georgia",
     "topLevelDomain": [".gs"],
     "alpha2Code": "GS",
     "alpha3Code": "SGS",
@@ -15999,7 +15999,7 @@
     "independent": true
   },
   {
-    "name": "United Kingdom of Great Britain and Northern Ireland",
+    "name": "United Kingdom",
     "topLevelDomain": [".uk"],
     "alpha2Code": "GB",
     "alpha3Code": "GBR",

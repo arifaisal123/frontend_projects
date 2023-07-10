@@ -37,21 +37,29 @@
 }
 
 .country-search-input {
-    background-image: url("./search.png");
+    background-image: url("./search-light.png");
     background-repeat: no-repeat;
-    background-position: 10px center;
+    background-position: 15px center;
     background-size: 20px 20px;
 }
 
+.country-search-input-light::placeholder {
+    color: #212529;
+}
+
+.country-search-input-dark::placeholder {
+    color: hsl(0, 0%, 100%);
+}
+
 .region-filter-input {
-    background-image: url("./down-arrow.png");
+    background-image: url("./down-arrow-light.png");
     background-repeat: no-repeat;
     background-position: 200px center;
     background-size: 10px 10px;
 }
 
 .back-button {
-    background-image: url("./left-arrow.png");
+    background-image: url("./left-arrow-light.png");
     background-repeat: no-repeat;
     background-position: 15px center;
     background-size: 20px 20px;
@@ -65,14 +73,48 @@
     background-color: rgb(221, 214, 253);
 }
 
-a:hover { 
-    color: black;
+a {
+    text-decoration: none;
 }
 
-.country-card:hover {
-    border: 2px solid black;
+a:hover { 
     color: black;
+    text-decoration: underline;
+}
+
+.country-card-light:hover {
+    border: 2px solid black;
     transition: 0.1s ease;
+}
+
+.country-card-dark:hover {
+    border: 2px solid #fff;
+    transition: 0.1s ease;
+}
+
+.toggle-button {
+    cursor: pointer;
+}
+
+.bg-dark-mode-element {
+    background-color: hsl(209, 23%, 22%) !important;
+}
+
+.bg-dark-mode-body {
+    background-color: hsl(207, 26%, 17%) !important;
+}
+
+.dark-mode-text {
+    color: hsl(0, 0%, 100%) !important;
+}
+
+.color-orange {
+    color: orangered;
+}
+
+.color-orange:hover {
+    color: rgb(227, 107, 64);
+    text-decoration: underline;
 }
 
 @media (min-width: 992px) {
