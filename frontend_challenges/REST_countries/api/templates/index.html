@@ -11,19 +11,19 @@
                 <input type="text" class="form-control shadow p-3 mb-4 bg-body rounded custom-box-shadow1 border-0 country-search-input ps-5" placeholder="Search for a country...">
             </div>
             <div class="col-8 col-lg-3 my-2">
-                <select name="" id="" class="form-control p-3 mb-4 mt-lg-0 shadow bg-body rounded custom-box-shadow1 border-0 fw-600 region-filter-input">
-                    <option disabled selected value="">Filter by Region</option>
-                    <option value="africa">Africa</option>
-                    <option value="america">America</option>
-                    <option value="asia">Asia</option>
-                    <option value="europe">Europe</option>
-                    <option value="oceania">Oceania</option>
+                <select name="" id="region-filter" class="form-control p-3 mb-4 mt-lg-0 shadow bg-body rounded custom-box-shadow1 border-0 fw-600 region-filter-input">
+                    <option selected value="">Filter by Region</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Americas">America</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
                 </select>
             </div>
         </div>
-        <div class="row mt-lg-3">
+        <div class="row filter-container mt-lg-3">
             {% for item in data %}
-            <a class="col-12 col-lg-3 px-0 text-decoration-none text-color-black" href="/{{ item['name'] }}">
+            <a class="col-12 col-lg-3 px-0 text-decoration-none text-color-black main-data-link" href="/{{ item['name'] }}">
                 <div class="card mx-auto mb-5 country-card country-card-light" style="width: 18rem;">
                     <div class="flag-img">
                         <img src="{{ item['flags']['png'] }}" class="card-img-top h-180px" alt="country flags">

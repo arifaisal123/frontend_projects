@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 import json
 
 # Configure application
@@ -10,9 +10,11 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 with open("../data.json", encoding="UTF-8") as file:
         data = json.load(file)
 
+
 @app.route("/")
 def index():
     return render_template("index.html", data=data)
+
 
 @app.route("/<country>")
 def country_info(country):
@@ -27,3 +29,16 @@ def country_info(country):
          return render_template("country.html", country_data=country_data, data=data)
     else:
          return "Country not found."
+
+
+@app.route("/filter")
+def filter_data():
+    selected_region = request.args.get("region")
+    filtered_data = [item for item in data if item['region'] == selected_region]
+
+    return jsonify({"filtered_data": filtered_data})
+
+
+if __name__ == "__main__":
+  app.run
+  
