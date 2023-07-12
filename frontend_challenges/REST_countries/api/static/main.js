@@ -38,6 +38,7 @@ $(".toggle-button").on("click", function() {
 });
 
 
+// $("#region-filter").on("change", function() {
 $("#region-filter").on("change", function() {
     const selectedRegion = $("#region-filter").val();
 
@@ -49,6 +50,7 @@ $("#region-filter").on("change", function() {
         $(".filter-asia").addClass("d-none");
         $(".filter-europe").addClass("d-none");
         $(".filter-oceania").addClass("d-none");
+        $(".custom-country").addClass("d-none");
     } else if (selectedRegion === "Africa") {
         // When Africa is selected
         if ($(".layout-container").hasClass("dark-mode")) {                                      // Dark mode 
@@ -62,6 +64,7 @@ $("#region-filter").on("change", function() {
                 $(".filter-asia").addClass("d-none");
                 $(".filter-europe").addClass("d-none");
                 $(".filter-oceania").addClass("d-none");
+                $(".custom-country").addClass("d-none");
                 filteredData.forEach((item, index) => {
                     const html = `<a class="filter-africa col-12 col-lg-3 px-0 text-decoration-none text-color-black filtered-data-link" href="/${item.name}">
                                     <div class="card mx-auto mb-5 country-card dark-mode bg-dark-mode-element dark-mode-text country-card-dark" style="width: 18rem;">
@@ -93,6 +96,7 @@ $("#region-filter").on("change", function() {
                 $(".filter-asia").addClass("d-none");
                 $(".filter-europe").addClass("d-none");
                 $(".filter-oceania").addClass("d-none");
+                $(".custom-country").addClass("d-none");
                 filteredData.forEach((item, index) => {
                     const html = `<a class="filter-africa col-12 col-lg-3 px-0 text-decoration-none text-color-black filtered-data-link" href="/${item.name}">
                                     <div class="card mx-auto mb-5 country-card country-card-light" style="width: 18rem;">
@@ -127,6 +131,7 @@ $("#region-filter").on("change", function() {
                 $(".filter-asia").addClass("d-none");
                 $(".filter-europe").addClass("d-none");
                 $(".filter-oceania").addClass("d-none");
+                $(".custom-country").addClass("d-none");
                 filteredData.forEach((item, index) => {
                     const html = `<a class="filter-americas col-12 col-lg-3 px-0 text-decoration-none text-color-black filtered-data-link" href="/${item.name}">
                                     <div class="card mx-auto mb-5 country-card dark-mode bg-dark-mode-element dark-mode-text country-card-dark" style="width: 18rem;">
@@ -158,6 +163,7 @@ $("#region-filter").on("change", function() {
                 $(".filter-asia").addClass("d-none");
                 $(".filter-europe").addClass("d-none");
                 $(".filter-oceania").addClass("d-none");
+                $(".custom-country").addClass("d-none");
                 filteredData.forEach((item, index) => {
                     const html = `<a class="filter-americas col-12 col-lg-3 px-0 text-decoration-none text-color-black filtered-data-link" href="/${item.name}">
                                     <div class="card mx-auto mb-5 country-card country-card-light" style="width: 18rem;">
@@ -192,6 +198,7 @@ $("#region-filter").on("change", function() {
                 $(".filter-europe").addClass("d-none");
                 $(".filter-americas").addClass("d-none");
                 $(".filter-oceania").addClass("d-none");
+                $(".custom-country").addClass("d-none");
                 filteredData.forEach((item, index) => {
                     const html = `<a class="filter-asia col-12 col-lg-3 px-0 text-decoration-none text-color-black filtered-data-link" href="/${item.name}">
                                     <div class="card mx-auto mb-5 country-card dark-mode bg-dark-mode-element dark-mode-text country-card-dark" style="width: 18rem;">
@@ -223,6 +230,7 @@ $("#region-filter").on("change", function() {
                 $(".filter-europe").addClass("d-none");
                 $(".filter-americas").addClass("d-none");
                 $(".filter-oceania").addClass("d-none");
+                $(".custom-country").addClass("d-none");
                 filteredData.forEach((item, index) => {
                     const html = `<a class="filter-asia col-12 col-lg-3 px-0 text-decoration-none text-color-black filtered-data-link" href="/${item.name}">
                                     <div class="card mx-auto mb-5 country-card country-card-light" style="width: 18rem;">
@@ -257,6 +265,7 @@ $("#region-filter").on("change", function() {
                 $(".filter-americas").addClass("d-none");
                 $(".filter-asia").addClass("d-none");
                 $(".filter-oceania").addClass("d-none");
+                $(".custom-country").addClass("d-none");
                 filteredData.forEach((item, index) => {
                     const html = `<a class="filter-europe col-12 col-lg-3 px-0 text-decoration-none text-color-black filtered-data-link" href="/${item.name}">
                                     <div class="card mx-auto mb-5 country-card dark-mode bg-dark-mode-element dark-mode-text country-card-dark" style="width: 18rem;">
@@ -288,6 +297,7 @@ $("#region-filter").on("change", function() {
                 $(".filter-americas").addClass("d-none");
                 $(".filter-asia").addClass("d-none");
                 $(".filter-oceania").addClass("d-none");
+                $(".custom-country").addClass("d-none");
                 filteredData.forEach((item, index) => {
                     const html = `<a class="filter-europe col-12 col-lg-3 px-0 text-decoration-none text-color-black filtered-data-link" href="/${item.name}">
                                     <div class="card mx-auto mb-5 country-card country-card-light" style="width: 18rem;">
@@ -322,6 +332,7 @@ $("#region-filter").on("change", function() {
                 $(".filter-americas").addClass("d-none");
                 $(".filter-asia").addClass("d-none");
                 $(".filter-europe").addClass("d-none");
+                $(".custom-country").addClass("d-none");
                 filteredData.forEach((item, index) => {
                     const html = `<a class="filter-oceania col-12 col-lg-3 px-0 text-decoration-none text-color-black filtered-data-link" href="/${item.name}">
                                     <div class="card mx-auto mb-5 country-card dark-mode bg-dark-mode-element dark-mode-text country-card-dark" style="width: 18rem;">
@@ -353,6 +364,7 @@ $("#region-filter").on("change", function() {
                 $(".filter-americas").addClass("d-none");
                 $(".filter-asia").addClass("d-none");
                 $(".filter-europe").addClass("d-none");
+                $(".custom-country").addClass("d-none");
                 filteredData.forEach((item, index) => {
                     const html = `<a class="filter-oceania col-12 col-lg-3 px-0 text-decoration-none text-color-black filtered-data-link" href="/${item.name}">
                                     <div class="card mx-auto mb-5 country-card country-card-light" style="width: 18rem;">
@@ -376,3 +388,99 @@ $("#region-filter").on("change", function() {
         } 
     }
 });
+
+// Functionality for filtering items based on country name [WIP]
+$("#input-text").on("input", function() {
+    const selectedCountry = $("#input-text").val();
+
+    if (!selectedCountry) {
+        $(".main-data-link").removeClass("d-none");
+        $(".filter-africa").addClass("d-none");
+        $(".filter-americas").addClass("d-none");
+        $(".filter-asia").addClass("d-none");
+        $(".filter-europe").addClass("d-none");
+        $(".filter-oceania").addClass("d-none");
+        $(".custom-country").addClass("d-none");
+    } else {
+        if ($(".layout-container").hasClass("dark-mode")) {                                      // Dark mode 
+            fetch(`/filter?country=${selectedCountry}`)
+            .then(response => response.json())
+            .then(data => {
+                const filteredData = data.filtered_data;
+                console.log(filteredData);
+
+                $(".main-data-link").addClass("d-none");
+                $(".filter-americas").addClass("d-none");
+                $(".filter-asia").addClass("d-none");
+                $(".filter-europe").addClass("d-none");
+                $(".filter-oceania").addClass("d-none");
+                $(".filter-africa").addClass("d-none");
+                $(".custom-country").addClass("d-none");
+
+                filteredData.forEach((item, index) => {
+                    if ($(".filter-container").find(`.custom-country-${item.name.toLowerCase()}`).length > 0) {
+                        $(`.custom-country-${item.name.toLowerCase()}`).removeClass("d-none");
+                    } else {
+                        const html = `<a class="custom-country custom-country-${item.name.toLowerCase()} col-12 col-lg-3 px-0 text-decoration-none text-color-black filtered-data-link" href="/${item.name}">
+                                        <div class="card mx-auto mb-5 country-card dark-mode bg-dark-mode-element dark-mode-text country-card-dark" style="width: 18rem;">
+                                            <div class="flag-img">
+                                                <img src="${item.flags.png}" class="card-img-top h-180px filtered-data-img" alt="country flags">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-800 filtered-data-heading">${item.name}</h5>
+                                                <p class="filtered-data-population"><strong>Population:</strong> ${item.population}</p>
+                                                <p class="filtered-data-region"><strong>Region:</strong> ${item.region}</p>
+                                                <p class="filtered-data-capital"><strong>Capital</strong> ${item.capital}</p>
+                                            </div>
+                                        </div>
+                                    </a>`;
+                        $(".filter-container").append(html);
+                    }
+                });
+            })
+            .catch(error => {
+                console.log('Error:', error);
+            });
+        } else {                                                                // Light mode
+            fetch(`/filter?country=${selectedCountry}`)
+            .then(response => response.json())
+            .then(data => {
+                const filteredData = data.filtered_data;
+                console.log(filteredData);
+
+                $(".main-data-link").addClass("d-none");
+                $(".filter-americas").addClass("d-none");
+                $(".filter-asia").addClass("d-none");
+                $(".filter-europe").addClass("d-none");
+                $(".filter-oceania").addClass("d-none");
+                $(".filter-africa").addClass("d-none");
+                $(".custom-country").addClass("d-none");
+
+                filteredData.forEach((item, index) => {
+                    if ($(".filter-container").find(`.custom-country-${item.name.toLowerCase()}`).length > 0) {
+                        $(`.custom-country-${item.name.toLowerCase()}`).removeClass("d-none");
+                    } else {
+                        const html = `<a class="custom-country custom-country-${item.name.toLowerCase()} col-12 col-lg-3 px-0 text-decoration-none text-color-black filtered-data-link" href="/${item.name}">
+                                        <div class="card mx-auto mb-5 country-card country-card-light" style="width: 18rem;">
+                                            <div class="flag-img">
+                                                <img src="${item.flags.png}" class="card-img-top h-180px filtered-data-img" alt="country flags">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-800 filtered-data-heading">${item.name}</h5>
+                                                <p class="filtered-data-population"><strong>Population:</strong> ${item.population}</p>
+                                                <p class="filtered-data-region"><strong>Region:</strong> ${item.region}</p>
+                                                <p class="filtered-data-capital"><strong>Capital</strong> ${item.capital}</p>
+                                            </div>
+                                        </div>
+                                    </a>`;
+                        $(".filter-container").append(html);
+                    }
+                });
+            })
+            .catch(error => {
+                console.log('Error:', error);
+            });
+        }
+    }
+});
+
