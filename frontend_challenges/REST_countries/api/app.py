@@ -35,16 +35,12 @@ def country_info(country):
 def filter_data():
     selected_region = request.args.get("region")
     selected_country = request.args.get("country")
-    print(selected_country)
 
     if not selected_country:
-        print("I have been entered1")
         filtered_data = [item for item in data if item['region'] == selected_region]
     else:
-        print("I have been entered2")
         # filtered_data = [item for item in data if item['name'].lower() == selected_country.lower()] #this method works
         filtered_data = [item for item in data if selected_country.lower() in item['name'].lower()]
-        print(filtered_data)
  
     return jsonify({"filtered_data": filtered_data})
 
