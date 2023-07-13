@@ -165,7 +165,7 @@ function applyCountryFilter() {
                                             </div>
                                             <div class="card-body">
                                                 <h5 class="card-title fw-800 filtered-data-heading">${item.name}</h5>
-                                                <p class="filtered-data-population"><strong>Population:</strong> ${item.population}</p>
+                                                <p class="filtered-data-population"><strong>Population:</strong> ${item.population.toLocaleString()}</p>
                                                 <p class="filtered-data-region"><strong>Region:</strong> ${item.region}</p>
                                                 <p class="filtered-data-capital"><strong>Capital</strong> ${item.capital}</p>
                                             </div>
@@ -214,7 +214,7 @@ function africaRegionFilter(region) {
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title fw-800 filtered-data-heading">${item.name}</h5>
-                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population}</p>
+                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population.toLocaleString()}</p>
                                         <p class="filtered-data-region"><strong>Region:</strong> ${item.region}</p>
                                         <p class="filtered-data-capital"><strong>Capital</strong> ${item.capital}</p>
                                     </div>
@@ -246,7 +246,7 @@ function africaRegionFilter(region) {
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title fw-800 filtered-data-heading">${item.name}</h5>
-                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population}</p>
+                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population.toLocaleString()}</p>
                                         <p class="filtered-data-region"><strong>Region:</strong> ${item.region}</p>
                                         <p class="filtered-data-capital"><strong>Capital</strong> ${item.capital}</p>
                                     </div>
@@ -283,7 +283,7 @@ function americaRegionFilter(region) {
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title fw-800 filtered-data-heading">${item.name}</h5>
-                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population}</p>
+                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population.toLocaleString()}</p>
                                         <p class="filtered-data-region"><strong>Region:</strong> ${item.region}</p>
                                         <p class="filtered-data-capital"><strong>Capital</strong> ${item.capital}</p>
                                     </div>
@@ -315,7 +315,7 @@ function americaRegionFilter(region) {
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title fw-800 filtered-data-heading">${item.name}</h5>
-                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population}</p>
+                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population.toLocaleString()}</p>
                                         <p class="filtered-data-region"><strong>Region:</strong> ${item.region}</p>
                                         <p class="filtered-data-capital"><strong>Capital</strong> ${item.capital}</p>
                                     </div>
@@ -352,7 +352,7 @@ function asiaRegionFilter(region) {
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title fw-800 filtered-data-heading">${item.name}</h5>
-                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population}</p>
+                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population.toLocaleString()}</p>
                                         <p class="filtered-data-region"><strong>Region:</strong> ${item.region}</p>
                                         <p class="filtered-data-capital"><strong>Capital</strong> ${item.capital}</p>
                                     </div>
@@ -384,7 +384,7 @@ function asiaRegionFilter(region) {
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title fw-800 filtered-data-heading">${item.name}</h5>
-                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population}</p>
+                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population.toLocaleString()}</p>
                                         <p class="filtered-data-region"><strong>Region:</strong> ${item.region}</p>
                                         <p class="filtered-data-capital"><strong>Capital</strong> ${item.capital}</p>
                                     </div>
@@ -421,7 +421,7 @@ function europeRegionFilter(region) {
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title fw-800 filtered-data-heading">${item.name}</h5>
-                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population}</p>
+                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population.toLocaleString()}</p>
                                         <p class="filtered-data-region"><strong>Region:</strong> ${item.region}</p>
                                         <p class="filtered-data-capital"><strong>Capital</strong> ${item.capital}</p>
                                     </div>
@@ -453,7 +453,7 @@ function europeRegionFilter(region) {
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title fw-800 filtered-data-heading">${item.name}</h5>
-                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population}</p>
+                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population.toLocaleString()}</p>
                                         <p class="filtered-data-region"><strong>Region:</strong> ${item.region}</p>
                                         <p class="filtered-data-capital"><strong>Capital</strong> ${item.capital}</p>
                                     </div>
@@ -490,7 +490,7 @@ function oceaniaRegionFilter(region) {
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title fw-800 filtered-data-heading">${item.name}</h5>
-                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population}</p>
+                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population.toLocaleString()}</p>
                                         <p class="filtered-data-region"><strong>Region:</strong> ${item.region}</p>
                                         <p class="filtered-data-capital"><strong>Capital</strong> ${item.capital}</p>
                                     </div>
@@ -522,7 +522,7 @@ function oceaniaRegionFilter(region) {
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title fw-800 filtered-data-heading">${item.name}</h5>
-                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population}</p>
+                                        <p class="filtered-data-population"><strong>Population:</strong> ${item.population.toLocaleString()}</p>
                                         <p class="filtered-data-region"><strong>Region:</strong> ${item.region}</p>
                                         <p class="filtered-data-capital"><strong>Capital</strong> ${item.capital}</p>
                                     </div>
