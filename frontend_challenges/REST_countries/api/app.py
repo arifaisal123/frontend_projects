@@ -23,15 +23,10 @@ def index():
 @app.route("/<country>")
 def country_info(country):
     country_data = None
-    print(country)
     decoded_country = unquote(country)
-    print(decoded_country)
     # Get the specific country data that is requested
     for item in data:
-         print(item["name"].lower())
-         print(country.lower())
          if item["name"].lower() == decoded_country.lower():
-              print("entered")
               country_data = item
               break
     
