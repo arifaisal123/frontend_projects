@@ -1,11 +1,20 @@
+// Check if user preference is already saved in localStorage
+if (localStorage.getItem("mode") === "dark") {
+    activateDarkMode();
+  } else {
+    activateLightMode();
+  }
+  
 // Toggle button for light and dark mode
 $(".toggle-button").on("click", function() {
     if ($(".layout-container").hasClass("dark-mode")) {
         // Activate light mode
         activateLightMode();
+        localStorage.setItem("mode", "light");
     } else {
         // Activate dark mode
         activateDarkMode();
+        localStorage.setItem("mode", "dark");
     }
 });
 
