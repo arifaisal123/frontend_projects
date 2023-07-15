@@ -39,7 +39,6 @@ Users should be able to:
 ### Built with
 
 - CSS custom properties
-- Flexbox
 - Mobile-first workflow
 - Bootstrap
 - jQuery
